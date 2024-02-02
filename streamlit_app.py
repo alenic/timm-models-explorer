@@ -1,14 +1,9 @@
 import streamlit as st
-import plotly.express as px
 import pandas as pd
-
 import altair as alt
 
 
 st.set_page_config(layout="wide")
-
-if 'show_contains' not in st.session_state:
-    st.session_state.show_contains = False
 
 
 @st.cache_data
@@ -83,10 +78,6 @@ df_filter = df_filter.query(f"top5>={top5_choice[0]} and top5<={top5_choice[1]}"
 df_filter = df_filter.query(f"param_count>={params_choice[0]} and param_count<={params_choice[1]}")
 df_filter = df_filter.query(f"img_size>={resolutions_choice[0]} and img_size<={resolutions_choice[1]}")
 df_filter = df_filter.loc[df_filter["model"].apply(lambda x: contain_text in x), :]
-
-
-def on_model_click(trace, points, selector):
-    st.text("ooooooooooooooooooooo")
 
 
 multi = alt.selection_point(on='mouseover', nearest=False)
