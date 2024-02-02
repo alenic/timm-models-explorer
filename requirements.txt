@@ -2,3 +2,4 @@ streamlit
 pandas
 plotly
 streamlit-plotly-events
+timm
