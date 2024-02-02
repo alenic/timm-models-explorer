@@ -1,3 +1,4 @@
 streamlit
 pandas
 plotly
+plotly_events
