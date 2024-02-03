@@ -2,6 +2,7 @@ import timm
 
 def get_models_from_modeltype(model_type):
     models_list = list(timm.models._registry._module_to_models[model_type])
+    models_list = sorted(models_list)
     return models_list
 
 
@@ -17,3 +18,11 @@ def strlist_in_str(name, name_list):
     for n in name_list:
         if n in name: return True
     return False
+
+def get_config(model):
+    try:
+        config = timm.get_pretrained_cfg(model, allow_unregistered=True)
+    except:
+        config = None
+    
+    return config
