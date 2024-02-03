@@ -1,14 +1,15 @@
 # Timm model's explorer
 
-**timm** is one of the more powerful python library for Computer Vision model's. It has more than 500 model's architecture, pretrained on Imagenet.
-Here you can find the repo
+**timm** stands out as a wonderful Python library for Computer Vision models, boasting an extensive collection of over 500 model architectures pre-trained on Imagenet. For those delving into the world of computer vision, timm proves to be an indispensable resource.
+
+You can explore the repository here:
 
 https://github.com/huggingface/pytorch-image-models
 
 
-This is a simple streamlit app, to explore the timm's library models.
+This Streamlit application serves as a user-friendly interface for navigating the myriad models available within the timm library.
 
-Try it here:
+Give it a try:
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://timm-model-explorer.streamlit.app/)
 
@@ -16,6 +17,6 @@ Try it here:
 
 # TODO List
 
-- [ ] Add inference data
-- [ ] Responsive plot
-- [ ] Add model's papers and architecture
+- [ ] Incorporate inference data
+- [ ] Optimize for responsive plot rendering
+- [ ] Include links to model papers and detailed architecture descriptions
