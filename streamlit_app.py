@@ -6,8 +6,28 @@ from streamlit_plotly_events import plotly_events
 
 import tme
 
+#from streamlit_profiler import Profiler
 
-@st.cache_data
+
+def update_plot(x_axis, yaxis, df_filter):
+    scatter = px.scatter(
+        df_filter,
+        x=x_axis,
+        y=yaxis,
+        hover_name="model",
+        template="plotly_white",
+        color="model_type",
+    )
+
+    scatter.update_layout(
+        xaxis_title=x_axis,
+        yaxis_title=y_axis,
+        legend_title="Model Type",
+    )
+
+    return scatter
+
+@st.cache_resource
 def fetch_and_clean_data(dataset_name):
     filename = os.path.join("data", tme.timm_version, tme.dataset_info[dataset_name]["filename"])
     df = pd.read_csv(filename)
@@ -45,6 +65,8 @@ def fetch_and_clean_data(dataset_name):
     df.index = range(len(df))
     return df
 
+#p = Profiler()
+#p.start()
 
 # =============================== Start ===========================
 st.set_page_config(layout="wide",
@@ -163,21 +185,7 @@ expander.markdown(f"""
     """
 )
 # ================ Scatter ===========================
-
-scatter = px.scatter(
-    df_filter,
-    x=tme.axis_to_cols[x_axis],
-    y=tme.axis_to_cols[y_axis],
-    hover_name="model",
-    template="plotly_white",
-    color="model_type",
-)
-
-scatter.update_layout(
-    xaxis_title=x_axis,
-    yaxis_title=y_axis,
-    legend_title="Model Type",
-)
+scatter = update_plot(tme.axis_to_cols[x_axis], tme.axis_to_cols[y_axis], df_filter)
 
 selected_points = plotly_events(scatter)
 
@@ -251,3 +259,5 @@ if selected_points:
         """
 
         st.code(load_python, language="python")
+
+#p.stop()
