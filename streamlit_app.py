@@ -136,10 +136,10 @@ with st.sidebar:
     # My signature
     st.markdown(
         """
-            <br><br>
-            <h6>Made in &nbsp<img src="https://streamlit.io/images/brand/streamlit-mark-color.png" alt="Streamlit logo" height="16">&nbsp by
-            <a href="https://github.com/alenic">@alenic</a></h6>
-            """,
+        <br>
+        <h6>Made in &nbsp<img src="https://streamlit.io/images/brand/streamlit-mark-color.png" alt="Streamlit logo" height="16">&nbsp by
+        <a href="https://github.com/alenic">@alenic</a></h6>
+        """,
         unsafe_allow_html=True,
     )
 
