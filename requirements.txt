@@ -2,4 +2,4 @@ streamlit
 pandas
 plotly
 streamlit-plotly-events
-timm
+timm==0.9.12
