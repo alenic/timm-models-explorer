@@ -18,5 +18,6 @@ Give it a try:
 # TODO List
 
 - [x] Incorporate inference and training data
+- [ ] Include model tag descriptions
 - [ ] Optimize for responsive plot rendering
 - [ ] Include links to model papers and detailed architecture descriptions
