@@ -1,0 +1,56 @@
+===============================================================================================
+Layer (type:depth-idx)                        Output Shape              Param #
+===============================================================================================
+EfficientNet                                  [1, 1000]                 --
+├─Conv2dSame: 1-1                             [1, 32, 130, 130]         864
+├─BatchNormAct2d: 1-2                         [1, 32, 130, 130]         64
+│    └─Identity: 2-1                          [1, 32, 130, 130]         --
+│    └─ReLU6: 2-2                             [1, 32, 130, 130]         --
+├─Sequential: 1-3                             [1, 352, 9, 9]            --
+│    └─Sequential: 2-3                        [1, 16, 130, 130]         --
+│    │    └─DepthwiseSeparableConv: 3-1       [1, 16, 130, 130]         896
+│    └─Sequential: 2-4                        [1, 24, 65, 65]           --
+│    │    └─InvertedResidual: 3-2             [1, 24, 65, 65]           5,136
+│    │    └─InvertedResidual: 3-3             [1, 24, 65, 65]           8,832
+│    │    └─InvertedResidual: 3-4             [1, 24, 65, 65]           8,832
+│    └─Sequential: 2-5                        [1, 48, 33, 33]           --
+│    │    └─InvertedResidual: 3-5             [1, 48, 33, 33]           14,640
+│    │    └─InvertedResidual: 3-6             [1, 48, 33, 33]           36,096
+│    │    └─InvertedResidual: 3-7             [1, 48, 33, 33]           36,096
+│    └─Sequential: 2-6                        [1, 88, 17, 17]           --
+│    │    └─InvertedResidual: 3-8             [1, 88, 17, 17]           43,088
+│    │    └─InvertedResidual: 3-9             [1, 88, 17, 17]           99,968
+│    │    └─InvertedResidual: 3-10            [1, 88, 17, 17]           99,968
+│    │    └─InvertedResidual: 3-11            [1, 88, 17, 17]           99,968
+│    └─Sequential: 2-7                        [1, 120, 17, 17]          --
+│    │    └─InvertedResidual: 3-12            [1, 120, 17, 17]          125,376
+│    │    └─InvertedResidual: 3-13            [1, 120, 17, 17]          193,920
+│    │    └─InvertedResidual: 3-14            [1, 120, 17, 17]          193,920
+│    │    └─InvertedResidual: 3-15            [1, 120, 17, 17]          193,920
+│    └─Sequential: 2-8                        [1, 208, 9, 9]            --
+│    │    └─InvertedResidual: 3-16            [1, 208, 9, 9]            257,456
+│    │    └─InvertedResidual: 3-17            [1, 208, 9, 9]            555,776
+│    │    └─InvertedResidual: 3-18            [1, 208, 9, 9]            555,776
+│    │    └─InvertedResidual: 3-19            [1, 208, 9, 9]            555,776
+│    │    └─InvertedResidual: 3-20            [1, 208, 9, 9]            555,776
+│    └─Sequential: 2-9                        [1, 352, 9, 9]            --
+│    │    └─InvertedResidual: 3-21            [1, 352, 9, 9]            715,808
+├─Conv2d: 1-4                                 [1, 1280, 9, 9]           450,560
+├─BatchNormAct2d: 1-5                         [1, 1280, 9, 9]           2,560
+│    └─Identity: 2-10                         [1, 1280, 9, 9]           --
+│    └─ReLU6: 2-11                            [1, 1280, 9, 9]           --
+├─SelectAdaptivePool2d: 1-6                   [1, 1280]                 --
+│    └─AdaptiveAvgPool2d: 2-12                [1, 1280, 1, 1]           --
+│    └─Flatten: 2-13                          [1, 1280]                 --
+├─Linear: 1-7                                 [1, 1000]                 1,281,000
+===============================================================================================
+Total params: 6,092,072
+Trainable params: 6,092,072
+Non-trainable params: 0
+Total mult-adds (M): 859.74
+===============================================================================================
+Input size (MB): 0.81
+Forward/backward pass size (MB): 103.16
+Params size (MB): 24.14
+Estimated Total Size (MB): 128.11
+===============================================================================================

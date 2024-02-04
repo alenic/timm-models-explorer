@@ -1,0 +1,67 @@
+===============================================================================================
+Layer (type:depth-idx)                        Output Shape              Param #
+===============================================================================================
+EfficientNet                                  [1, 1000]                 --
+├─Conv2dSame: 1-1                             [1, 48, 190, 190]         1,296
+├─BatchNormAct2d: 1-2                         [1, 48, 190, 190]         96
+│    └─Identity: 2-1                          [1, 48, 190, 190]         --
+│    └─SiLU: 2-2                              [1, 48, 190, 190]         --
+├─Sequential: 1-3                             [1, 448, 12, 12]          --
+│    └─Sequential: 2-3                        [1, 24, 190, 190]         --
+│    │    └─DepthwiseSeparableConv: 3-1       [1, 24, 190, 190]         2,940
+│    │    └─DepthwiseSeparableConv: 3-2       [1, 24, 190, 190]         1,206
+│    └─Sequential: 2-4                        [1, 32, 95, 95]           --
+│    │    └─InvertedResidual: 3-3             [1, 32, 95, 95]           11,878
+│    │    └─InvertedResidual: 3-4             [1, 32, 95, 95]           18,120
+│    │    └─InvertedResidual: 3-5             [1, 32, 95, 95]           18,120
+│    │    └─InvertedResidual: 3-6             [1, 32, 95, 95]           18,120
+│    └─Sequential: 2-5                        [1, 56, 48, 48]           --
+│    │    └─InvertedResidual: 3-7             [1, 56, 48, 48]           25,848
+│    │    └─InvertedResidual: 3-8             [1, 56, 48, 48]           57,246
+│    │    └─InvertedResidual: 3-9             [1, 56, 48, 48]           57,246
+│    │    └─InvertedResidual: 3-10            [1, 56, 48, 48]           57,246
+│    └─Sequential: 2-6                        [1, 112, 24, 24]          --
+│    │    └─InvertedResidual: 3-11            [1, 112, 24, 24]          70,798
+│    │    └─InvertedResidual: 3-12            [1, 112, 24, 24]          197,820
+│    │    └─InvertedResidual: 3-13            [1, 112, 24, 24]          197,820
+│    │    └─InvertedResidual: 3-14            [1, 112, 24, 24]          197,820
+│    │    └─InvertedResidual: 3-15            [1, 112, 24, 24]          197,820
+│    │    └─InvertedResidual: 3-16            [1, 112, 24, 24]          197,820
+│    └─Sequential: 2-7                        [1, 160, 24, 24]          --
+│    │    └─InvertedResidual: 3-17            [1, 160, 24, 24]          240,924
+│    │    └─InvertedResidual: 3-18            [1, 160, 24, 24]          413,160
+│    │    └─InvertedResidual: 3-19            [1, 160, 24, 24]          413,160
+│    │    └─InvertedResidual: 3-20            [1, 160, 24, 24]          413,160
+│    │    └─InvertedResidual: 3-21            [1, 160, 24, 24]          413,160
+│    │    └─InvertedResidual: 3-22            [1, 160, 24, 24]          413,160
+│    └─Sequential: 2-8                        [1, 272, 12, 12]          --
+│    │    └─InvertedResidual: 3-23            [1, 272, 12, 12]          520,904
+│    │    └─InvertedResidual: 3-24            [1, 272, 12, 12]          1,159,332
+│    │    └─InvertedResidual: 3-25            [1, 272, 12, 12]          1,159,332
+│    │    └─InvertedResidual: 3-26            [1, 272, 12, 12]          1,159,332
+│    │    └─InvertedResidual: 3-27            [1, 272, 12, 12]          1,159,332
+│    │    └─InvertedResidual: 3-28            [1, 272, 12, 12]          1,159,332
+│    │    └─InvertedResidual: 3-29            [1, 272, 12, 12]          1,159,332
+│    │    └─InvertedResidual: 3-30            [1, 272, 12, 12]          1,159,332
+│    └─Sequential: 2-9                        [1, 448, 12, 12]          --
+│    │    └─InvertedResidual: 3-31            [1, 448, 12, 12]          1,420,804
+│    │    └─InvertedResidual: 3-32            [1, 448, 12, 12]          3,049,200
+├─Conv2d: 1-4                                 [1, 1792, 12, 12]         802,816
+├─BatchNormAct2d: 1-5                         [1, 1792, 12, 12]         3,584
+│    └─Identity: 2-10                         [1, 1792, 12, 12]         --
+│    └─SiLU: 2-11                             [1, 1792, 12, 12]         --
+├─SelectAdaptivePool2d: 1-6                   [1, 1792]                 --
+│    └─AdaptiveAvgPool2d: 2-12                [1, 1792, 1, 1]           --
+│    └─Flatten: 2-13                          [1, 1792]                 --
+├─Linear: 1-7                                 [1, 1000]                 1,793,000
+===============================================================================================
+Total params: 19,341,616
+Trainable params: 19,341,616
+Non-trainable params: 0
+Total mult-adds (G): 4.39
+===============================================================================================
+Input size (MB): 1.73
+Forward/backward pass size (MB): 395.91
+Params size (MB): 76.87
+Estimated Total Size (MB): 474.51
+===============================================================================================

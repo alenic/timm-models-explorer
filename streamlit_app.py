@@ -3,7 +3,6 @@ import pandas as pd
 import numpy as np
 import os
 
-import plotly.express as px
 from streamlit_plotly_events import plotly_events
 
 import timm
@@ -14,24 +13,6 @@ import tme
 # from streamlit_profiler import Profiler
 # p = Profiler()
 # p.start()
-
-def update_plot(x_axis, yaxis, df_filter):
-    scatter = px.scatter(
-        df_filter,
-        x=x_axis,
-        y=yaxis,
-        hover_name="model",
-        template="plotly_white",
-        color="model_module",
-    )
-
-    scatter.update_layout(
-        xaxis_title=x_axis,
-        yaxis_title=y_axis,
-        legend_title="Model Module",
-    )
-
-    return scatter
 
 
 @st.cache_resource
@@ -96,6 +77,9 @@ st.set_page_config(
     layout="wide", page_title="Timm model's explorer", initial_sidebar_state="expanded"
 )
 
+# Load CSS
+with open("resources/style.css") as fp:
+    st.markdown(f"<style>{fp.read()}</style>", unsafe_allow_html=True)
 
 st.title(f"Timm model's explorer (version {tme.timm_version})")
 
@@ -135,7 +119,7 @@ with st.sidebar:
         options=tme.get_all_model_modules(),
     )
 
-    st.write("Model's name contains string:")
+    st.write("The model's name contains string:")
     contain_text = st.text_input(
         "Contain:",
         key="contain_text",
@@ -148,12 +132,19 @@ with st.sidebar:
         x_axis = st.selectbox("x-axis", options=list(tme.axis_to_cols.keys()), index=2)
     with col2:
         y_axis = st.selectbox("y-axis", options=list(tme.axis_to_cols.keys()), index=0)
+
+    # My signature
     st.markdown(
         """
             <br><br>
             <h6>Made in &nbsp<img src="https://streamlit.io/images/brand/streamlit-mark-color.png" alt="Streamlit logo" height="16">&nbsp by
             <a href="https://github.com/alenic">@alenic</a></h6>
             """,
+        unsafe_allow_html=True,
+    )
+
+    st.markdown(
+        '<div style="margin-top: 0.75em;"><a href="https://www.buymeacoffee.com/alessandro.nicolosi" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a></div>',
         unsafe_allow_html=True,
     )
 # =================== Filter =========================
@@ -194,8 +185,9 @@ expander.markdown(
     """
 )
 # ================ Scatter ===========================
-scatter = update_plot(tme.axis_to_cols[x_axis], tme.axis_to_cols[y_axis], df_filter)
 
+
+scatter = tme.update_plot(tme.axis_to_cols[x_axis], tme.axis_to_cols[y_axis], df_filter)
 selected_points = plotly_events(scatter)
 
 
@@ -229,48 +221,39 @@ if selected_points:
     if pretrained_cfg is not None:
         pretrained_cfg = pretrained_cfg.to_dict()
 
+    m_tab_info, m_tab_cfg, m_tab_summ, m_tab_code = st.tabs(
+        ["Model Info", "Model Config", "Model Summary", "Code"]
+    )
     col1, col2 = st.columns([0.5, 0.5])
 
-    with col1:
-        st.subheader("Model Info")
-        sub_col1, sub_col2 = st.columns([1, 2])
+    # Model Info Tab
+    with m_tab_info:
+        sub_col1, sub_col2 = st.columns([1, 1])
         with sub_col1:
-            st.write("Model")
-            st.write("Model Name")
-            st.write("Model Pretrained Tag")
-            st.write("Architecture")
-            st.write("Top1 (Acc.%)")
-            st.write("Top5 (Acc.%)")
-            st.write("Parameters [Millions]")
-            st.write("Evaluation - Image resolution [px]")
-            st.write("Inference batch size")
-            st.write("Inference image size [px]")
-            st.write("Inference sample/sec (RTX 3090)")
-            st.write("Train batch size")
-            st.write("Train image size [px]")
-            st.write("Train sample/sec (RTX 3090)")
-        with sub_col2:
-            st.write(row["model"])
-            st.write(row["model_name"])
-            st.write(row["pretrained_tag"])
             module_timm_url = f"https://github.com/huggingface/pytorch-image-models/tree/{tme.timm_version}/timm/models/{row['model_module']}.py"
-            st.markdown(f"[{row['model_module']}]({module_timm_url})")
-            st.write(row["top1"])
-            st.write(row["top5"])
-            st.write(row["param_count"])
-            st.write(row["img_size"])
-            st.write(row["infer_batch_size"])
-            st.write(row["infer_img_size"])
-            st.write(row["infer_samples_per_sec"])
-            st.write(row["train_batch_size"])
-            st.write(row["train_img_size"])
-            st.write(row["train_samples_per_sec"])
+            html = f"""
+            <table>
+                <tr><td>Model</td> <td>{row["model"]}</td></tr>
+                <tr><td>Model Name</td> <td>{row["model_name"]}</td></tr>
+                <tr><td>Model Pretrained Tag</td> <td>{row["pretrained_tag"]}</td></tr>
+                <tr><td>Module</td> <td><a href="{module_timm_url}">{row['model_module']}</a></td></tr>
+                <tr><td>Top1 (Acc.%)</td> <td>{row["top1"]}</td></tr>
+                <tr><td>Top5 (Acc.%)</td> <td>{row["top5"]}</td></tr>
+                <tr><td>Parameters [Millions]</td> <td>{row["param_count"]}</td></tr>
+                <tr><td>Evaluation - Image resolution [px]</td> <td>{row["img_size"]}</td></tr>
+                <tr><td>Inference batch size</td> <td>{row["infer_batch_size"]}</td></tr>
+                <tr><td>Inference image size [px]</td> <td>{row["infer_img_size"]}</td></tr>
+                <tr><td>Inference sample/sec (RTX 3090)</td> <td>{row["infer_samples_per_sec"]}</td></tr>
+                <tr><td>Train batch size</td> <td>{row["train_batch_size"]}</td></tr>
+                <tr><td>Train image size [px]</td> <td>{row["train_img_size"]}</td></tr>
+                <tr><td>Train sample/sec (RTX 3090)</td> <td>{row["train_samples_per_sec"]}</td></tr>
+            </table>
+            """
+            st.code(row["model"])
+            st.markdown(html, unsafe_allow_html=True)
 
-    with col2:
-        st.subheader("Model Config")
-
-        st.code(row["model"])
-
+    # Model Config Tab
+    with m_tab_cfg:
         if pretrained_cfg is not None:
             model_text = "{\n"
             for k, v in pretrained_cfg.items():
@@ -284,12 +267,50 @@ if selected_points:
 
         st.code(model_text, language="python")
 
-        st.subheader("Code")
+    # Model Summary Tab
+    with m_tab_summ:
+        summary_path = os.path.join(
+            "data", tme.timm_version, "models_summaries", f'{row["model"]}.txt'
+        )
+        if os.path.exists(summary_path):
+            with open(summary_path, "r") as fp:
+                st.text(fp.read())
+        else:
+            st.text("None")
 
-        load_python = f"""
-        model = timm.create_model("{row['model']}") 
-        """
+    # Model Code Tab
+    with m_tab_code:
+        col1, col2 = st.columns([1, 1])
+        with col1:
+            st.write("Create from scratch")
+            code_scratch = f"""
+            import timm
 
-        st.code(load_python, language="python")
+            model = timm.create_model("{row['model']}") 
+            """
+            st.code(code_scratch, language="python")
+
+            st.write("Create pretrained")
+            code_scratch = f"""
+            import timm
+
+            model = timm.create_model(
+                "{row['model']}",
+                pretrained=True
+            ) 
+            """
+            st.code(code_scratch, language="python")
+
+            st.write("Create pretrained with custm classes")
+            code_scratch = f"""
+            import timm
+
+            model = timm.create_model(
+                "{row['model']}",
+                pretrained=True,
+                num_classes=10
+            ) 
+            """
+            st.code(code_scratch, language="python")
 
 # p.stop()

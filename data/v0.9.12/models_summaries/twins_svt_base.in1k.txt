@@ -1,0 +1,94 @@
+====================================================================================================
+Layer (type:depth-idx)                             Output Shape              Param #
+====================================================================================================
+Twins                                              [1, 1000]                 --
+├─ModuleList: 1-16                                 --                        (recursive)
+│    └─PatchEmbed: 2-1                             [1, 3136, 96]             --
+│    │    └─Conv2d: 3-1                            [1, 96, 56, 56]           4,704
+│    │    └─LayerNorm: 3-2                         [1, 3136, 96]             192
+├─ModuleList: 1-17                                 --                        --
+│    └─Dropout: 2-2                                [1, 3136, 96]             --
+├─ModuleList: 1-20                                 --                        (recursive)
+│    └─ModuleList: 2-5                             --                        (recursive)
+│    │    └─Block: 3-3                             [1, 3136, 96]             111,840
+├─ModuleList: 1-19                                 --                        (recursive)
+│    └─PosConv: 2-4                                [1, 3136, 96]             --
+│    │    └─Sequential: 3-4                        [1, 96, 56, 56]           960
+├─ModuleList: 1-20                                 --                        (recursive)
+│    └─ModuleList: 2-5                             --                        (recursive)
+│    │    └─Block: 3-5                             [1, 3136, 96]             701,952
+├─ModuleList: 1-16                                 --                        (recursive)
+│    └─PatchEmbed: 2-6                             [1, 784, 192]             --
+│    │    └─Conv2d: 3-6                            [1, 192, 28, 28]          73,920
+│    │    └─LayerNorm: 3-7                         [1, 784, 192]             384
+├─ModuleList: 1-17                                 --                        --
+│    └─Dropout: 2-7                                [1, 784, 192]             --
+├─ModuleList: 1-20                                 --                        (recursive)
+│    └─ModuleList: 2-10                            --                        (recursive)
+│    │    └─Block: 3-8                             [1, 784, 192]             444,864
+├─ModuleList: 1-19                                 --                        (recursive)
+│    └─PosConv: 2-9                                [1, 784, 192]             --
+│    │    └─Sequential: 3-9                        [1, 192, 28, 28]          1,920
+├─ModuleList: 1-20                                 --                        (recursive)
+│    └─ModuleList: 2-10                            --                        (recursive)
+│    │    └─Block: 3-10                            [1, 784, 192]             1,035,264
+├─ModuleList: 1-16                                 --                        (recursive)
+│    └─PatchEmbed: 2-11                            [1, 196, 384]             --
+│    │    └─Conv2d: 3-11                           [1, 384, 14, 14]          295,296
+│    │    └─LayerNorm: 3-12                        [1, 196, 384]             768
+├─ModuleList: 1-17                                 --                        --
+│    └─Dropout: 2-12                               [1, 196, 384]             --
+├─ModuleList: 1-20                                 --                        (recursive)
+│    └─ModuleList: 2-15                            --                        (recursive)
+│    │    └─Block: 3-13                            [1, 196, 384]             1,774,464
+├─ModuleList: 1-19                                 --                        (recursive)
+│    └─PosConv: 2-14                               [1, 196, 384]             --
+│    │    └─Sequential: 3-14                       [1, 384, 14, 14]          3,840
+├─ModuleList: 1-20                                 --                        (recursive)
+│    └─ModuleList: 2-15                            --                        (recursive)
+│    │    └─Block: 3-15                            [1, 196, 384]             2,365,440
+│    │    └─Block: 3-16                            [1, 196, 384]             1,774,464
+│    │    └─Block: 3-17                            [1, 196, 384]             2,365,440
+│    │    └─Block: 3-18                            [1, 196, 384]             1,774,464
+│    │    └─Block: 3-19                            [1, 196, 384]             2,365,440
+│    │    └─Block: 3-20                            [1, 196, 384]             1,774,464
+│    │    └─Block: 3-21                            [1, 196, 384]             2,365,440
+│    │    └─Block: 3-22                            [1, 196, 384]             1,774,464
+│    │    └─Block: 3-23                            [1, 196, 384]             2,365,440
+│    │    └─Block: 3-24                            [1, 196, 384]             1,774,464
+│    │    └─Block: 3-25                            [1, 196, 384]             2,365,440
+│    │    └─Block: 3-26                            [1, 196, 384]             1,774,464
+│    │    └─Block: 3-27                            [1, 196, 384]             2,365,440
+│    │    └─Block: 3-28                            [1, 196, 384]             1,774,464
+│    │    └─Block: 3-29                            [1, 196, 384]             2,365,440
+│    │    └─Block: 3-30                            [1, 196, 384]             1,774,464
+│    │    └─Block: 3-31                            [1, 196, 384]             2,365,440
+├─ModuleList: 1-16                                 --                        (recursive)
+│    └─PatchEmbed: 2-16                            [1, 49, 768]              --
+│    │    └─Conv2d: 3-32                           [1, 768, 7, 7]            1,180,416
+│    │    └─LayerNorm: 3-33                        [1, 49, 768]              1,536
+├─ModuleList: 1-17                                 --                        --
+│    └─Dropout: 2-17                               [1, 49, 768]              --
+├─ModuleList: 1-20                                 --                        (recursive)
+│    └─ModuleList: 2-20                            --                        (recursive)
+│    │    └─Block: 3-34                            [1, 49, 768]              7,087,872
+├─ModuleList: 1-19                                 --                        (recursive)
+│    └─PosConv: 2-19                               [1, 49, 768]              --
+│    │    └─Sequential: 3-35                       [1, 768, 7, 7]            7,680
+├─ModuleList: 1-20                                 --                        (recursive)
+│    └─ModuleList: 2-20                            --                        (recursive)
+│    │    └─Block: 3-36                            [1, 49, 768]              7,087,872
+├─LayerNorm: 1-21                                  [1, 49, 768]              1,536
+├─Dropout: 1-22                                    [1, 768]                  --
+├─Linear: 1-23                                     [1, 1000]                 769,000
+====================================================================================================
+Total params: 56,070,952
+Trainable params: 56,070,952
+Non-trainable params: 0
+Total mult-adds (M): 560.18
+====================================================================================================
+Input size (MB): 0.60
+Forward/backward pass size (MB): 206.98
+Params size (MB): 224.28
+Estimated Total Size (MB): 431.87
+====================================================================================================

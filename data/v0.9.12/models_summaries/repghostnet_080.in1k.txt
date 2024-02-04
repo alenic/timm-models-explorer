@@ -1,0 +1,53 @@
+====================================================================================================
+Layer (type:depth-idx)                             Output Shape              Param #
+====================================================================================================
+RepGhostNet                                        [1, 1000]                 --
+├─Conv2d: 1-1                                      [1, 12, 112, 112]         324
+├─BatchNorm2d: 1-2                                 [1, 12, 112, 112]         24
+├─ReLU: 1-3                                        [1, 12, 112, 112]         --
+├─Sequential: 1-4                                  [1, 768, 7, 7]            --
+│    └─Sequential: 2-1                             [1, 12, 112, 112]         --
+│    │    └─RepGhostBottleneck: 3-1                [1, 12, 112, 112]         492
+│    └─Sequential: 2-2                             [1, 20, 56, 56]           --
+│    │    └─RepGhostBottleneck: 3-2                [1, 20, 56, 56]           1,872
+│    └─Sequential: 2-3                             [1, 20, 56, 56]           --
+│    │    └─RepGhostBottleneck: 3-3                [1, 20, 56, 56]           1,840
+│    └─Sequential: 2-4                             [1, 32, 28, 28]           --
+│    │    └─RepGhostBottleneck: 3-4                [1, 32, 28, 28]           4,840
+│    └─Sequential: 2-5                             [1, 32, 28, 28]           --
+│    │    └─RepGhostBottleneck: 3-5                [1, 32, 28, 28]           5,484
+│    └─Sequential: 2-6                             [1, 64, 14, 14]           --
+│    │    └─RepGhostBottleneck: 3-6                [1, 64, 14, 14]           15,200
+│    └─Sequential: 2-7                             [1, 88, 14, 14]           --
+│    │    └─RepGhostBottleneck: 3-7                [1, 64, 14, 14]           12,400
+│    │    └─RepGhostBottleneck: 3-8                [1, 64, 14, 14]           14,688
+│    │    └─RepGhostBottleneck: 3-9                [1, 64, 14, 14]           14,688
+│    │    └─RepGhostBottleneck: 3-10               [1, 88, 14, 14]           58,568
+│    │    └─RepGhostBottleneck: 3-11               [1, 88, 14, 14]           89,292
+│    └─Sequential: 2-8                             [1, 128, 7, 7]            --
+│    │    └─RepGhostBottleneck: 3-12               [1, 128, 7, 7]            121,744
+│    └─Sequential: 2-9                             [1, 128, 7, 7]            --
+│    │    └─RepGhostBottleneck: 3-13               [1, 128, 7, 7]            105,984
+│    │    └─RepGhostBottleneck: 3-14               [1, 128, 7, 7]            180,192
+│    │    └─RepGhostBottleneck: 3-15               [1, 128, 7, 7]            105,984
+│    │    └─RepGhostBottleneck: 3-16               [1, 128, 7, 7]            180,192
+│    └─Sequential: 2-10                            [1, 768, 7, 7]            --
+│    │    └─ConvBnAct: 3-17                        [1, 768, 7, 7]            99,840
+├─SelectAdaptivePool2d: 1-5                        [1, 768, 1, 1]            --
+│    └─AdaptiveAvgPool2d: 2-11                     [1, 768, 1, 1]            --
+│    └─Identity: 2-12                              [1, 768, 1, 1]            --
+├─Conv2d: 1-6                                      [1, 1280, 1, 1]           984,320
+├─ReLU: 1-7                                        [1, 1280, 1, 1]           --
+├─Flatten: 1-8                                     [1, 1280]                 --
+├─Linear: 1-9                                      [1, 1000]                 1,281,000
+====================================================================================================
+Total params: 3,278,968
+Trainable params: 3,278,968
+Non-trainable params: 0
+Total mult-adds (M): 95.55
+====================================================================================================
+Input size (MB): 0.60
+Forward/backward pass size (MB): 61.94
+Params size (MB): 13.11
+Estimated Total Size (MB): 75.65
+====================================================================================================

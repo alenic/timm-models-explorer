@@ -1,0 +1,383 @@
+====================================================================================================
+Layer (type:depth-idx)                             Output Shape              Param #
+====================================================================================================
+CoaT                                               [1, 1000]                 --
+├─PatchEmbed: 1-1                                  [1, 3136, 152]            --
+│    └─Conv2d: 2-1                                 [1, 152, 56, 56]          7,448
+│    └─LayerNorm: 2-2                              [1, 3136, 152]            304
+├─ModuleList: 1-2                                  --                        --
+│    └─SerialBlock: 2-3                            [1, 3137, 152]            285,456
+│    └─SerialBlock: 2-6                            --                        (recursive)
+│    │    └─ConvPosEnc: 3-1                        [1, 3137, 152]            1,520
+│    └─SerialBlock: 2-7                            --                        (recursive)
+│    │    └─LayerNorm: 3-2                         [1, 3137, 152]            304
+│    │    └─FactorAttnConvRelPosEnc: 3-3           [1, 3137, 152]            97,736
+│    └─SerialBlock: 2-6                            --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-4           --                        (recursive)
+│    └─SerialBlock: 2-7                            --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-5           --                        (recursive)
+│    │    └─Identity: 3-6                          [1, 3137, 152]            --
+│    │    └─LayerNorm: 3-7                         [1, 3137, 152]            304
+│    │    └─Mlp: 3-8                               [1, 3137, 152]            185,592
+│    │    └─Identity: 3-9                          [1, 3137, 152]            --
+│    └─SerialBlock: 2-8                            [1, 3137, 152]            1,520
+│    │    └─ConvPosEnc: 3-10                       [1, 3137, 152]            (recursive)
+│    │    └─LayerNorm: 3-11                        [1, 3137, 152]            304
+│    │    └─FactorAttnConvRelPosEnc: 3-12          [1, 3137, 152]            97,736
+│    │    └─Identity: 3-13                         [1, 3137, 152]            --
+│    │    └─LayerNorm: 3-14                        [1, 3137, 152]            304
+│    │    └─Mlp: 3-15                              [1, 3137, 152]            185,592
+│    │    └─Identity: 3-16                         [1, 3137, 152]            --
+├─PatchEmbed: 1-3                                  [1, 784, 320]             --
+│    └─Conv2d: 2-9                                 [1, 320, 28, 28]          194,880
+│    └─LayerNorm: 2-10                             [1, 784, 320]             640
+├─ModuleList: 1-41                                 --                        (recursive)
+│    └─SerialBlock: 2-11                           [1, 785, 320]             1,246,080
+│    └─SerialBlock: 2-89                           --                        (recursive)
+│    │    └─ConvPosEnc: 3-17                       [1, 785, 320]             3,200
+│    └─SerialBlock: 2-15                           --                        (recursive)
+│    │    └─LayerNorm: 3-18                        [1, 785, 320]             640
+│    │    └─FactorAttnConvRelPosEnc: 3-19          [1, 785, 320]             420,800
+├─ModuleList: 1-44                                 --                        (recursive)
+│    └─ParallelBlock: 2-87                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-186         --                        (recursive)
+├─ModuleList: 1-41                                 --                        (recursive)
+│    └─SerialBlock: 2-15                           --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-21          --                        (recursive)
+│    │    └─Identity: 3-22                         [1, 785, 320]             --
+│    │    └─LayerNorm: 3-23                        [1, 785, 320]             640
+│    │    └─Mlp: 3-24                              [1, 785, 320]             820,800
+│    │    └─Identity: 3-25                         [1, 785, 320]             --
+│    └─SerialBlock: 2-16                           [1, 785, 320]             824,640
+│    │    └─ConvPosEnc: 3-26                       [1, 785, 320]             (recursive)
+│    │    └─LayerNorm: 3-27                        [1, 785, 320]             640
+│    │    └─FactorAttnConvRelPosEnc: 3-28          [1, 785, 320]             420,800
+├─ModuleList: 1-44                                 --                        (recursive)
+│    └─ParallelBlock: 2-87                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-186         --                        (recursive)
+├─ModuleList: 1-41                                 --                        (recursive)
+│    └─SerialBlock: 2-89                           --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-30          --                        (recursive)
+│    │    └─Identity: 3-31                         [1, 785, 320]             --
+│    │    └─LayerNorm: 3-32                        [1, 785, 320]             640
+│    │    └─Mlp: 3-33                              [1, 785, 320]             820,800
+│    │    └─Identity: 3-34                         [1, 785, 320]             --
+├─PatchEmbed: 1-9                                  [1, 196, 320]             --
+│    └─Conv2d: 2-19                                [1, 320, 14, 14]          409,920
+│    └─LayerNorm: 2-20                             [1, 196, 320]             640
+├─ModuleList: 1-42                                 --                        (recursive)
+│    └─SerialBlock: 2-21                           [1, 197, 320]             1,246,080
+│    └─SerialBlock: 2-90                           --                        (recursive)
+│    │    └─ConvPosEnc: 3-35                       [1, 197, 320]             3,200
+│    └─SerialBlock: 2-25                           --                        (recursive)
+│    │    └─LayerNorm: 3-36                        [1, 197, 320]             640
+│    │    └─FactorAttnConvRelPosEnc: 3-37          [1, 197, 320]             420,800
+├─ModuleList: 1-44                                 --                        (recursive)
+│    └─ParallelBlock: 2-87                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-189         --                        (recursive)
+├─ModuleList: 1-42                                 --                        (recursive)
+│    └─SerialBlock: 2-25                           --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-39          --                        (recursive)
+│    │    └─Identity: 3-40                         [1, 197, 320]             --
+│    │    └─LayerNorm: 3-41                        [1, 197, 320]             640
+│    │    └─Mlp: 3-42                              [1, 197, 320]             820,800
+│    │    └─Identity: 3-43                         [1, 197, 320]             --
+│    └─SerialBlock: 2-26                           [1, 197, 320]             824,640
+│    │    └─ConvPosEnc: 3-44                       [1, 197, 320]             (recursive)
+│    │    └─LayerNorm: 3-45                        [1, 197, 320]             640
+│    │    └─FactorAttnConvRelPosEnc: 3-46          [1, 197, 320]             420,800
+├─ModuleList: 1-44                                 --                        (recursive)
+│    └─ParallelBlock: 2-87                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-189         --                        (recursive)
+├─ModuleList: 1-42                                 --                        (recursive)
+│    └─SerialBlock: 2-90                           --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-48          --                        (recursive)
+│    │    └─Identity: 3-49                         [1, 197, 320]             --
+│    │    └─LayerNorm: 3-50                        [1, 197, 320]             640
+│    │    └─Mlp: 3-51                              [1, 197, 320]             820,800
+│    │    └─Identity: 3-52                         [1, 197, 320]             --
+├─PatchEmbed: 1-15                                 [1, 49, 320]              --
+│    └─Conv2d: 2-29                                [1, 320, 7, 7]            409,920
+│    └─LayerNorm: 2-30                             [1, 49, 320]              640
+├─ModuleList: 1-43                                 --                        (recursive)
+│    └─SerialBlock: 2-31                           [1, 50, 320]              1,246,080
+│    └─SerialBlock: 2-91                           --                        (recursive)
+│    │    └─ConvPosEnc: 3-53                       [1, 50, 320]              3,200
+│    └─SerialBlock: 2-35                           --                        (recursive)
+│    │    └─LayerNorm: 3-54                        [1, 50, 320]              640
+│    │    └─FactorAttnConvRelPosEnc: 3-55          [1, 50, 320]              420,800
+├─ModuleList: 1-44                                 --                        (recursive)
+│    └─ParallelBlock: 2-87                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-192         --                        (recursive)
+├─ModuleList: 1-43                                 --                        (recursive)
+│    └─SerialBlock: 2-35                           --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-57          --                        (recursive)
+│    │    └─Identity: 3-58                         [1, 50, 320]              --
+│    │    └─LayerNorm: 3-59                        [1, 50, 320]              640
+│    │    └─Mlp: 3-60                              [1, 50, 320]              820,800
+│    │    └─Identity: 3-61                         [1, 50, 320]              --
+│    └─SerialBlock: 2-36                           [1, 50, 320]              824,640
+│    │    └─ConvPosEnc: 3-62                       [1, 50, 320]              (recursive)
+│    │    └─LayerNorm: 3-63                        [1, 50, 320]              640
+│    │    └─FactorAttnConvRelPosEnc: 3-64          [1, 50, 320]              420,800
+├─ModuleList: 1-44                                 --                        (recursive)
+│    └─ParallelBlock: 2-87                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-192         --                        (recursive)
+├─ModuleList: 1-43                                 --                        (recursive)
+│    └─SerialBlock: 2-91                           --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-66          --                        (recursive)
+│    │    └─Identity: 3-67                         [1, 50, 320]              --
+│    │    └─LayerNorm: 3-68                        [1, 50, 320]              640
+│    │    └─Mlp: 3-69                              [1, 50, 320]              820,800
+│    │    └─Identity: 3-70                         [1, 50, 320]              --
+├─ModuleList: 1-41                                 --                        (recursive)
+│    └─SerialBlock: 2-89                           --                        (recursive)
+│    │    └─ConvPosEnc: 3-71                       [1, 785, 320]             (recursive)
+├─ModuleList: 1-42                                 --                        (recursive)
+│    └─SerialBlock: 2-90                           --                        (recursive)
+│    │    └─ConvPosEnc: 3-72                       [1, 197, 320]             (recursive)
+├─ModuleList: 1-43                                 --                        (recursive)
+│    └─SerialBlock: 2-91                           --                        (recursive)
+│    │    └─ConvPosEnc: 3-73                       [1, 50, 320]              (recursive)
+├─ModuleList: 1-44                                 --                        (recursive)
+│    └─ParallelBlock: 2-42                         [1, 3137, 152]            1,664,320
+│    │    └─LayerNorm: 3-74                        [1, 785, 320]             640
+│    │    └─LayerNorm: 3-75                        [1, 197, 320]             640
+│    │    └─LayerNorm: 3-76                        [1, 50, 320]              640
+│    │    └─FactorAttnConvRelPosEnc: 3-77          [1, 785, 320]             420,800
+│    └─ParallelBlock: 2-87                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-186         --                        (recursive)
+│    └─ParallelBlock: 2-48                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-79          --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-80          [1, 197, 320]             420,800
+│    └─ParallelBlock: 2-87                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-189         --                        (recursive)
+│    └─ParallelBlock: 2-48                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-82          --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-83          [1, 50, 320]              420,800
+│    └─ParallelBlock: 2-87                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-192         --                        (recursive)
+│    └─ParallelBlock: 2-48                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-85          --                        (recursive)
+│    │    └─Identity: 3-86                         [1, 785, 320]             --
+│    │    └─Identity: 3-87                         [1, 197, 320]             --
+│    │    └─Identity: 3-88                         [1, 50, 320]              --
+│    │    └─LayerNorm: 3-89                        [1, 785, 320]             640
+│    │    └─LayerNorm: 3-90                        [1, 197, 320]             640
+│    │    └─LayerNorm: 3-91                        [1, 50, 320]              640
+│    │    └─Mlp: 3-92                              [1, 785, 320]             820,800
+│    │    └─Mlp: 3-93                              [1, 197, 320]             (recursive)
+│    │    └─Mlp: 3-94                              [1, 50, 320]              (recursive)
+│    │    └─Identity: 3-95                         [1, 785, 320]             --
+│    │    └─Identity: 3-96                         [1, 197, 320]             --
+│    │    └─Identity: 3-97                         [1, 50, 320]              --
+├─ModuleList: 1-41                                 --                        (recursive)
+│    └─SerialBlock: 2-89                           --                        (recursive)
+│    │    └─ConvPosEnc: 3-98                       [1, 785, 320]             (recursive)
+├─ModuleList: 1-42                                 --                        (recursive)
+│    └─SerialBlock: 2-90                           --                        (recursive)
+│    │    └─ConvPosEnc: 3-99                       [1, 197, 320]             (recursive)
+├─ModuleList: 1-43                                 --                        (recursive)
+│    └─SerialBlock: 2-91                           --                        (recursive)
+│    │    └─ConvPosEnc: 3-100                      [1, 50, 320]              (recursive)
+├─ModuleList: 1-44                                 --                        (recursive)
+│    └─ParallelBlock: 2-52                         [1, 3137, 152]            1,664,320
+│    │    └─LayerNorm: 3-101                       [1, 785, 320]             640
+│    │    └─LayerNorm: 3-102                       [1, 197, 320]             640
+│    │    └─LayerNorm: 3-103                       [1, 50, 320]              640
+│    │    └─FactorAttnConvRelPosEnc: 3-104         [1, 785, 320]             420,800
+│    └─ParallelBlock: 2-87                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-186         --                        (recursive)
+│    └─ParallelBlock: 2-58                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-106         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-107         [1, 197, 320]             420,800
+│    └─ParallelBlock: 2-87                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-189         --                        (recursive)
+│    └─ParallelBlock: 2-58                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-109         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-110         [1, 50, 320]              420,800
+│    └─ParallelBlock: 2-87                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-192         --                        (recursive)
+│    └─ParallelBlock: 2-58                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-112         --                        (recursive)
+│    │    └─Identity: 3-113                        [1, 785, 320]             --
+│    │    └─Identity: 3-114                        [1, 197, 320]             --
+│    │    └─Identity: 3-115                        [1, 50, 320]              --
+│    │    └─LayerNorm: 3-116                       [1, 785, 320]             640
+│    │    └─LayerNorm: 3-117                       [1, 197, 320]             640
+│    │    └─LayerNorm: 3-118                       [1, 50, 320]              640
+│    │    └─Mlp: 3-119                             [1, 785, 320]             820,800
+│    │    └─Mlp: 3-120                             [1, 197, 320]             (recursive)
+│    │    └─Mlp: 3-121                             [1, 50, 320]              (recursive)
+│    │    └─Identity: 3-122                        [1, 785, 320]             --
+│    │    └─Identity: 3-123                        [1, 197, 320]             --
+│    │    └─Identity: 3-124                        [1, 50, 320]              --
+├─ModuleList: 1-41                                 --                        (recursive)
+│    └─SerialBlock: 2-89                           --                        (recursive)
+│    │    └─ConvPosEnc: 3-125                      [1, 785, 320]             (recursive)
+├─ModuleList: 1-42                                 --                        (recursive)
+│    └─SerialBlock: 2-90                           --                        (recursive)
+│    │    └─ConvPosEnc: 3-126                      [1, 197, 320]             (recursive)
+├─ModuleList: 1-43                                 --                        (recursive)
+│    └─SerialBlock: 2-91                           --                        (recursive)
+│    │    └─ConvPosEnc: 3-127                      [1, 50, 320]              (recursive)
+├─ModuleList: 1-44                                 --                        (recursive)
+│    └─ParallelBlock: 2-62                         [1, 3137, 152]            1,664,320
+│    │    └─LayerNorm: 3-128                       [1, 785, 320]             640
+│    │    └─LayerNorm: 3-129                       [1, 197, 320]             640
+│    │    └─LayerNorm: 3-130                       [1, 50, 320]              640
+│    │    └─FactorAttnConvRelPosEnc: 3-131         [1, 785, 320]             420,800
+│    └─ParallelBlock: 2-87                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-186         --                        (recursive)
+│    └─ParallelBlock: 2-68                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-133         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-134         [1, 197, 320]             420,800
+│    └─ParallelBlock: 2-87                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-189         --                        (recursive)
+│    └─ParallelBlock: 2-68                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-136         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-137         [1, 50, 320]              420,800
+│    └─ParallelBlock: 2-87                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-192         --                        (recursive)
+│    └─ParallelBlock: 2-68                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-139         --                        (recursive)
+│    │    └─Identity: 3-140                        [1, 785, 320]             --
+│    │    └─Identity: 3-141                        [1, 197, 320]             --
+│    │    └─Identity: 3-142                        [1, 50, 320]              --
+│    │    └─LayerNorm: 3-143                       [1, 785, 320]             640
+│    │    └─LayerNorm: 3-144                       [1, 197, 320]             640
+│    │    └─LayerNorm: 3-145                       [1, 50, 320]              640
+│    │    └─Mlp: 3-146                             [1, 785, 320]             820,800
+│    │    └─Mlp: 3-147                             [1, 197, 320]             (recursive)
+│    │    └─Mlp: 3-148                             [1, 50, 320]              (recursive)
+│    │    └─Identity: 3-149                        [1, 785, 320]             --
+│    │    └─Identity: 3-150                        [1, 197, 320]             --
+│    │    └─Identity: 3-151                        [1, 50, 320]              --
+├─ModuleList: 1-41                                 --                        (recursive)
+│    └─SerialBlock: 2-89                           --                        (recursive)
+│    │    └─ConvPosEnc: 3-152                      [1, 785, 320]             (recursive)
+├─ModuleList: 1-42                                 --                        (recursive)
+│    └─SerialBlock: 2-90                           --                        (recursive)
+│    │    └─ConvPosEnc: 3-153                      [1, 197, 320]             (recursive)
+├─ModuleList: 1-43                                 --                        (recursive)
+│    └─SerialBlock: 2-91                           --                        (recursive)
+│    │    └─ConvPosEnc: 3-154                      [1, 50, 320]              (recursive)
+├─ModuleList: 1-44                                 --                        (recursive)
+│    └─ParallelBlock: 2-72                         [1, 3137, 152]            1,664,320
+│    │    └─LayerNorm: 3-155                       [1, 785, 320]             640
+│    │    └─LayerNorm: 3-156                       [1, 197, 320]             640
+│    │    └─LayerNorm: 3-157                       [1, 50, 320]              640
+│    │    └─FactorAttnConvRelPosEnc: 3-158         [1, 785, 320]             420,800
+│    └─ParallelBlock: 2-87                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-186         --                        (recursive)
+│    └─ParallelBlock: 2-78                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-160         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-161         [1, 197, 320]             420,800
+│    └─ParallelBlock: 2-87                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-189         --                        (recursive)
+│    └─ParallelBlock: 2-78                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-163         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-164         [1, 50, 320]              420,800
+│    └─ParallelBlock: 2-87                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-192         --                        (recursive)
+│    └─ParallelBlock: 2-78                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-166         --                        (recursive)
+│    │    └─Identity: 3-167                        [1, 785, 320]             --
+│    │    └─Identity: 3-168                        [1, 197, 320]             --
+│    │    └─Identity: 3-169                        [1, 50, 320]              --
+│    │    └─LayerNorm: 3-170                       [1, 785, 320]             640
+│    │    └─LayerNorm: 3-171                       [1, 197, 320]             640
+│    │    └─LayerNorm: 3-172                       [1, 50, 320]              640
+│    │    └─Mlp: 3-173                             [1, 785, 320]             820,800
+│    │    └─Mlp: 3-174                             [1, 197, 320]             (recursive)
+│    │    └─Mlp: 3-175                             [1, 50, 320]              (recursive)
+│    │    └─Identity: 3-176                        [1, 785, 320]             --
+│    │    └─Identity: 3-177                        [1, 197, 320]             --
+│    │    └─Identity: 3-178                        [1, 50, 320]              --
+├─ModuleList: 1-41                                 --                        (recursive)
+│    └─SerialBlock: 2-89                           --                        (recursive)
+│    │    └─ConvPosEnc: 3-179                      [1, 785, 320]             (recursive)
+├─ModuleList: 1-42                                 --                        (recursive)
+│    └─SerialBlock: 2-90                           --                        (recursive)
+│    │    └─ConvPosEnc: 3-180                      [1, 197, 320]             (recursive)
+├─ModuleList: 1-43                                 --                        (recursive)
+│    └─SerialBlock: 2-91                           --                        (recursive)
+│    │    └─ConvPosEnc: 3-181                      [1, 50, 320]              (recursive)
+├─ModuleList: 1-44                                 --                        (recursive)
+│    └─ParallelBlock: 2-82                         [1, 3137, 152]            1,664,320
+│    │    └─LayerNorm: 3-182                       [1, 785, 320]             640
+│    │    └─LayerNorm: 3-183                       [1, 197, 320]             640
+│    │    └─LayerNorm: 3-184                       [1, 50, 320]              640
+│    │    └─FactorAttnConvRelPosEnc: 3-185         [1, 785, 320]             420,800
+│    └─ParallelBlock: 2-87                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-186         --                        (recursive)
+│    └─ParallelBlock: 2-88                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-187         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-188         [1, 197, 320]             420,800
+│    └─ParallelBlock: 2-87                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-189         --                        (recursive)
+│    └─ParallelBlock: 2-88                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-190         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-191         [1, 50, 320]              420,800
+│    └─ParallelBlock: 2-87                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-192         --                        (recursive)
+│    └─ParallelBlock: 2-88                         --                        (recursive)
+│    │    └─FactorAttnConvRelPosEnc: 3-193         --                        (recursive)
+│    │    └─Identity: 3-194                        [1, 785, 320]             --
+│    │    └─Identity: 3-195                        [1, 197, 320]             --
+│    │    └─Identity: 3-196                        [1, 50, 320]              --
+│    │    └─LayerNorm: 3-197                       [1, 785, 320]             640
+│    │    └─LayerNorm: 3-198                       [1, 197, 320]             640
+│    │    └─LayerNorm: 3-199                       [1, 50, 320]              640
+│    │    └─Mlp: 3-200                             [1, 785, 320]             820,800
+│    │    └─Mlp: 3-201                             [1, 197, 320]             (recursive)
+│    │    └─Mlp: 3-202                             [1, 50, 320]              (recursive)
+│    │    └─Identity: 3-203                        [1, 785, 320]             --
+│    │    └─Identity: 3-204                        [1, 197, 320]             --
+│    │    └─Identity: 3-205                        [1, 50, 320]              --
+├─ModuleList: 1-41                                 --                        (recursive)
+│    └─SerialBlock: 2-89                           --                        (recursive)
+│    │    └─ConvPosEnc: 3-206                      [1, 785, 320]             (recursive)
+├─ModuleList: 1-42                                 --                        (recursive)
+│    └─SerialBlock: 2-90                           --                        (recursive)
+│    │    └─ConvPosEnc: 3-207                      [1, 197, 320]             (recursive)
+├─ModuleList: 1-43                                 --                        (recursive)
+│    └─SerialBlock: 2-91                           --                        (recursive)
+│    │    └─ConvPosEnc: 3-208                      [1, 50, 320]              (recursive)
+├─ModuleList: 1-44                                 --                        (recursive)
+│    └─ParallelBlock: 2-92                         [1, 3137, 152]            --
+│    │    └─LayerNorm: 3-209                       [1, 785, 320]             640
+│    │    └─LayerNorm: 3-210                       [1, 197, 320]             640
+│    │    └─LayerNorm: 3-211                       [1, 50, 320]              640
+│    │    └─FactorAttnConvRelPosEnc: 3-212         [1, 785, 320]             420,800
+│    │    └─FactorAttnConvRelPosEnc: 3-213         [1, 197, 320]             420,800
+│    │    └─FactorAttnConvRelPosEnc: 3-214         [1, 50, 320]              420,800
+│    │    └─Identity: 3-215                        [1, 785, 320]             --
+│    │    └─Identity: 3-216                        [1, 197, 320]             --
+│    │    └─Identity: 3-217                        [1, 50, 320]              --
+│    │    └─LayerNorm: 3-218                       [1, 785, 320]             640
+│    │    └─LayerNorm: 3-219                       [1, 197, 320]             640
+│    │    └─LayerNorm: 3-220                       [1, 50, 320]              640
+│    │    └─Mlp: 3-221                             [1, 785, 320]             820,800
+│    │    └─Mlp: 3-222                             [1, 197, 320]             (recursive)
+│    │    └─Mlp: 3-223                             [1, 50, 320]              (recursive)
+│    │    └─Identity: 3-224                        [1, 785, 320]             --
+│    │    └─Identity: 3-225                        [1, 197, 320]             --
+│    │    └─Identity: 3-226                        [1, 50, 320]              --
+├─LayerNorm: 1-45                                  [1, 785, 320]             640
+├─LayerNorm: 1-46                                  [1, 197, 320]             640
+├─LayerNorm: 1-47                                  [1, 50, 320]              640
+├─Conv1d: 1-48                                     [1, 1, 320]               4
+├─Dropout: 1-49                                    [1, 320]                  --
+├─Linear: 1-50                                     [1, 1000]                 321,000
+====================================================================================================
+Total params: 38,941,412
+Trainable params: 38,941,412
+Non-trainable params: 0
+Total mult-adds (M): 454.14
+====================================================================================================
+Input size (MB): 0.60
+Forward/backward pass size (MB): 389.36
+Params size (MB): 86.77
+Estimated Total Size (MB): 476.73
+====================================================================================================

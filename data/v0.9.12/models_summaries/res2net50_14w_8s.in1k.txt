@@ -1,0 +1,483 @@
+==========================================================================================
+Layer (type:depth-idx)                   Output Shape              Param #
+==========================================================================================
+ResNet                                   [1, 1000]                 --
+├─Conv2d: 1-1                            [1, 64, 112, 112]         9,408
+├─BatchNorm2d: 1-2                       [1, 64, 112, 112]         128
+├─ReLU: 1-3                              [1, 64, 112, 112]         --
+├─MaxPool2d: 1-4                         [1, 64, 56, 56]           --
+├─Sequential: 1-5                        [1, 256, 56, 56]          --
+│    └─Bottle2neck: 2-1                  [1, 256, 56, 56]          --
+│    │    └─Conv2d: 3-1                  [1, 112, 56, 56]          7,168
+│    │    └─BatchNorm2d: 3-2             [1, 112, 56, 56]          224
+│    │    └─ReLU: 3-3                    [1, 112, 56, 56]          --
+│    │    └─ModuleList: 3-22             --                        (recursive)
+│    │    └─ModuleList: 3-23             --                        (recursive)
+│    │    └─ReLU: 3-6                    [1, 14, 56, 56]           --
+│    │    └─ModuleList: 3-22             --                        (recursive)
+│    │    └─ModuleList: 3-23             --                        (recursive)
+│    │    └─ReLU: 3-9                    [1, 14, 56, 56]           --
+│    │    └─ModuleList: 3-22             --                        (recursive)
+│    │    └─ModuleList: 3-23             --                        (recursive)
+│    │    └─ReLU: 3-12                   [1, 14, 56, 56]           --
+│    │    └─ModuleList: 3-22             --                        (recursive)
+│    │    └─ModuleList: 3-23             --                        (recursive)
+│    │    └─ReLU: 3-15                   [1, 14, 56, 56]           --
+│    │    └─ModuleList: 3-22             --                        (recursive)
+│    │    └─ModuleList: 3-23             --                        (recursive)
+│    │    └─ReLU: 3-18                   [1, 14, 56, 56]           --
+│    │    └─ModuleList: 3-22             --                        (recursive)
+│    │    └─ModuleList: 3-23             --                        (recursive)
+│    │    └─ReLU: 3-21                   [1, 14, 56, 56]           --
+│    │    └─ModuleList: 3-22             --                        (recursive)
+│    │    └─ModuleList: 3-23             --                        (recursive)
+│    │    └─ReLU: 3-24                   [1, 14, 56, 56]           --
+│    │    └─AvgPool2d: 3-25              [1, 14, 56, 56]           --
+│    │    └─Conv2d: 3-26                 [1, 256, 56, 56]          28,672
+│    │    └─BatchNorm2d: 3-27            [1, 256, 56, 56]          512
+│    │    └─Sequential: 3-28             [1, 256, 56, 56]          16,896
+│    │    └─ReLU: 3-29                   [1, 256, 56, 56]          --
+│    └─Bottle2neck: 2-2                  [1, 256, 56, 56]          --
+│    │    └─Conv2d: 3-30                 [1, 112, 56, 56]          28,672
+│    │    └─BatchNorm2d: 3-31            [1, 112, 56, 56]          224
+│    │    └─ReLU: 3-32                   [1, 112, 56, 56]          --
+│    │    └─ModuleList: 3-51             --                        (recursive)
+│    │    └─ModuleList: 3-52             --                        (recursive)
+│    │    └─ReLU: 3-35                   [1, 14, 56, 56]           --
+│    │    └─ModuleList: 3-51             --                        (recursive)
+│    │    └─ModuleList: 3-52             --                        (recursive)
+│    │    └─ReLU: 3-38                   [1, 14, 56, 56]           --
+│    │    └─ModuleList: 3-51             --                        (recursive)
+│    │    └─ModuleList: 3-52             --                        (recursive)
+│    │    └─ReLU: 3-41                   [1, 14, 56, 56]           --
+│    │    └─ModuleList: 3-51             --                        (recursive)
+│    │    └─ModuleList: 3-52             --                        (recursive)
+│    │    └─ReLU: 3-44                   [1, 14, 56, 56]           --
+│    │    └─ModuleList: 3-51             --                        (recursive)
+│    │    └─ModuleList: 3-52             --                        (recursive)
+│    │    └─ReLU: 3-47                   [1, 14, 56, 56]           --
+│    │    └─ModuleList: 3-51             --                        (recursive)
+│    │    └─ModuleList: 3-52             --                        (recursive)
+│    │    └─ReLU: 3-50                   [1, 14, 56, 56]           --
+│    │    └─ModuleList: 3-51             --                        (recursive)
+│    │    └─ModuleList: 3-52             --                        (recursive)
+│    │    └─ReLU: 3-53                   [1, 14, 56, 56]           --
+│    │    └─Conv2d: 3-54                 [1, 256, 56, 56]          28,672
+│    │    └─BatchNorm2d: 3-55            [1, 256, 56, 56]          512
+│    │    └─ReLU: 3-56                   [1, 256, 56, 56]          --
+│    └─Bottle2neck: 2-3                  [1, 256, 56, 56]          --
+│    │    └─Conv2d: 3-57                 [1, 112, 56, 56]          28,672
+│    │    └─BatchNorm2d: 3-58            [1, 112, 56, 56]          224
+│    │    └─ReLU: 3-59                   [1, 112, 56, 56]          --
+│    │    └─ModuleList: 3-78             --                        (recursive)
+│    │    └─ModuleList: 3-79             --                        (recursive)
+│    │    └─ReLU: 3-62                   [1, 14, 56, 56]           --
+│    │    └─ModuleList: 3-78             --                        (recursive)
+│    │    └─ModuleList: 3-79             --                        (recursive)
+│    │    └─ReLU: 3-65                   [1, 14, 56, 56]           --
+│    │    └─ModuleList: 3-78             --                        (recursive)
+│    │    └─ModuleList: 3-79             --                        (recursive)
+│    │    └─ReLU: 3-68                   [1, 14, 56, 56]           --
+│    │    └─ModuleList: 3-78             --                        (recursive)
+│    │    └─ModuleList: 3-79             --                        (recursive)
+│    │    └─ReLU: 3-71                   [1, 14, 56, 56]           --
+│    │    └─ModuleList: 3-78             --                        (recursive)
+│    │    └─ModuleList: 3-79             --                        (recursive)
+│    │    └─ReLU: 3-74                   [1, 14, 56, 56]           --
+│    │    └─ModuleList: 3-78             --                        (recursive)
+│    │    └─ModuleList: 3-79             --                        (recursive)
+│    │    └─ReLU: 3-77                   [1, 14, 56, 56]           --
+│    │    └─ModuleList: 3-78             --                        (recursive)
+│    │    └─ModuleList: 3-79             --                        (recursive)
+│    │    └─ReLU: 3-80                   [1, 14, 56, 56]           --
+│    │    └─Conv2d: 3-81                 [1, 256, 56, 56]          28,672
+│    │    └─BatchNorm2d: 3-82            [1, 256, 56, 56]          512
+│    │    └─ReLU: 3-83                   [1, 256, 56, 56]          --
+├─Sequential: 1-6                        [1, 512, 28, 28]          --
+│    └─Bottle2neck: 2-4                  [1, 512, 28, 28]          --
+│    │    └─Conv2d: 3-84                 [1, 224, 56, 56]          57,344
+│    │    └─BatchNorm2d: 3-85            [1, 224, 56, 56]          448
+│    │    └─ReLU: 3-86                   [1, 224, 56, 56]          --
+│    │    └─ModuleList: 3-105            --                        (recursive)
+│    │    └─ModuleList: 3-106            --                        (recursive)
+│    │    └─ReLU: 3-89                   [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-105            --                        (recursive)
+│    │    └─ModuleList: 3-106            --                        (recursive)
+│    │    └─ReLU: 3-92                   [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-105            --                        (recursive)
+│    │    └─ModuleList: 3-106            --                        (recursive)
+│    │    └─ReLU: 3-95                   [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-105            --                        (recursive)
+│    │    └─ModuleList: 3-106            --                        (recursive)
+│    │    └─ReLU: 3-98                   [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-105            --                        (recursive)
+│    │    └─ModuleList: 3-106            --                        (recursive)
+│    │    └─ReLU: 3-101                  [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-105            --                        (recursive)
+│    │    └─ModuleList: 3-106            --                        (recursive)
+│    │    └─ReLU: 3-104                  [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-105            --                        (recursive)
+│    │    └─ModuleList: 3-106            --                        (recursive)
+│    │    └─ReLU: 3-107                  [1, 28, 28, 28]           --
+│    │    └─AvgPool2d: 3-108             [1, 28, 28, 28]           --
+│    │    └─Conv2d: 3-109                [1, 512, 28, 28]          114,688
+│    │    └─BatchNorm2d: 3-110           [1, 512, 28, 28]          1,024
+│    │    └─Sequential: 3-111            [1, 512, 28, 28]          132,096
+│    │    └─ReLU: 3-112                  [1, 512, 28, 28]          --
+│    └─Bottle2neck: 2-5                  [1, 512, 28, 28]          --
+│    │    └─Conv2d: 3-113                [1, 224, 28, 28]          114,688
+│    │    └─BatchNorm2d: 3-114           [1, 224, 28, 28]          448
+│    │    └─ReLU: 3-115                  [1, 224, 28, 28]          --
+│    │    └─ModuleList: 3-134            --                        (recursive)
+│    │    └─ModuleList: 3-135            --                        (recursive)
+│    │    └─ReLU: 3-118                  [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-134            --                        (recursive)
+│    │    └─ModuleList: 3-135            --                        (recursive)
+│    │    └─ReLU: 3-121                  [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-134            --                        (recursive)
+│    │    └─ModuleList: 3-135            --                        (recursive)
+│    │    └─ReLU: 3-124                  [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-134            --                        (recursive)
+│    │    └─ModuleList: 3-135            --                        (recursive)
+│    │    └─ReLU: 3-127                  [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-134            --                        (recursive)
+│    │    └─ModuleList: 3-135            --                        (recursive)
+│    │    └─ReLU: 3-130                  [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-134            --                        (recursive)
+│    │    └─ModuleList: 3-135            --                        (recursive)
+│    │    └─ReLU: 3-133                  [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-134            --                        (recursive)
+│    │    └─ModuleList: 3-135            --                        (recursive)
+│    │    └─ReLU: 3-136                  [1, 28, 28, 28]           --
+│    │    └─Conv2d: 3-137                [1, 512, 28, 28]          114,688
+│    │    └─BatchNorm2d: 3-138           [1, 512, 28, 28]          1,024
+│    │    └─ReLU: 3-139                  [1, 512, 28, 28]          --
+│    └─Bottle2neck: 2-6                  [1, 512, 28, 28]          --
+│    │    └─Conv2d: 3-140                [1, 224, 28, 28]          114,688
+│    │    └─BatchNorm2d: 3-141           [1, 224, 28, 28]          448
+│    │    └─ReLU: 3-142                  [1, 224, 28, 28]          --
+│    │    └─ModuleList: 3-161            --                        (recursive)
+│    │    └─ModuleList: 3-162            --                        (recursive)
+│    │    └─ReLU: 3-145                  [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-161            --                        (recursive)
+│    │    └─ModuleList: 3-162            --                        (recursive)
+│    │    └─ReLU: 3-148                  [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-161            --                        (recursive)
+│    │    └─ModuleList: 3-162            --                        (recursive)
+│    │    └─ReLU: 3-151                  [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-161            --                        (recursive)
+│    │    └─ModuleList: 3-162            --                        (recursive)
+│    │    └─ReLU: 3-154                  [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-161            --                        (recursive)
+│    │    └─ModuleList: 3-162            --                        (recursive)
+│    │    └─ReLU: 3-157                  [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-161            --                        (recursive)
+│    │    └─ModuleList: 3-162            --                        (recursive)
+│    │    └─ReLU: 3-160                  [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-161            --                        (recursive)
+│    │    └─ModuleList: 3-162            --                        (recursive)
+│    │    └─ReLU: 3-163                  [1, 28, 28, 28]           --
+│    │    └─Conv2d: 3-164                [1, 512, 28, 28]          114,688
+│    │    └─BatchNorm2d: 3-165           [1, 512, 28, 28]          1,024
+│    │    └─ReLU: 3-166                  [1, 512, 28, 28]          --
+│    └─Bottle2neck: 2-7                  [1, 512, 28, 28]          --
+│    │    └─Conv2d: 3-167                [1, 224, 28, 28]          114,688
+│    │    └─BatchNorm2d: 3-168           [1, 224, 28, 28]          448
+│    │    └─ReLU: 3-169                  [1, 224, 28, 28]          --
+│    │    └─ModuleList: 3-188            --                        (recursive)
+│    │    └─ModuleList: 3-189            --                        (recursive)
+│    │    └─ReLU: 3-172                  [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-188            --                        (recursive)
+│    │    └─ModuleList: 3-189            --                        (recursive)
+│    │    └─ReLU: 3-175                  [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-188            --                        (recursive)
+│    │    └─ModuleList: 3-189            --                        (recursive)
+│    │    └─ReLU: 3-178                  [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-188            --                        (recursive)
+│    │    └─ModuleList: 3-189            --                        (recursive)
+│    │    └─ReLU: 3-181                  [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-188            --                        (recursive)
+│    │    └─ModuleList: 3-189            --                        (recursive)
+│    │    └─ReLU: 3-184                  [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-188            --                        (recursive)
+│    │    └─ModuleList: 3-189            --                        (recursive)
+│    │    └─ReLU: 3-187                  [1, 28, 28, 28]           --
+│    │    └─ModuleList: 3-188            --                        (recursive)
+│    │    └─ModuleList: 3-189            --                        (recursive)
+│    │    └─ReLU: 3-190                  [1, 28, 28, 28]           --
+│    │    └─Conv2d: 3-191                [1, 512, 28, 28]          114,688
+│    │    └─BatchNorm2d: 3-192           [1, 512, 28, 28]          1,024
+│    │    └─ReLU: 3-193                  [1, 512, 28, 28]          --
+├─Sequential: 1-7                        [1, 1024, 14, 14]         --
+│    └─Bottle2neck: 2-8                  [1, 1024, 14, 14]         --
+│    │    └─Conv2d: 3-194                [1, 448, 28, 28]          229,376
+│    │    └─BatchNorm2d: 3-195           [1, 448, 28, 28]          896
+│    │    └─ReLU: 3-196                  [1, 448, 28, 28]          --
+│    │    └─ModuleList: 3-215            --                        (recursive)
+│    │    └─ModuleList: 3-216            --                        (recursive)
+│    │    └─ReLU: 3-199                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-215            --                        (recursive)
+│    │    └─ModuleList: 3-216            --                        (recursive)
+│    │    └─ReLU: 3-202                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-215            --                        (recursive)
+│    │    └─ModuleList: 3-216            --                        (recursive)
+│    │    └─ReLU: 3-205                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-215            --                        (recursive)
+│    │    └─ModuleList: 3-216            --                        (recursive)
+│    │    └─ReLU: 3-208                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-215            --                        (recursive)
+│    │    └─ModuleList: 3-216            --                        (recursive)
+│    │    └─ReLU: 3-211                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-215            --                        (recursive)
+│    │    └─ModuleList: 3-216            --                        (recursive)
+│    │    └─ReLU: 3-214                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-215            --                        (recursive)
+│    │    └─ModuleList: 3-216            --                        (recursive)
+│    │    └─ReLU: 3-217                  [1, 56, 14, 14]           --
+│    │    └─AvgPool2d: 3-218             [1, 56, 14, 14]           --
+│    │    └─Conv2d: 3-219                [1, 1024, 14, 14]         458,752
+│    │    └─BatchNorm2d: 3-220           [1, 1024, 14, 14]         2,048
+│    │    └─Sequential: 3-221            [1, 1024, 14, 14]         526,336
+│    │    └─ReLU: 3-222                  [1, 1024, 14, 14]         --
+│    └─Bottle2neck: 2-9                  [1, 1024, 14, 14]         --
+│    │    └─Conv2d: 3-223                [1, 448, 14, 14]          458,752
+│    │    └─BatchNorm2d: 3-224           [1, 448, 14, 14]          896
+│    │    └─ReLU: 3-225                  [1, 448, 14, 14]          --
+│    │    └─ModuleList: 3-244            --                        (recursive)
+│    │    └─ModuleList: 3-245            --                        (recursive)
+│    │    └─ReLU: 3-228                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-244            --                        (recursive)
+│    │    └─ModuleList: 3-245            --                        (recursive)
+│    │    └─ReLU: 3-231                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-244            --                        (recursive)
+│    │    └─ModuleList: 3-245            --                        (recursive)
+│    │    └─ReLU: 3-234                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-244            --                        (recursive)
+│    │    └─ModuleList: 3-245            --                        (recursive)
+│    │    └─ReLU: 3-237                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-244            --                        (recursive)
+│    │    └─ModuleList: 3-245            --                        (recursive)
+│    │    └─ReLU: 3-240                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-244            --                        (recursive)
+│    │    └─ModuleList: 3-245            --                        (recursive)
+│    │    └─ReLU: 3-243                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-244            --                        (recursive)
+│    │    └─ModuleList: 3-245            --                        (recursive)
+│    │    └─ReLU: 3-246                  [1, 56, 14, 14]           --
+│    │    └─Conv2d: 3-247                [1, 1024, 14, 14]         458,752
+│    │    └─BatchNorm2d: 3-248           [1, 1024, 14, 14]         2,048
+│    │    └─ReLU: 3-249                  [1, 1024, 14, 14]         --
+│    └─Bottle2neck: 2-10                 [1, 1024, 14, 14]         --
+│    │    └─Conv2d: 3-250                [1, 448, 14, 14]          458,752
+│    │    └─BatchNorm2d: 3-251           [1, 448, 14, 14]          896
+│    │    └─ReLU: 3-252                  [1, 448, 14, 14]          --
+│    │    └─ModuleList: 3-271            --                        (recursive)
+│    │    └─ModuleList: 3-272            --                        (recursive)
+│    │    └─ReLU: 3-255                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-271            --                        (recursive)
+│    │    └─ModuleList: 3-272            --                        (recursive)
+│    │    └─ReLU: 3-258                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-271            --                        (recursive)
+│    │    └─ModuleList: 3-272            --                        (recursive)
+│    │    └─ReLU: 3-261                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-271            --                        (recursive)
+│    │    └─ModuleList: 3-272            --                        (recursive)
+│    │    └─ReLU: 3-264                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-271            --                        (recursive)
+│    │    └─ModuleList: 3-272            --                        (recursive)
+│    │    └─ReLU: 3-267                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-271            --                        (recursive)
+│    │    └─ModuleList: 3-272            --                        (recursive)
+│    │    └─ReLU: 3-270                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-271            --                        (recursive)
+│    │    └─ModuleList: 3-272            --                        (recursive)
+│    │    └─ReLU: 3-273                  [1, 56, 14, 14]           --
+│    │    └─Conv2d: 3-274                [1, 1024, 14, 14]         458,752
+│    │    └─BatchNorm2d: 3-275           [1, 1024, 14, 14]         2,048
+│    │    └─ReLU: 3-276                  [1, 1024, 14, 14]         --
+│    └─Bottle2neck: 2-11                 [1, 1024, 14, 14]         --
+│    │    └─Conv2d: 3-277                [1, 448, 14, 14]          458,752
+│    │    └─BatchNorm2d: 3-278           [1, 448, 14, 14]          896
+│    │    └─ReLU: 3-279                  [1, 448, 14, 14]          --
+│    │    └─ModuleList: 3-298            --                        (recursive)
+│    │    └─ModuleList: 3-299            --                        (recursive)
+│    │    └─ReLU: 3-282                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-298            --                        (recursive)
+│    │    └─ModuleList: 3-299            --                        (recursive)
+│    │    └─ReLU: 3-285                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-298            --                        (recursive)
+│    │    └─ModuleList: 3-299            --                        (recursive)
+│    │    └─ReLU: 3-288                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-298            --                        (recursive)
+│    │    └─ModuleList: 3-299            --                        (recursive)
+│    │    └─ReLU: 3-291                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-298            --                        (recursive)
+│    │    └─ModuleList: 3-299            --                        (recursive)
+│    │    └─ReLU: 3-294                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-298            --                        (recursive)
+│    │    └─ModuleList: 3-299            --                        (recursive)
+│    │    └─ReLU: 3-297                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-298            --                        (recursive)
+│    │    └─ModuleList: 3-299            --                        (recursive)
+│    │    └─ReLU: 3-300                  [1, 56, 14, 14]           --
+│    │    └─Conv2d: 3-301                [1, 1024, 14, 14]         458,752
+│    │    └─BatchNorm2d: 3-302           [1, 1024, 14, 14]         2,048
+│    │    └─ReLU: 3-303                  [1, 1024, 14, 14]         --
+│    └─Bottle2neck: 2-12                 [1, 1024, 14, 14]         --
+│    │    └─Conv2d: 3-304                [1, 448, 14, 14]          458,752
+│    │    └─BatchNorm2d: 3-305           [1, 448, 14, 14]          896
+│    │    └─ReLU: 3-306                  [1, 448, 14, 14]          --
+│    │    └─ModuleList: 3-325            --                        (recursive)
+│    │    └─ModuleList: 3-326            --                        (recursive)
+│    │    └─ReLU: 3-309                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-325            --                        (recursive)
+│    │    └─ModuleList: 3-326            --                        (recursive)
+│    │    └─ReLU: 3-312                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-325            --                        (recursive)
+│    │    └─ModuleList: 3-326            --                        (recursive)
+│    │    └─ReLU: 3-315                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-325            --                        (recursive)
+│    │    └─ModuleList: 3-326            --                        (recursive)
+│    │    └─ReLU: 3-318                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-325            --                        (recursive)
+│    │    └─ModuleList: 3-326            --                        (recursive)
+│    │    └─ReLU: 3-321                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-325            --                        (recursive)
+│    │    └─ModuleList: 3-326            --                        (recursive)
+│    │    └─ReLU: 3-324                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-325            --                        (recursive)
+│    │    └─ModuleList: 3-326            --                        (recursive)
+│    │    └─ReLU: 3-327                  [1, 56, 14, 14]           --
+│    │    └─Conv2d: 3-328                [1, 1024, 14, 14]         458,752
+│    │    └─BatchNorm2d: 3-329           [1, 1024, 14, 14]         2,048
+│    │    └─ReLU: 3-330                  [1, 1024, 14, 14]         --
+│    └─Bottle2neck: 2-13                 [1, 1024, 14, 14]         --
+│    │    └─Conv2d: 3-331                [1, 448, 14, 14]          458,752
+│    │    └─BatchNorm2d: 3-332           [1, 448, 14, 14]          896
+│    │    └─ReLU: 3-333                  [1, 448, 14, 14]          --
+│    │    └─ModuleList: 3-352            --                        (recursive)
+│    │    └─ModuleList: 3-353            --                        (recursive)
+│    │    └─ReLU: 3-336                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-352            --                        (recursive)
+│    │    └─ModuleList: 3-353            --                        (recursive)
+│    │    └─ReLU: 3-339                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-352            --                        (recursive)
+│    │    └─ModuleList: 3-353            --                        (recursive)
+│    │    └─ReLU: 3-342                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-352            --                        (recursive)
+│    │    └─ModuleList: 3-353            --                        (recursive)
+│    │    └─ReLU: 3-345                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-352            --                        (recursive)
+│    │    └─ModuleList: 3-353            --                        (recursive)
+│    │    └─ReLU: 3-348                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-352            --                        (recursive)
+│    │    └─ModuleList: 3-353            --                        (recursive)
+│    │    └─ReLU: 3-351                  [1, 56, 14, 14]           --
+│    │    └─ModuleList: 3-352            --                        (recursive)
+│    │    └─ModuleList: 3-353            --                        (recursive)
+│    │    └─ReLU: 3-354                  [1, 56, 14, 14]           --
+│    │    └─Conv2d: 3-355                [1, 1024, 14, 14]         458,752
+│    │    └─BatchNorm2d: 3-356           [1, 1024, 14, 14]         2,048
+│    │    └─ReLU: 3-357                  [1, 1024, 14, 14]         --
+├─Sequential: 1-8                        [1, 2048, 7, 7]           --
+│    └─Bottle2neck: 2-14                 [1, 2048, 7, 7]           --
+│    │    └─Conv2d: 3-358                [1, 896, 14, 14]          917,504
+│    │    └─BatchNorm2d: 3-359           [1, 896, 14, 14]          1,792
+│    │    └─ReLU: 3-360                  [1, 896, 14, 14]          --
+│    │    └─ModuleList: 3-379            --                        (recursive)
+│    │    └─ModuleList: 3-380            --                        (recursive)
+│    │    └─ReLU: 3-363                  [1, 112, 7, 7]            --
+│    │    └─ModuleList: 3-379            --                        (recursive)
+│    │    └─ModuleList: 3-380            --                        (recursive)
+│    │    └─ReLU: 3-366                  [1, 112, 7, 7]            --
+│    │    └─ModuleList: 3-379            --                        (recursive)
+│    │    └─ModuleList: 3-380            --                        (recursive)
+│    │    └─ReLU: 3-369                  [1, 112, 7, 7]            --
+│    │    └─ModuleList: 3-379            --                        (recursive)
+│    │    └─ModuleList: 3-380            --                        (recursive)
+│    │    └─ReLU: 3-372                  [1, 112, 7, 7]            --
+│    │    └─ModuleList: 3-379            --                        (recursive)
+│    │    └─ModuleList: 3-380            --                        (recursive)
+│    │    └─ReLU: 3-375                  [1, 112, 7, 7]            --
+│    │    └─ModuleList: 3-379            --                        (recursive)
+│    │    └─ModuleList: 3-380            --                        (recursive)
+│    │    └─ReLU: 3-378                  [1, 112, 7, 7]            --
+│    │    └─ModuleList: 3-379            --                        (recursive)
+│    │    └─ModuleList: 3-380            --                        (recursive)
+│    │    └─ReLU: 3-381                  [1, 112, 7, 7]            --
+│    │    └─AvgPool2d: 3-382             [1, 112, 7, 7]            --
+│    │    └─Conv2d: 3-383                [1, 2048, 7, 7]           1,835,008
+│    │    └─BatchNorm2d: 3-384           [1, 2048, 7, 7]           4,096
+│    │    └─Sequential: 3-385            [1, 2048, 7, 7]           2,101,248
+│    │    └─ReLU: 3-386                  [1, 2048, 7, 7]           --
+│    └─Bottle2neck: 2-15                 [1, 2048, 7, 7]           --
+│    │    └─Conv2d: 3-387                [1, 896, 7, 7]            1,835,008
+│    │    └─BatchNorm2d: 3-388           [1, 896, 7, 7]            1,792
+│    │    └─ReLU: 3-389                  [1, 896, 7, 7]            --
+│    │    └─ModuleList: 3-408            --                        (recursive)
+│    │    └─ModuleList: 3-409            --                        (recursive)
+│    │    └─ReLU: 3-392                  [1, 112, 7, 7]            --
+│    │    └─ModuleList: 3-408            --                        (recursive)
+│    │    └─ModuleList: 3-409            --                        (recursive)
+│    │    └─ReLU: 3-395                  [1, 112, 7, 7]            --
+│    │    └─ModuleList: 3-408            --                        (recursive)
+│    │    └─ModuleList: 3-409            --                        (recursive)
+│    │    └─ReLU: 3-398                  [1, 112, 7, 7]            --
+│    │    └─ModuleList: 3-408            --                        (recursive)
+│    │    └─ModuleList: 3-409            --                        (recursive)
+│    │    └─ReLU: 3-401                  [1, 112, 7, 7]            --
+│    │    └─ModuleList: 3-408            --                        (recursive)
+│    │    └─ModuleList: 3-409            --                        (recursive)
+│    │    └─ReLU: 3-404                  [1, 112, 7, 7]            --
+│    │    └─ModuleList: 3-408            --                        (recursive)
+│    │    └─ModuleList: 3-409            --                        (recursive)
+│    │    └─ReLU: 3-407                  [1, 112, 7, 7]            --
+│    │    └─ModuleList: 3-408            --                        (recursive)
+│    │    └─ModuleList: 3-409            --                        (recursive)
+│    │    └─ReLU: 3-410                  [1, 112, 7, 7]            --
+│    │    └─Conv2d: 3-411                [1, 2048, 7, 7]           1,835,008
+│    │    └─BatchNorm2d: 3-412           [1, 2048, 7, 7]           4,096
+│    │    └─ReLU: 3-413                  [1, 2048, 7, 7]           --
+│    └─Bottle2neck: 2-16                 [1, 2048, 7, 7]           --
+│    │    └─Conv2d: 3-414                [1, 896, 7, 7]            1,835,008
+│    │    └─BatchNorm2d: 3-415           [1, 896, 7, 7]            1,792
+│    │    └─ReLU: 3-416                  [1, 896, 7, 7]            --
+│    │    └─ModuleList: 3-435            --                        (recursive)
+│    │    └─ModuleList: 3-436            --                        (recursive)
+│    │    └─ReLU: 3-419                  [1, 112, 7, 7]            --
+│    │    └─ModuleList: 3-435            --                        (recursive)
+│    │    └─ModuleList: 3-436            --                        (recursive)
+│    │    └─ReLU: 3-422                  [1, 112, 7, 7]            --
+│    │    └─ModuleList: 3-435            --                        (recursive)
+│    │    └─ModuleList: 3-436            --                        (recursive)
+│    │    └─ReLU: 3-425                  [1, 112, 7, 7]            --
+│    │    └─ModuleList: 3-435            --                        (recursive)
+│    │    └─ModuleList: 3-436            --                        (recursive)
+│    │    └─ReLU: 3-428                  [1, 112, 7, 7]            --
+│    │    └─ModuleList: 3-435            --                        (recursive)
+│    │    └─ModuleList: 3-436            --                        (recursive)
+│    │    └─ReLU: 3-431                  [1, 112, 7, 7]            --
+│    │    └─ModuleList: 3-435            --                        (recursive)
+│    │    └─ModuleList: 3-436            --                        (recursive)
+│    │    └─ReLU: 3-434                  [1, 112, 7, 7]            --
+│    │    └─ModuleList: 3-435            --                        (recursive)
+│    │    └─ModuleList: 3-436            --                        (recursive)
+│    │    └─ReLU: 3-437                  [1, 112, 7, 7]            --
+│    │    └─Conv2d: 3-438                [1, 2048, 7, 7]           1,835,008
+│    │    └─BatchNorm2d: 3-439           [1, 2048, 7, 7]           4,096
+│    │    └─ReLU: 3-440                  [1, 2048, 7, 7]           --
+├─SelectAdaptivePool2d: 1-9              [1, 2048]                 --
+│    └─AdaptiveAvgPool2d: 2-17           [1, 2048, 1, 1]           --
+│    └─Flatten: 2-18                     [1, 2048]                 --
+├─Linear: 1-10                           [1, 1000]                 2,049,000
+==========================================================================================
+Total params: 25,059,816
+Trainable params: 25,059,816
+Non-trainable params: 0
+Total mult-adds (G): 4.18
+==========================================================================================
+Input size (MB): 0.60
+Forward/backward pass size (MB): 212.44
+Params size (MB): 100.24
+Estimated Total Size (MB): 313.28
+==========================================================================================

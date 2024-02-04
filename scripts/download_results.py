@@ -19,7 +19,7 @@ files = [
     "results-sketch.csv",
     "model_metadata-in1k.csv",
     "benchmark-infer-amp-nchw-pt112-cu113-rtx3090.csv",
-    "benchmark-train-amp-nchw-pt112-cu113-rtx3090.csv"
+    "benchmark-train-amp-nchw-pt112-cu113-rtx3090.csv",
 ]
 
 os.makedirs(file_root, exist_ok=True)
@@ -30,14 +30,12 @@ for f in files:
     if os.path.exists(filepath):
         print("skip", filepath)
         continue
-    
+
     response = requests.get(url)
     print(url, response.status_code)
 
     if response.status_code == 200:
-        decoded_content = response.content.decode('utf-8')
-
-        
+        decoded_content = response.content.decode("utf-8")
 
         with open(filepath, "w") as file:
             file.write(decoded_content)

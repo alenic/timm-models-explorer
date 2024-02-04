@@ -12,7 +12,10 @@ Try it here: [https://timm-model-explorer.streamlit.app/](https://timm-model-exp
 
 # TODO List
 
-- [x] Incorporate inference and training data
-- [ ] Include model tag descriptions
-- [ ] Optimize for responsive plot rendering
-- [ ] Include links to model papers and detailed architecture descriptions
+- [ ] Incorporate missed inference and training stats
+- [ ] Include model's name tag descriptions
+- [ ] Optimize for responsive website
+- [ ] Include links to model papers
+- [ ] Include architecture visualization (e.g. netron)
+- [ ] Include other metrics like (e.g. weight sensitivity, )
+- [ ] Incluse some inference example (e.g. gradcam)

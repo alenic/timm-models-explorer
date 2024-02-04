@@ -1,0 +1,36 @@
+=========================================================================================================
+Layer (type:depth-idx)                                  Output Shape              Param #
+=========================================================================================================
+PyramidVisionTransformerV2                              [1, 1000]                 --
+├─OverlapPatchEmbed: 1-1                                [1, 56, 56, 64]           --
+│    └─Conv2d: 2-1                                      [1, 64, 56, 56]           9,472
+│    └─LayerNorm: 2-2                                   [1, 56, 56, 64]           128
+├─Sequential: 1-2                                       [1, 512, 7, 7]            --
+│    └─PyramidVisionTransformerStage: 2-3               [1, 64, 56, 56]           --
+│    │    └─ModuleList: 3-1                             --                        1,051,392
+│    │    └─LayerNorm: 3-2                              [1, 3136, 64]             128
+│    └─PyramidVisionTransformerStage: 2-4               [1, 128, 28, 28]          --
+│    │    └─OverlapPatchEmbed: 3-3                      [1, 28, 28, 128]          74,112
+│    │    └─ModuleList: 3-4                             --                        4,820,992
+│    │    └─LayerNorm: 3-5                              [1, 784, 128]             256
+│    └─PyramidVisionTransformerStage: 2-5               [1, 320, 14, 14]          --
+│    │    └─OverlapPatchEmbed: 3-6                      [1, 14, 14, 320]          369,600
+│    │    └─ModuleList: 3-7                             --                        44,720,640
+│    │    └─LayerNorm: 3-8                              [1, 196, 320]             640
+│    └─PyramidVisionTransformerStage: 2-6               [1, 512, 7, 7]            --
+│    │    └─OverlapPatchEmbed: 3-9                      [1, 7, 7, 512]            1,476,096
+│    │    └─ModuleList: 3-10                            --                        9,518,592
+│    │    └─LayerNorm: 3-11                             [1, 49, 512]              1,024
+├─Dropout: 1-3                                          [1, 512]                  --
+├─Linear: 1-4                                           [1, 1000]                 513,000
+=========================================================================================================
+Total params: 62,556,072
+Trainable params: 62,556,072
+Non-trainable params: 0
+Total mult-adds (G): 1.15
+=========================================================================================================
+Input size (MB): 0.60
+Forward/backward pass size (MB): 445.97
+Params size (MB): 250.22
+Estimated Total Size (MB): 696.80
+=========================================================================================================

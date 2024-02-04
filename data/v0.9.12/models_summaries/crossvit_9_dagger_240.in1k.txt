@@ -1,0 +1,53 @@
+=========================================================================================================
+Layer (type:depth-idx)                                  Output Shape              Param #
+=========================================================================================================
+CrossVit                                                [1, 1000]                 102,144
+├─ModuleList: 1-3                                       --                        (recursive)
+│    └─PatchEmbed: 2-1                                  [1, 400, 128]             --
+│    │    └─Sequential: 3-1                             [1, 128, 20, 20]          97,088
+├─Dropout: 1-2                                          [1, 401, 128]             --
+├─ModuleList: 1-3                                       --                        (recursive)
+│    └─PatchEmbed: 2-2                                  [1, 196, 256]             --
+│    │    └─Sequential: 3-2                             [1, 256, 14, 14]          378,496
+├─Dropout: 1-4                                          [1, 197, 256]             --
+├─ModuleList: 1-5                                       --                        --
+│    └─MultiScaleBlock: 2-3                             [1, 401, 128]             --
+│    │    └─ModuleList: 3-3                             --                        2,140,672
+│    │    └─ModuleList: 3-4                             --                        66,688
+│    │    └─ModuleList: 3-7                             --                        (recursive)
+│    │    └─ModuleList: 3-8                             --                        (recursive)
+│    │    └─ModuleList: 3-7                             --                        (recursive)
+│    │    └─ModuleList: 3-8                             --                        (recursive)
+│    └─MultiScaleBlock: 2-4                             [1, 401, 128]             --
+│    │    └─ModuleList: 3-9                             --                        2,140,672
+│    │    └─ModuleList: 3-10                            --                        66,688
+│    │    └─ModuleList: 3-13                            --                        (recursive)
+│    │    └─ModuleList: 3-14                            --                        (recursive)
+│    │    └─ModuleList: 3-13                            --                        (recursive)
+│    │    └─ModuleList: 3-14                            --                        (recursive)
+│    └─MultiScaleBlock: 2-5                             [1, 401, 128]             --
+│    │    └─ModuleList: 3-15                            --                        2,140,672
+│    │    └─ModuleList: 3-16                            --                        66,688
+│    │    └─ModuleList: 3-19                            --                        (recursive)
+│    │    └─ModuleList: 3-20                            --                        (recursive)
+│    │    └─ModuleList: 3-19                            --                        (recursive)
+│    │    └─ModuleList: 3-20                            --                        (recursive)
+├─ModuleList: 1-6                                       --                        --
+│    └─LayerNorm: 2-6                                   [1, 401, 128]             256
+│    └─LayerNorm: 2-7                                   [1, 197, 256]             512
+├─Dropout: 1-7                                          [1, 128]                  --
+├─Dropout: 1-8                                          [1, 256]                  --
+├─ModuleList: 1-9                                       --                        --
+│    └─Linear: 2-8                                      [1, 1000]                 129,000
+│    └─Linear: 2-9                                      [1, 1000]                 257,000
+=========================================================================================================
+Total params: 8,776,592
+Trainable params: 8,776,592
+Non-trainable params: 0
+Total mult-adds (M): 207.65
+=========================================================================================================
+Input size (MB): 0.69
+Forward/backward pass size (MB): 61.19
+Params size (MB): 34.70
+Estimated Total Size (MB): 96.58
+=========================================================================================================

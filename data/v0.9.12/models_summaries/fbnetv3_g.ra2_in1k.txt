@@ -1,0 +1,71 @@
+===============================================================================================
+Layer (type:depth-idx)                        Output Shape              Param #
+===============================================================================================
+MobileNetV3                                   [1, 1000]                 --
+├─Conv2d: 1-1                                 [1, 32, 120, 120]         864
+├─BatchNormAct2d: 1-2                         [1, 32, 120, 120]         64
+│    └─Identity: 2-1                          [1, 32, 120, 120]         --
+│    └─Hardswish: 2-2                         [1, 32, 120, 120]         --
+├─Sequential: 1-3                             [1, 1728, 8, 8]           --
+│    └─Sequential: 2-3                        [1, 24, 120, 120]         --
+│    │    └─DepthwiseSeparableConv: 3-1       [1, 24, 120, 120]         1,168
+│    │    └─DepthwiseSeparableConv: 3-2       [1, 24, 120, 120]         888
+│    │    └─DepthwiseSeparableConv: 3-3       [1, 24, 120, 120]         888
+│    └─Sequential: 2-4                        [1, 40, 60, 60]           --
+│    │    └─InvertedResidual: 3-4             [1, 40, 60, 60]           9,008
+│    │    └─InvertedResidual: 3-5             [1, 40, 60, 60]           8,800
+│    │    └─InvertedResidual: 3-6             [1, 40, 60, 60]           8,800
+│    │    └─InvertedResidual: 3-7             [1, 40, 60, 60]           8,800
+│    │    └─InvertedResidual: 3-8             [1, 40, 60, 60]           8,800
+│    └─Sequential: 2-5                        [1, 56, 30, 30]           --
+│    │    └─InvertedResidual: 3-9             [1, 56, 30, 30]           25,408
+│    │    └─InvertedResidual: 3-10            [1, 56, 30, 30]           29,360
+│    │    └─InvertedResidual: 3-11            [1, 56, 30, 30]           29,360
+│    │    └─InvertedResidual: 3-12            [1, 56, 30, 30]           29,360
+│    │    └─InvertedResidual: 3-13            [1, 56, 30, 30]           29,360
+│    └─Sequential: 2-6                        [1, 104, 15, 15]          --
+│    │    └─InvertedResidual: 3-14            [1, 104, 15, 15]          53,128
+│    │    └─InvertedResidual: 3-15            [1, 104, 15, 15]          69,160
+│    │    └─InvertedResidual: 3-16            [1, 104, 15, 15]          69,160
+│    │    └─InvertedResidual: 3-17            [1, 104, 15, 15]          69,160
+│    │    └─InvertedResidual: 3-18            [1, 104, 15, 15]          69,160
+│    └─Sequential: 2-7                        [1, 160, 15, 15]          --
+│    │    └─InvertedResidual: 3-19            [1, 160, 15, 15]          178,192
+│    │    └─InvertedResidual: 3-20            [1, 160, 15, 15]          206,760
+│    │    └─InvertedResidual: 3-21            [1, 160, 15, 15]          206,760
+│    │    └─InvertedResidual: 3-22            [1, 160, 15, 15]          206,760
+│    │    └─InvertedResidual: 3-23            [1, 160, 15, 15]          206,760
+│    │    └─InvertedResidual: 3-24            [1, 160, 15, 15]          206,760
+│    │    └─InvertedResidual: 3-25            [1, 160, 15, 15]          206,760
+│    │    └─InvertedResidual: 3-26            [1, 160, 15, 15]          206,760
+│    │    └─InvertedResidual: 3-27            [1, 160, 15, 15]          206,760
+│    └─Sequential: 2-8                        [1, 288, 8, 8]            --
+│    │    └─InvertedResidual: 3-28            [1, 264, 8, 8]            497,848
+│    │    └─InvertedResidual: 3-29            [1, 264, 8, 8]            906,112
+│    │    └─InvertedResidual: 3-30            [1, 264, 8, 8]            906,112
+│    │    └─InvertedResidual: 3-31            [1, 264, 8, 8]            906,112
+│    │    └─InvertedResidual: 3-32            [1, 264, 8, 8]            906,112
+│    │    └─InvertedResidual: 3-33            [1, 264, 8, 8]            906,112
+│    │    └─InvertedResidual: 3-34            [1, 264, 8, 8]            906,112
+│    │    └─InvertedResidual: 3-35            [1, 288, 8, 8]            1,125,280
+│    │    └─InvertedResidual: 3-36            [1, 288, 8, 8]            1,296,648
+│    └─Sequential: 2-9                        [1, 1728, 8, 8]           --
+│    │    └─ConvBnAct: 3-37                   [1, 1728, 8, 8]           501,120
+├─SelectAdaptivePool2d: 1-4                   [1, 1728, 1, 1]           --
+│    └─AdaptiveAvgPool2d: 2-10                [1, 1728, 1, 1]           --
+│    └─Identity: 2-11                         [1, 1728, 1, 1]           --
+├─Conv2d: 1-5                                 [1, 1984, 1, 1]           3,428,352
+├─Hardswish: 1-6                              [1, 1984, 1, 1]           --
+├─Flatten: 1-7                                [1, 1984]                 --
+├─Linear: 1-8                                 [1, 1000]                 1,985,000
+===============================================================================================
+Total params: 16,623,888
+Trainable params: 16,623,888
+Non-trainable params: 0
+Total mult-adds (G): 1.25
+===============================================================================================
+Input size (MB): 0.69
+Forward/backward pass size (MB): 118.92
+Params size (MB): 66.13
+Estimated Total Size (MB): 185.74
+===============================================================================================

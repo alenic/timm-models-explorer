@@ -1,0 +1,58 @@
+===============================================================================================
+Layer (type:depth-idx)                        Output Shape              Param #
+===============================================================================================
+EfficientNet                                  [1, 1000]                 --
+├─Conv2d: 1-1                                 [1, 32, 112, 112]         864
+├─BatchNormAct2d: 1-2                         [1, 32, 112, 112]         64
+│    └─Identity: 2-1                          [1, 32, 112, 112]         --
+│    └─SiLU: 2-2                              [1, 32, 112, 112]         --
+├─Sequential: 1-3                             [1, 320, 7, 7]            --
+│    └─Sequential: 2-3                        [1, 16, 112, 112]         --
+│    │    └─DepthwiseSeparableConv: 3-1       [1, 16, 112, 112]         1,448
+│    │    └─DepthwiseSeparableConv: 3-2       [1, 16, 112, 112]         612
+│    └─Sequential: 2-4                        [1, 24, 56, 56]           --
+│    │    └─InvertedResidual: 3-3             [1, 24, 56, 56]           6,004
+│    │    └─InvertedResidual: 3-4             [1, 24, 56, 56]           10,710
+│    │    └─InvertedResidual: 3-5             [1, 24, 56, 56]           10,710
+│    └─Sequential: 2-5                        [1, 40, 28, 28]           --
+│    │    └─InvertedResidual: 3-6             [1, 40, 28, 28]           15,350
+│    │    └─InvertedResidual: 3-7             [1, 40, 28, 28]           31,290
+│    │    └─InvertedResidual: 3-8             [1, 40, 28, 28]           31,290
+│    └─Sequential: 2-6                        [1, 80, 14, 14]           --
+│    │    └─InvertedResidual: 3-9             [1, 80, 14, 14]           37,130
+│    │    └─InvertedResidual: 3-10            [1, 80, 14, 14]           102,900
+│    │    └─InvertedResidual: 3-11            [1, 80, 14, 14]           102,900
+│    │    └─InvertedResidual: 3-12            [1, 80, 14, 14]           102,900
+│    └─Sequential: 2-7                        [1, 112, 14, 14]          --
+│    │    └─InvertedResidual: 3-13            [1, 112, 14, 14]          126,004
+│    │    └─InvertedResidual: 3-14            [1, 112, 14, 14]          208,572
+│    │    └─InvertedResidual: 3-15            [1, 112, 14, 14]          208,572
+│    │    └─InvertedResidual: 3-16            [1, 112, 14, 14]          208,572
+│    └─Sequential: 2-8                        [1, 192, 7, 7]            --
+│    │    └─InvertedResidual: 3-17            [1, 192, 7, 7]            262,492
+│    │    └─InvertedResidual: 3-18            [1, 192, 7, 7]            587,952
+│    │    └─InvertedResidual: 3-19            [1, 192, 7, 7]            587,952
+│    │    └─InvertedResidual: 3-20            [1, 192, 7, 7]            587,952
+│    │    └─InvertedResidual: 3-21            [1, 192, 7, 7]            587,952
+│    └─Sequential: 2-9                        [1, 320, 7, 7]            --
+│    │    └─InvertedResidual: 3-22            [1, 320, 7, 7]            717,232
+│    │    └─InvertedResidual: 3-23            [1, 320, 7, 7]            1,563,600
+├─Conv2d: 1-4                                 [1, 1280, 7, 7]           409,600
+├─BatchNormAct2d: 1-5                         [1, 1280, 7, 7]           2,560
+│    └─Identity: 2-10                         [1, 1280, 7, 7]           --
+│    └─SiLU: 2-11                             [1, 1280, 7, 7]           --
+├─SelectAdaptivePool2d: 1-6                   [1, 1280]                 --
+│    └─AdaptiveAvgPool2d: 2-12                [1, 1280, 1, 1]           --
+│    └─Flatten: 2-13                          [1, 1280]                 --
+├─Linear: 1-7                                 [1, 1000]                 1,281,000
+===============================================================================================
+Total params: 7,794,184
+Trainable params: 7,794,184
+Non-trainable params: 0
+Total mult-adds (M): 569.67
+===============================================================================================
+Input size (MB): 0.60
+Forward/backward pass size (MB): 74.85
+Params size (MB): 30.93
+Estimated Total Size (MB): 106.38
+===============================================================================================
