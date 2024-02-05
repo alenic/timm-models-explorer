@@ -49,7 +49,7 @@ def fetch_and_clean_data(dataset_name):
     df_infer.drop(columns="param_count", inplace=True)
     df_infer.rename(columns={"model": "model_name"}, inplace=True)
     df = pd.merge(left=df, right=df_infer, how="left", on="model_name")
-    df.fillna(0, inplace=True)
+    df.fillna(tme.NAN_INT, inplace=True)
     df["infer_batch_size"] = df["infer_batch_size"].astype(int)
     df["infer_img_size"] = df["infer_img_size"].astype(int)
     df["infer_samples_per_sec"] = df["infer_samples_per_sec"].astype(int)
@@ -63,7 +63,7 @@ def fetch_and_clean_data(dataset_name):
     df_train.drop(columns="param_count", inplace=True)
     df_train.rename(columns={"model": "model_name"}, inplace=True)
     df = pd.merge(left=df, right=df_train, how="left", on="model_name")
-    df.fillna(0, inplace=True)
+    df.fillna(tme.NAN_INT, inplace=True)
     df["train_batch_size"] = df["train_batch_size"].astype(int)
     df["train_img_size"] = df["train_img_size"].astype(int)
     df["train_samples_per_sec"] = df["train_samples_per_sec"].astype(int)
@@ -164,8 +164,11 @@ if contain_text != "":
     df_filter.index = range(len(df_filter))
 
 if len(model_modules) > 0:
+    filter_module = True
     df_filter = df_filter.loc[df_filter["model_module"].isin(model_modules), :]
     df_filter.index = range(len(df_filter))
+else:
+    filter_module = False
 
 
 # ===================== Page =========================
@@ -187,7 +190,7 @@ expander.markdown(
 # ================ Scatter ===========================
 
 
-scatter = tme.update_plot(tme.axis_to_cols[x_axis], tme.axis_to_cols[y_axis], df_filter)
+scatter = tme.update_plot(tme.axis_to_cols[x_axis], tme.axis_to_cols[y_axis], df_filter, filter_module)
 selected_points = plotly_events(scatter)
 
 
@@ -215,42 +218,39 @@ if selected_points:
         ],
     ].iloc[0]
 
-    row_val = row.values
-
-    pretrained_cfg = tme.get_config(row_val[0])
+    pretrained_cfg = tme.get_config(row["model"])
     if pretrained_cfg is not None:
         pretrained_cfg = pretrained_cfg.to_dict()
 
     m_tab_info, m_tab_cfg, m_tab_summ, m_tab_code = st.tabs(
         ["Model Info", "Model Config", "Model Summary", "Code"]
     )
-    col1, col2 = st.columns([0.5, 0.5])
 
     # Model Info Tab
     with m_tab_info:
-        sub_col1, sub_col2 = st.columns([1, 1])
-        with sub_col1:
-            module_timm_url = f"https://github.com/huggingface/pytorch-image-models/tree/{tme.timm_version}/timm/models/{row['model_module']}.py"
-            html = f"""
-            <table>
-                <tr><td>Model</td> <td>{row["model"]}</td></tr>
-                <tr><td>Model Name</td> <td>{row["model_name"]}</td></tr>
-                <tr><td>Model Pretrained Tag</td> <td>{row["pretrained_tag"]}</td></tr>
-                <tr><td>Module</td> <td><a href="{module_timm_url}">{row['model_module']}</a></td></tr>
-                <tr><td>Top1 (Acc.%)</td> <td>{row["top1"]}</td></tr>
-                <tr><td>Top5 (Acc.%)</td> <td>{row["top5"]}</td></tr>
-                <tr><td>Parameters [Millions]</td> <td>{row["param_count"]}</td></tr>
-                <tr><td>Evaluation - Image resolution [px]</td> <td>{row["img_size"]}</td></tr>
-                <tr><td>Inference batch size</td> <td>{row["infer_batch_size"]}</td></tr>
-                <tr><td>Inference image size [px]</td> <td>{row["infer_img_size"]}</td></tr>
-                <tr><td>Inference sample/sec (RTX 3090)</td> <td>{row["infer_samples_per_sec"]}</td></tr>
-                <tr><td>Train batch size</td> <td>{row["train_batch_size"]}</td></tr>
-                <tr><td>Train image size [px]</td> <td>{row["train_img_size"]}</td></tr>
-                <tr><td>Train sample/sec (RTX 3090)</td> <td>{row["train_samples_per_sec"]}</td></tr>
-            </table>
-            """
-            st.code(row["model"])
-            st.markdown(html, unsafe_allow_html=True)
+        row.values[row.values==tme.NAN_INT] = "None"
+
+        module_timm_url = f"https://github.com/huggingface/pytorch-image-models/tree/{tme.timm_version}/timm/models/{row['model_module']}.py"
+        html = f"""
+        <table>
+            <tr><td>Model</td> <td>{row["model"]}</td></tr>
+            <tr><td>Model Name</td> <td>{row["model_name"]}</td></tr>
+            <tr><td>Model Pretrained Tag</td> <td>{row["pretrained_tag"]}</td></tr>
+            <tr><td>Module</td> <td><a href="{module_timm_url}">{row['model_module']}</a></td></tr>
+            <tr><td>Top1 (Acc.%)</td> <td>{row["top1"]}</td></tr>
+            <tr><td>Top5 (Acc.%)</td> <td>{row["top5"]}</td></tr>
+            <tr><td>Parameters [Millions]</td> <td>{row["param_count"]}</td></tr>
+            <tr><td>Evaluation - Image resolution [px]</td> <td>{row["img_size"]}</td></tr>
+            <tr><td>Inference batch size</td> <td>{row["infer_batch_size"]}</td></tr>
+            <tr><td>Inference image size [px]</td> <td>{row["infer_img_size"]}</td></tr>
+            <tr><td>Inference sample/sec (RTX 3090)</td> <td>{row["infer_samples_per_sec"]}</td></tr>
+            <tr><td>Train batch size</td> <td>{row["train_batch_size"]}</td></tr>
+            <tr><td>Train image size [px]</td> <td>{row["train_img_size"]}</td></tr>
+            <tr><td>Train sample/sec (RTX 3090)</td> <td>{row["train_samples_per_sec"]}</td></tr>
+        </table>
+        """
+        st.code(row["model"])
+        st.markdown(html, unsafe_allow_html=True)
 
     # Model Config Tab
     with m_tab_cfg:
@@ -273,44 +273,42 @@ if selected_points:
             "data", tme.timm_version, "models_summaries", f'{row["model"]}.txt'
         )
         if os.path.exists(summary_path):
-            with open(summary_path, "r") as fp:
+            with open(summary_path, "r", encoding='utf8') as fp:
                 st.text(fp.read())
         else:
             st.text("None")
 
     # Model Code Tab
     with m_tab_code:
-        col1, col2 = st.columns([1, 1])
-        with col1:
-            st.write("Create from scratch")
-            code_scratch = f"""
-            import timm
+        st.write("Create from scratch")
+        code_scratch = f"""
+        import timm
 
-            model = timm.create_model("{row['model']}") 
-            """
-            st.code(code_scratch, language="python")
+        model = timm.create_model("{row['model']}") 
+        """
+        st.code(code_scratch, language="python")
 
-            st.write("Create pretrained")
-            code_scratch = f"""
-            import timm
+        st.write("Create pretrained")
+        code_scratch = f"""
+        import timm
 
-            model = timm.create_model(
-                "{row['model']}",
-                pretrained=True
-            ) 
-            """
-            st.code(code_scratch, language="python")
+        model = timm.create_model(
+            "{row['model']}",
+            pretrained=True
+        ) 
+        """
+        st.code(code_scratch, language="python")
 
-            st.write("Create pretrained with custm classes")
-            code_scratch = f"""
-            import timm
+        st.write("Create pretrained with custm classes")
+        code_scratch = f"""
+        import timm
 
-            model = timm.create_model(
-                "{row['model']}",
-                pretrained=True,
-                num_classes=10
-            ) 
-            """
-            st.code(code_scratch, language="python")
+        model = timm.create_model(
+            "{row['model']}",
+            pretrained=True,
+            num_classes=10
+        ) 
+        """
+        st.code(code_scratch, language="python")
 
 # p.stop()

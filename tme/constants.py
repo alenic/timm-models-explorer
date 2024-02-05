@@ -3,6 +3,8 @@ TOP5_STR = "top5 [Acc.%]"
 PARAM_STR = "Parameters [Millions]"
 IMG_SIZE_STR = "Image resolution [px]"
 
+NAN_INT = -123
+
 axis_to_cols = {TOP1_STR: "top1",
                 TOP5_STR: "top5",
                 PARAM_STR: "param_count",
