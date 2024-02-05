@@ -3,11 +3,6 @@ import plotly
 import streamlit as st
 from .constants import cols_to_axis
 
-if "bin_size" not in st.session_state:
-    st.session_state["bin_size"] = 0.1
-if "plot_select" not in st.session_state:
-    st.session_state["plot_select"] = "plot1"
-
 @st.cache_resource
 def update_plot(x_axis, y_axis, df_filter, filter_module=False):
     scatter = plotly.graph_objs.Scatter()

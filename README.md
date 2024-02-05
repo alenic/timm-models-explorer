@@ -26,10 +26,11 @@ This is a first app prototype and can be useful to visualize and search the foll
 
 # TODO List
 
+- [ ] Keep scatter plot zoom
 - [ ] Incorporate missed inference and training stats
 - [ ] Include model's name tag descriptions
 - [ ] Optimize for responsive website
-- [ ] Include links to model papers
+- [x] Include links to model papers
 - [ ] Include architecture visualization (e.g. netron)
-- [ ] Include other metrics like (e.g. weight sensitivity, )
+- [ ] Include other metrics
 - [ ] Incluse some inference example (e.g. gradcam)

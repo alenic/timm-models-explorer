@@ -106,8 +106,9 @@ with st.sidebar:
     # Load Dataset
     df = fetch_and_clean_data(dataset_name)
 
+    exp = st.expander(tme.TOP1_STR)
     top1s = sorted(df["top1"].unique())
-    top1_choice = st.select_slider(
+    top1_choice = exp.select_slider(
         tme.TOP1_STR, options=top1s, value=(top1s[0], top1s[-1])
     )
 
