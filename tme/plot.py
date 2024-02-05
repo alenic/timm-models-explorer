@@ -3,9 +3,9 @@ import plotly
 import streamlit as st
 from .constants import cols_to_axis
 
-@st.cache_resource
+
 def update_plot(x_axis, y_axis, df_filter, filter_module=False):
-    scatter = plotly.graph_objs.Scatter()
+
     scatter = px.scatter(
         df_filter,
         x=x_axis,

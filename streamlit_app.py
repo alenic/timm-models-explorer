@@ -9,11 +9,16 @@ import timm
 
 import tme
 
+PROFILE = False
 
-# from streamlit_profiler import Profiler
-# p = Profiler()
-# p.start()
+if PROFILE:
+    from streamlit_profiler import Profiler
+    PROFILE = Profiler()
+    PROFILE.start()
 
+
+if 'num_models' not in st.session_state:
+    st.session_state['num_models'] = 0
 
 @st.cache_resource
 def fetch_and_clean_data(dataset_name):
@@ -182,7 +187,6 @@ if len(model_modules) > 0:
 else:
     filter_module = False
 
-
 # ===================== Page =========================
 st.subheader(f"{dataset_name}")
 
@@ -201,12 +205,16 @@ expander.markdown(
 )
 # ================ Scatter ===========================
 
-
 scatter = tme.update_plot(
     tme.axis_to_cols[x_axis], tme.axis_to_cols[y_axis], df_filter, filter_module
 )
-selected_points = plotly_events(scatter)
+selected_points = plotly_events(scatter, key="scatter_key")
 
+# prevent selection keep
+if (len(df_filter) != st.session_state['num_models']):
+    selected_points = None
+
+st.session_state['num_models'] = len(df_filter)
 
 if selected_points:
     point_index = selected_points[0]["pointIndex"]
@@ -313,4 +321,5 @@ if selected_points:
         """
         st.code(code_scratch, language="python")
 
-# p.stop()
+if PROFILE:
+    PROFILE.stop()
