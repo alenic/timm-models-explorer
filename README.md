@@ -1,6 +1,6 @@
 # Timm model's explorer
 
-[**timm**](https://github.com/huggingface/pytorch-image-models) is a very popular python library for Computer Vision models, with an extensive collection of over 500 model architectures, pre-trained on Imagenet.
+[**timm**](https://github.com/huggingface/pytorch-image-models) is a very popular python library for Computer Vision models, with an extensive collection of over 1000 model architectures, pre-trained on Imagenet.
 
 This Streamlit application serves as a user-friendly interface for navigating the myriad models available within the timm library.
 

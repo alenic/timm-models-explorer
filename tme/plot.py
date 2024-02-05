@@ -8,6 +8,7 @@ if "bin_size" not in st.session_state:
 if "plot_select" not in st.session_state:
     st.session_state["plot_select"] = "plot1"
 
+@st.cache_resource
 def update_plot(x_axis, y_axis, df_filter, filter_module=False):
     scatter = plotly.graph_objs.Scatter()
     scatter = px.scatter(

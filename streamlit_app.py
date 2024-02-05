@@ -54,7 +54,7 @@ def fetch_and_clean_data(dataset_name):
     df["infer_img_size"] = df["infer_img_size"].astype(int)
     df["infer_samples_per_sec"] = df["infer_samples_per_sec"].astype(int)
 
-    # Add information about inference performances
+    # Add information about taining performances
     df_train = pd.read_csv(
         os.path.join(
             "data", tme.timm_version, "benchmark-train-amp-nchw-pt112-cu113-rtx3090.csv"
@@ -67,6 +67,18 @@ def fetch_and_clean_data(dataset_name):
     df["train_batch_size"] = df["train_batch_size"].astype(int)
     df["train_img_size"] = df["train_img_size"].astype(int)
     df["train_samples_per_sec"] = df["train_samples_per_sec"].astype(int)
+
+    # Add information about comments
+    df_comments = pd.read_csv(
+        os.path.join("data", tme.timm_version, "comments", "model_comments.csv")
+    )
+    df_comments.drop(columns="model", inplace=True)
+    df = pd.merge(left=df, right=df_comments, how="left", on="model_name")
+
+    df_descriptions = pd.read_csv(
+        os.path.join("data", tme.timm_version, "comments", "module_descriptions.csv")
+    )
+    df = pd.merge(left=df, right=df_descriptions, how="left", on="model_module")
 
     df.index = range(len(df))
     return df
@@ -81,7 +93,7 @@ st.set_page_config(
 with open("resources/style.css") as fp:
     st.markdown(f"<style>{fp.read()}</style>", unsafe_allow_html=True)
 
-st.title(f"Timm model's explorer (version {tme.timm_version})")
+st.title(f"Timm model's explorer ({tme.timm_version})")
 
 
 # # =========================== Sidebar ===========================
@@ -190,7 +202,9 @@ expander.markdown(
 # ================ Scatter ===========================
 
 
-scatter = tme.update_plot(tme.axis_to_cols[x_axis], tme.axis_to_cols[y_axis], df_filter, filter_module)
+scatter = tme.update_plot(
+    tme.axis_to_cols[x_axis], tme.axis_to_cols[y_axis], df_filter, filter_module
+)
 selected_points = plotly_events(scatter)
 
 
@@ -198,39 +212,21 @@ if selected_points:
     point_index = selected_points[0]["pointIndex"]
     index = selected_points[0]["curveNumber"]
     selected_model = scatter.data[index]["hovertext"][point_index]
-    row = df_filter.loc[
-        df_filter["model"] == selected_model,
-        [
-            "model",
-            "model_name",
-            "pretrained_tag",
-            "model_module",
-            "top1",
-            "top5",
-            "param_count",
-            "img_size",
-            "infer_batch_size",
-            "infer_img_size",
-            "infer_samples_per_sec",
-            "train_batch_size",
-            "train_img_size",
-            "train_samples_per_sec",
-        ],
-    ].iloc[0]
+    row = df_filter.loc[df_filter["model"] == selected_model, :].iloc[0]
 
     pretrained_cfg = tme.get_config(row["model"])
     if pretrained_cfg is not None:
         pretrained_cfg = pretrained_cfg.to_dict()
 
-    m_tab_info, m_tab_cfg, m_tab_summ, m_tab_code = st.tabs(
-        ["Model Info", "Model Config", "Model Summary", "Code"]
+    m_tab_info, m_tab_arch, m_tab_cfg, m_tab_summ, m_tab_code = st.tabs(
+        ["Model Info", "Architecture Info", "Model Config", "Model Summary", "Code"]
     )
 
+    module_timm_url = f"https://github.com/huggingface/pytorch-image-models/tree/{tme.timm_version}/timm/models/{row['model_module']}.py"
     # Model Info Tab
     with m_tab_info:
-        row.values[row.values==tme.NAN_INT] = "None"
+        row.values[row.values == tme.NAN_INT] = "None"
 
-        module_timm_url = f"https://github.com/huggingface/pytorch-image-models/tree/{tme.timm_version}/timm/models/{row['model_module']}.py"
         html = f"""
         <table>
             <tr><td>Model</td> <td>{row["model"]}</td></tr>
@@ -251,6 +247,12 @@ if selected_points:
         """
         st.code(row["model"])
         st.markdown(html, unsafe_allow_html=True)
+    # Architecture Info tab
+    with m_tab_arch:
+        st.code(row["model"])
+        st.code(f'"""\n{row["model_comment"]}\n"""')
+        st.markdown(f"### [{row['model_module']}]({module_timm_url})")
+        st.markdown(row["description"])
 
     # Model Config Tab
     with m_tab_cfg:
@@ -273,7 +275,7 @@ if selected_points:
             "data", tme.timm_version, "models_summaries", f'{row["model"]}.txt'
         )
         if os.path.exists(summary_path):
-            with open(summary_path, "r", encoding='utf8') as fp:
+            with open(summary_path, "r", encoding="utf8") as fp:
                 st.text(fp.read())
         else:
             st.text("None")

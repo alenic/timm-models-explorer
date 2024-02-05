@@ -1,0 +1,1377 @@
+model,model_name,model_comment
+eva02_large_patch14_448.mim_m38m_ft_in22k_in1k,eva02_large_patch14_448,EVA-g CLIP model (only difference from non-CLIP is the pooling)
+eva02_large_patch14_448.mim_in22k_ft_in22k_in1k,eva02_large_patch14_448,EVA-g CLIP model (only difference from non-CLIP is the pooling)
+eva_giant_patch14_560.m30m_ft_in22k_in1k,eva_giant_patch14_560,EVA-g model https://arxiv.org/abs/2211.07636
+eva02_large_patch14_448.mim_in22k_ft_in1k,eva02_large_patch14_448,EVA-g CLIP model (only difference from non-CLIP is the pooling)
+eva02_large_patch14_448.mim_m38m_ft_in1k,eva02_large_patch14_448,EVA-g CLIP model (only difference from non-CLIP is the pooling)
+eva_giant_patch14_336.m30m_ft_in22k_in1k,eva_giant_patch14_336,EVA-g model https://arxiv.org/abs/2211.07636
+eva_giant_patch14_336.clip_ft_in1k,eva_giant_patch14_336,EVA-g model https://arxiv.org/abs/2211.07636
+eva_large_patch14_336.in22k_ft_in22k_in1k,eva_large_patch14_336,EVA-large model https://arxiv.org/abs/2211.07636 via MAE MIM pretrain
+eva_giant_patch14_224.clip_ft_in1k,eva_giant_patch14_224,EVA-g model https://arxiv.org/abs/2211.07636
+convnextv2_huge.fcmae_ft_in22k_in1k_512,convnextv2_huge,
+eva02_base_patch14_448.mim_in22k_ft_in22k_in1k,eva02_base_patch14_448,EVA-g CLIP model (only difference from non-CLIP is the pooling)
+convnextv2_huge.fcmae_ft_in22k_in1k_384,convnextv2_huge,
+eva_large_patch14_336.in22k_ft_in1k,eva_large_patch14_336,EVA-large model https://arxiv.org/abs/2211.07636 via MAE MIM pretrain
+convnext_xxlarge.clip_laion2b_soup_ft_in1k,convnext_xxlarge,
+beit_large_patch16_512.in22k_ft_in22k_in1k,beit_large_patch16_512,
+vit_huge_patch14_clip_336.laion2b_ft_in12k_in1k,vit_huge_patch14_clip_336,ViT-Huge model (ViT-H/14) CLIP image tower @ 336x336
+eva_large_patch14_196.in22k_ft_in22k_in1k,eva_large_patch14_196,EVA-large model https://arxiv.org/abs/2211.07636 /via MAE MIM pretrain
+maxvit_xlarge_tf_512.in21k_ft_in1k,maxvit_xlarge_tf_512,
+beit_large_patch16_384.in22k_ft_in22k_in1k,beit_large_patch16_384,
+beitv2_large_patch16_224.in1k_ft_in22k_in1k,beitv2_large_patch16_224,
+tf_efficientnet_l2.ns_jft_in1k,tf_efficientnet_l2,EfficientNet-L2 NoisyStudent. Tensorflow compatible variant
+maxvit_xlarge_tf_384.in21k_ft_in1k,maxvit_xlarge_tf_384,
+convnext_large_mlp.clip_laion2b_soup_ft_in12k_in1k_384,convnext_large_mlp,
+vit_large_patch14_clip_336.openai_ft_in12k_in1k,vit_large_patch14_clip_336,ViT-Large model (ViT-L/14) CLIP image tower @ 336x336
+vit_huge_patch14_clip_224.laion2b_ft_in12k_in1k,vit_huge_patch14_clip_224,ViT-Huge model (ViT-H/14) CLIP image tower.
+eva02_base_patch14_448.mim_in22k_ft_in1k,eva02_base_patch14_448,EVA-g CLIP model (only difference from non-CLIP is the pooling)
+tf_efficientnet_l2.ns_jft_in1k_475,tf_efficientnet_l2,EfficientNet-L2 NoisyStudent. Tensorflow compatible variant
+regnety_1280.swag_ft_in1k,regnety_1280,RegNetY-128GF
+maxvit_large_tf_512.in21k_ft_in1k,maxvit_large_tf_512,
+maxvit_base_tf_512.in21k_ft_in1k,maxvit_base_tf_512,
+convnextv2_large.fcmae_ft_in22k_in1k_384,convnextv2_large,
+vit_large_patch14_clip_336.laion2b_ft_in12k_in1k,vit_large_patch14_clip_336,ViT-Large model (ViT-L/14) CLIP image tower @ 336x336
+vit_large_patch14_clip_224.openai_ft_in12k_in1k,vit_large_patch14_clip_224,ViT-Large model (ViT-L/14) CLIP image tower
+caformer_b36.sail_in22k_ft_in1k_384,caformer_b36,
+maxvit_large_tf_384.in21k_ft_in1k,maxvit_large_tf_384,
+convnext_large_mlp.clip_laion2b_soup_ft_in12k_in1k_320,convnext_large_mlp,
+eva_large_patch14_196.in22k_ft_in1k,eva_large_patch14_196,EVA-large model https://arxiv.org/abs/2211.07636 /via MAE MIM pretrain
+maxvit_base_tf_384.in21k_ft_in1k,maxvit_base_tf_384,
+vit_large_patch14_clip_224.laion2b_ft_in12k_in1k,vit_large_patch14_clip_224,ViT-Large model (ViT-L/14) CLIP image tower
+vit_large_patch14_clip_336.laion2b_ft_in1k,vit_large_patch14_clip_336,ViT-Large model (ViT-L/14) CLIP image tower @ 336x336
+vit_large_patch14_clip_224.openai_ft_in1k,vit_large_patch14_clip_224,ViT-Large model (ViT-L/14) CLIP image tower
+convnext_large_mlp.clip_laion2b_augreg_ft_in1k_384,convnext_large_mlp,
+maxvit_rmlp_base_rw_384.sw_in12k_ft_in1k,maxvit_rmlp_base_rw_384,
+convnext_xlarge.fb_in22k_ft_in1k_384,convnext_xlarge,
+deit3_large_patch16_384.fb_in22k_ft_in1k,deit3_large_patch16_384,"DeiT-3 large model @ 384x384 from paper (https://arxiv.org/abs/2204.07118).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+convnextv2_base.fcmae_ft_in22k_in1k_384,convnextv2_base,
+convformer_b36.sail_in22k_ft_in1k_384,convformer_b36,
+vit_huge_patch14_clip_224.laion2b_ft_in1k,vit_huge_patch14_clip_224,ViT-Huge model (ViT-H/14) CLIP image tower.
+convnextv2_large.fcmae_ft_in22k_in1k,convnextv2_large,
+beit_large_patch16_224.in22k_ft_in22k_in1k,beit_large_patch16_224,
+convnext_large.fb_in22k_ft_in1k_384,convnext_large,
+maxxvitv2_rmlp_base_rw_384.sw_in12k_ft_in1k,maxxvitv2_rmlp_base_rw_384,
+swinv2_large_window12to24_192to384.ms_in22k_ft_in1k,swinv2_large_window12to24_192to384,
+caformer_m36.sail_in22k_ft_in1k_384,caformer_m36,
+caformer_b36.sail_in22k_ft_in1k,caformer_b36,
+beitv2_large_patch16_224.in1k_ft_in1k,beitv2_large_patch16_224,
+coatnet_rmlp_2_rw_384.sw_in12k_ft_in1k,coatnet_rmlp_2_rw_384,
+convnext_large_mlp.clip_laion2b_augreg_ft_in1k,convnext_large_mlp,
+convnext_xlarge.fb_in22k_ft_in1k,convnext_xlarge,
+seresnextaa201d_32x8d.sw_in12k_ft_in1k_384,seresnextaa201d_32x8d,Constructs a SE=ResNeXt-101-D 32x8d model with avgpool anti-aliasing
+vit_large_patch14_clip_224.laion2b_ft_in1k,vit_large_patch14_clip_224,ViT-Large model (ViT-L/14) CLIP image tower
+vit_base_patch16_clip_384.laion2b_ft_in12k_in1k,vit_base_patch16_clip_384,ViT-B/16 CLIP image tower @ 384x384
+deit3_huge_patch14_224.fb_in22k_ft_in1k,deit3_huge_patch14_224,"DeiT-3 base model @ 384x384 from paper (https://arxiv.org/abs/2204.07118).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+convnext_base.clip_laion2b_augreg_ft_in12k_in1k_384,convnext_base,
+swin_large_patch4_window12_384.ms_in22k_ft_in1k,swin_large_patch4_window12_384,Swin-L @ 384x384
+swinv2_base_window12to24_192to384.ms_in22k_ft_in1k,swinv2_base_window12to24_192to384,
+vit_large_patch16_384.augreg_in21k_ft_in1k,vit_large_patch16_384,"ViT-Large model (ViT-L/16) from original paper (https://arxiv.org/abs/2010.11929).
+ImageNet-1k weights fine-tuned from in21k @ 384x384, source https://github.com/google-research/vision_transformer."
+volo_d5_512.sail_in1k,volo_d5_512,"VOLO-D5 model, Params: 296M
+stem_hidden_dim=128, the dim in patch embedding is 128 for VOLO-D5"
+convnext_large.fb_in22k_ft_in1k,convnext_large,
+vit_base_patch16_clip_384.openai_ft_in12k_in1k,vit_base_patch16_clip_384,ViT-B/16 CLIP image tower @ 384x384
+convformer_b36.sail_in22k_ft_in1k,convformer_b36,
+convnextv2_base.fcmae_ft_in22k_in1k,convnextv2_base,
+deit3_large_patch16_224.fb_in22k_ft_in1k,deit3_large_patch16_224,"DeiT-3 large model @ 224x224 from paper (https://arxiv.org/abs/2204.07118).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+swinv2_large_window12to16_192to256.ms_in22k_ft_in1k,swinv2_large_window12to16_192to256,
+volo_d5_448.sail_in1k,volo_d5_448,"VOLO-D5 model, Params: 296M
+stem_hidden_dim=128, the dim in patch embedding is 128 for VOLO-D5"
+maxvit_rmlp_base_rw_224.sw_in12k_ft_in1k,maxvit_rmlp_base_rw_224,
+convformer_m36.sail_in22k_ft_in1k_384,convformer_m36,
+caformer_s36.sail_in22k_ft_in1k_384,caformer_s36,
+tf_efficientnet_b7.ns_jft_in1k,tf_efficientnet_b7,EfficientNet-B7. Tensorflow compatible variant
+regnety_320.swag_ft_in1k,regnety_320,RegNetY-32GF
+tf_efficientnetv2_l.in21k_ft_in1k,tf_efficientnetv2_l,EfficientNet-V2 Large. Tensorflow compatible variant
+beit_base_patch16_384.in22k_ft_in22k_in1k,beit_base_patch16_384,
+convnext_base.fb_in22k_ft_in1k_384,convnext_base,
+volo_d4_448.sail_in1k,volo_d4_448,"VOLO-D4 model, Params: 193M"
+tf_efficientnetv2_xl.in21k_ft_in1k,tf_efficientnetv2_xl,EfficientNet-V2 Xtra-Large. Tensorflow compatible variant
+deit3_base_patch16_384.fb_in22k_ft_in1k,deit3_base_patch16_384,"DeiT-3 base model @ 384x384 from paper (https://arxiv.org/abs/2204.07118).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+seresnextaa101d_32x8d.sw_in12k_ft_in1k_288,seresnextaa101d_32x8d,Constructs a SE=ResNeXt-101-D 32x8d model with avgpool anti-aliasing
+maxxvitv2_rmlp_base_rw_224.sw_in12k_ft_in1k,maxxvitv2_rmlp_base_rw_224,
+vit_base_patch16_clip_384.laion2b_ft_in1k,vit_base_patch16_clip_384,ViT-B/16 CLIP image tower @ 384x384
+maxvit_base_tf_512.in1k,maxvit_base_tf_512,
+caformer_m36.sail_in22k_ft_in1k,caformer_m36,
+convnextv2_huge.fcmae_ft_in1k,convnextv2_huge,
+coatnet_2_rw_224.sw_in12k_ft_in1k,coatnet_2_rw_224,
+maxvit_large_tf_512.in1k,maxvit_large_tf_512,
+coatnet_rmlp_2_rw_224.sw_in12k_ft_in1k,coatnet_rmlp_2_rw_224,
+convnext_base.clip_laiona_augreg_ft_in1k_384,convnext_base,
+volo_d3_448.sail_in1k,volo_d3_448,"VOLO-D3 model, Params: 86M"
+cait_m48_448.fb_dist_in1k,cait_m48_448,
+seresnextaa101d_32x8d.sw_in12k_ft_in1k,seresnextaa101d_32x8d,Constructs a SE=ResNeXt-101-D 32x8d model with avgpool anti-aliasing
+beitv2_base_patch16_224.in1k_ft_in22k_in1k,beitv2_base_patch16_224,
+tiny_vit_21m_512.dist_in22k_ft_in1k,tiny_vit_21m_512,
+tf_efficientnet_b6.ns_jft_in1k,tf_efficientnet_b6,EfficientNet-B6. Tensorflow compatible variant
+swin_base_patch4_window12_384.ms_in22k_ft_in1k,swin_base_patch4_window12_384,Swin-B @ 384x384
+caformer_b36.sail_in1k_384,caformer_b36,
+convformer_s36.sail_in22k_ft_in1k_384,convformer_s36,
+convnext_base.clip_laion2b_augreg_ft_in12k_in1k,convnext_base,
+dm_nfnet_f6.dm_in1k,dm_nfnet_f6,"NFNet-F6 (DeepMind weight compatible)
+High-Performance Large-Scale Image Recognition Without Normalization
+- https://arxiv.org/abs/2102.06171"
+swin_large_patch4_window7_224.ms_in22k_ft_in1k,swin_large_patch4_window7_224,Swin-L @ 224x224
+maxvit_base_tf_384.in1k,maxvit_base_tf_384,
+convnext_base.fb_in22k_ft_in1k,convnext_base,
+swinv2_base_window12to16_192to256.ms_in22k_ft_in1k,swinv2_base_window12to16_192to256,
+maxvit_large_tf_384.in1k,maxvit_large_tf_384,
+vit_base_patch8_224.augreg2_in21k_ft_in1k,vit_base_patch8_224,"ViT-Base (ViT-B/8) from original paper (https://arxiv.org/abs/2010.11929).
+ImageNet-1k weights fine-tuned from in21k @ 224x224, source https://github.com/google-research/vision_transformer."
+vit_base_patch16_clip_384.openai_ft_in1k,vit_base_patch16_clip_384,ViT-B/16 CLIP image tower @ 384x384
+convnext_small.in12k_ft_in1k_384,convnext_small,
+vit_large_r50_s32_384.augreg_in21k_ft_in1k,vit_large_r50_s32_384,R50+ViT-L/S32 hybrid.
+vit_base_patch16_clip_224.laion2b_ft_in12k_in1k,vit_base_patch16_clip_224,ViT-B/16 CLIP image tower
+caformer_m36.sail_in1k_384,caformer_m36,
+convnext_base.clip_laion2b_augreg_ft_in1k,convnext_base,
+convformer_m36.sail_in22k_ft_in1k,convformer_m36,
+convnextv2_large.fcmae_ft_in1k,convnextv2_large,
+tiny_vit_21m_384.dist_in22k_ft_in1k,tiny_vit_21m_384,
+dm_nfnet_f5.dm_in1k,dm_nfnet_f5,"NFNet-F5 (DeepMind weight compatible)
+High-Performance Large-Scale Image Recognition Without Normalization
+- https://arxiv.org/abs/2102.06171"
+tf_efficientnet_b5.ns_jft_in1k,tf_efficientnet_b5,EfficientNet-B5. Tensorflow compatible variant
+maxvit_small_tf_512.in1k,maxvit_small_tf_512,
+volo_d5_224.sail_in1k,volo_d5_224,"VOLO-D5 model, Params: 296M
+stem_hidden_dim=128, the dim in patch embedding is 128 for VOLO-D5"
+cait_m36_384.fb_dist_in1k,cait_m36_384,
+volo_d2_384.sail_in1k,volo_d2_384,"VOLO-D2 model, Params: 59M"
+regnety_160.swag_ft_in1k,regnety_160,RegNetY-16GF
+xcit_large_24_p8_384.fb_dist_in1k,xcit_large_24_p8_384,
+vit_base_patch16_384.augreg_in21k_ft_in1k,vit_base_patch16_384,"ViT-Base model (ViT-B/16) from original paper (https://arxiv.org/abs/2010.11929).
+ImageNet-1k weights fine-tuned from in21k @ 384x384, source https://github.com/google-research/vision_transformer."
+tf_efficientnetv2_m.in21k_ft_in1k,tf_efficientnetv2_m,EfficientNet-V2 Medium. Tensorflow compatible variant
+regnety_160.lion_in12k_ft_in1k,regnety_160,RegNetY-16GF
+regnety_160.sw_in12k_ft_in1k,regnety_160,RegNetY-16GF
+regnety_1280.swag_lc_in1k,regnety_1280,RegNetY-128GF
+vit_base_patch16_clip_224.openai_ft_in12k_in1k,vit_base_patch16_clip_224,ViT-B/16 CLIP image tower
+efficientnet_b5.sw_in12k_ft_in1k,efficientnet_b5,EfficientNet-B5. Tensorflow compatible variant
+volo_d4_224.sail_in1k,volo_d4_224,"VOLO-D4 model, Params: 193M"
+vit_large_patch16_224.augreg_in21k_ft_in1k,vit_large_patch16_224,"ViT-Large model (ViT-L/16) from original paper (https://arxiv.org/abs/2010.11929).
+ImageNet-1k weights fine-tuned from in21k @ 224x224, source https://github.com/google-research/vision_transformer."
+dm_nfnet_f4.dm_in1k,dm_nfnet_f4,"NFNet-F4 (DeepMind weight compatible)
+High-Performance Large-Scale Image Recognition Without Normalization
+- https://arxiv.org/abs/2102.06171"
+xcit_medium_24_p8_384.fb_dist_in1k,xcit_medium_24_p8_384,
+deit3_large_patch16_384.fb_in1k,deit3_large_patch16_384,"DeiT-3 large model @ 384x384 from paper (https://arxiv.org/abs/2204.07118).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+vit_base_patch8_224.augreg_in21k_ft_in1k,vit_base_patch8_224,"ViT-Base (ViT-B/8) from original paper (https://arxiv.org/abs/2010.11929).
+ImageNet-1k weights fine-tuned from in21k @ 224x224, source https://github.com/google-research/vision_transformer."
+caformer_s36.sail_in22k_ft_in1k,caformer_s36,
+vit_base_patch32_clip_448.laion2b_ft_in12k_in1k,vit_base_patch32_clip_448,ViT-B/32 CLIP image tower @ 448x448
+convnext_small.fb_in22k_ft_in1k_384,convnext_small,
+xcit_large_24_p16_384.fb_dist_in1k,xcit_large_24_p16_384,
+caformer_s36.sail_in1k_384,caformer_s36,
+convformer_b36.sail_in1k_384,convformer_b36,
+eva02_small_patch14_336.mim_in22k_ft_in1k,eva02_small_patch14_336,EVA-g CLIP model (only difference from non-CLIP is the pooling)
+deit3_base_patch16_224.fb_in22k_ft_in1k,deit3_base_patch16_224,"DeiT-3 base model @ 224x224 from paper (https://arxiv.org/abs/2204.07118).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+dm_nfnet_f3.dm_in1k,dm_nfnet_f3,"NFNet-F3 (DeepMind weight compatible)
+High-Performance Large-Scale Image Recognition Without Normalization
+- https://arxiv.org/abs/2102.06171"
+maxvit_tiny_tf_512.in1k,maxvit_tiny_tf_512,
+tf_efficientnetv2_l.in1k,tf_efficientnetv2_l,EfficientNet-V2 Large. Tensorflow compatible variant
+flexivit_large.1200ep_in1k,flexivit_large,FlexiViT-Large
+beitv2_base_patch16_224.in1k_ft_in1k,beitv2_base_patch16_224,
+convformer_m36.sail_in1k_384,convformer_m36,
+xcit_small_24_p8_384.fb_dist_in1k,xcit_small_24_p8_384,
+flexivit_large.600ep_in1k,flexivit_large,FlexiViT-Large
+maxvit_small_tf_384.in1k,maxvit_small_tf_384,
+vit_medium_patch16_gap_384.sw_in12k_ft_in1k,vit_medium_patch16_gap_384,"ViT-Medium (ViT-M/16) w/o class token, w/ avg-pool @ 384x384"
+caformer_b36.sail_in1k,caformer_b36,
+convnextv2_base.fcmae_ft_in1k,convnextv2_base,
+vit_base_patch16_clip_224.laion2b_ft_in1k,vit_base_patch16_clip_224,ViT-B/16 CLIP image tower
+cait_s36_384.fb_dist_in1k,cait_s36_384,
+xcit_medium_24_p16_384.fb_dist_in1k,xcit_medium_24_p16_384,
+deit_base_distilled_patch16_384.fb_in1k,deit_base_distilled_patch16_384,"DeiT-base distilled model @ 384x384 from paper (https://arxiv.org/abs/2012.12877).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+caformer_s18.sail_in22k_ft_in1k_384,caformer_s18,
+convformer_s36.sail_in22k_ft_in1k,convformer_s36,
+volo_d3_224.sail_in1k,volo_d3_224,"VOLO-D3 model, Params: 86M"
+xcit_large_24_p8_224.fb_dist_in1k,xcit_large_24_p8_224,
+regnety_120.sw_in12k_ft_in1k,regnety_120,RegNetY-12GF
+convformer_s36.sail_in1k_384,convformer_s36,
+tf_efficientnet_b8.ra_in1k,tf_efficientnet_b8,EfficientNet-B8. Tensorflow compatible variant
+vit_base_patch32_clip_384.laion2b_ft_in12k_in1k,vit_base_patch32_clip_384,ViT-B/32 CLIP image tower @ 384x384
+tf_efficientnet_b8.ap_in1k,tf_efficientnet_b8,EfficientNet-B8. Tensorflow compatible variant
+convnext_small.in12k_ft_in1k,convnext_small,
+vit_base_patch16_clip_224.openai_ft_in1k,vit_base_patch16_clip_224,ViT-B/16 CLIP image tower
+flexivit_large.300ep_in1k,flexivit_large,FlexiViT-Large
+swin_base_patch4_window7_224.ms_in22k_ft_in1k,swin_base_patch4_window7_224,Swin-B @ 224x224
+convnext_small.fb_in22k_ft_in1k,convnext_small,
+volo_d1_384.sail_in1k,volo_d1_384,"VOLO-D1 model, Params: 27M"
+mvitv2_large.fb_in1k,mvitv2_large,
+caformer_m36.sail_in1k,caformer_m36,
+deit3_huge_patch14_224.fb_in1k,deit3_huge_patch14_224,"DeiT-3 base model @ 384x384 from paper (https://arxiv.org/abs/2204.07118).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+vit_base_patch32_clip_384.openai_ft_in12k_in1k,vit_base_patch32_clip_384,ViT-B/32 CLIP image tower @ 384x384
+beit_base_patch16_224.in22k_ft_in22k_in1k,beit_base_patch16_224,
+tf_efficientnetv2_m.in1k,tf_efficientnetv2_m,EfficientNet-V2 Medium. Tensorflow compatible variant
+inception_next_base.sail_in1k_384,inception_next_base,
+volo_d2_224.sail_in1k,volo_d2_224,"VOLO-D2 model, Params: 59M"
+dm_nfnet_f2.dm_in1k,dm_nfnet_f2,"NFNet-F2 (DeepMind weight compatible)
+High-Performance Large-Scale Image Recognition Without Normalization
+- https://arxiv.org/abs/2102.06171"
+tf_efficientnet_b4.ns_jft_in1k,tf_efficientnet_b4,EfficientNet-B4. Tensorflow compatible variant
+regnety_2560.seer_ft_in1k,regnety_2560,RegNetY-256GF
+tf_efficientnet_b7.ap_in1k,tf_efficientnet_b7,EfficientNet-B7. Tensorflow compatible variant
+convnext_tiny.in12k_ft_in1k_384,convnext_tiny,
+convnextv2_tiny.fcmae_ft_in22k_in1k_384,convnextv2_tiny,
+maxvit_tiny_tf_384.in1k,maxvit_tiny_tf_384,
+resnext101_32x32d.fb_wsl_ig1b_ft_in1k,resnext101_32x32d,Constructs a ResNeXt-101 32x32d model
+vit_base_patch16_224.augreg2_in21k_ft_in1k,vit_base_patch16_224,ViT-B/16 based on samvit arch
+xcit_small_24_p16_384.fb_dist_in1k,xcit_small_24_p16_384,
+tiny_vit_21m_224.dist_in22k_ft_in1k,tiny_vit_21m_224,
+xcit_small_12_p8_384.fb_dist_in1k,xcit_small_12_p8_384,
+xcit_medium_24_p8_224.fb_dist_in1k,xcit_medium_24_p8_224,
+deit3_base_patch16_384.fb_in1k,deit3_base_patch16_384,"DeiT-3 base model @ 384x384 from paper (https://arxiv.org/abs/2204.07118).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+cait_s24_384.fb_dist_in1k,cait_s24_384,
+regnetz_e8.ra3_in1k,regnetz_e8,
+caformer_s18.sail_in1k_384,caformer_s18,
+resnetrs420.tf_in1k,resnetrs420,"Constructs a ResNet-RS-420 model
+Paper: Revisiting ResNets - https://arxiv.org/abs/2103.07579
+Pretrained weights from https://github.com/tensorflow/tpu/tree/bee9c4f6/models/official/resnet/resnet_rs"
+convformer_s18.sail_in22k_ft_in1k_384,convformer_s18,
+vit_base_r50_s16_384.orig_in21k_ft_in1k,vit_base_r50_s16_384,"R50+ViT-B/16 hybrid from original paper (https://arxiv.org/abs/2010.11929).
+ImageNet-1k weights fine-tuned from in21k @ 384x384, source https://github.com/google-research/vision_transformer."
+ecaresnet269d.ra2_in1k,ecaresnet269d,Constructs a ResNet-269-D model with ECA.
+maxvit_large_tf_224.in1k,maxvit_large_tf_224,
+tf_efficientnet_b7.ra_in1k,tf_efficientnet_b7,EfficientNet-B7. Tensorflow compatible variant
+resnetv2_152x4_bit.goog_in21k_ft_in1k,resnetv2_152x4_bit,
+xcit_large_24_p16_224.fb_dist_in1k,xcit_large_24_p16_224,
+coatnet_rmlp_1_rw2_224.sw_in12k_ft_in1k,coatnet_rmlp_1_rw2_224,
+coat_lite_medium_384.in1k,coat_lite_medium_384,
+xcit_small_24_p8_224.fb_dist_in1k,xcit_small_24_p8_224,
+maxvit_base_tf_224.in1k,maxvit_base_tf_224,
+convnext_large.fb_in1k,convnext_large,
+deit3_small_patch16_384.fb_in22k_ft_in1k,deit3_small_patch16_384,"DeiT-3 small model @ 384x384 from paper (https://arxiv.org/abs/2204.07118).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+convformer_b36.sail_in1k,convformer_b36,
+efficientnetv2_rw_m.agc_in1k,efficientnetv2_rw_m,EfficientNet-V2 Medium (RW variant).
+tf_efficientnet_b6.ap_in1k,tf_efficientnet_b6,EfficientNet-B6. Tensorflow compatible variant
+deit3_large_patch16_224.fb_in1k,deit3_large_patch16_224,"DeiT-3 large model @ 224x224 from paper (https://arxiv.org/abs/2204.07118).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+resnetrs350.tf_in1k,resnetrs350,"Constructs a ResNet-RS-350 model.
+Paper: Revisiting ResNets - https://arxiv.org/abs/2103.07579
+Pretrained weights from https://github.com/tensorflow/tpu/tree/bee9c4f6/models/official/resnet/resnet_rs"
+xcit_small_12_p16_384.fb_dist_in1k,xcit_small_12_p16_384,
+dm_nfnet_f1.dm_in1k,dm_nfnet_f1,"NFNet-F1 (DeepMind weight compatible)
+High-Performance Large-Scale Image Recognition Without Normalization
+- https://arxiv.org/abs/2102.06171"
+eca_nfnet_l2.ra3_in1k,eca_nfnet_l2,"ECA-NFNet-L2 w/ SiLU
+My experimental 'light' model w/ F2 repeats, 2.0x final_conv mult, 64 group_size, .25 bottleneck & ECA attn"
+flexivit_base.1200ep_in1k,flexivit_base,FlexiViT-Base
+davit_base.msft_in1k,davit_base,
+maxxvit_rmlp_small_rw_256.sw_in1k,maxxvit_rmlp_small_rw_256,
+coatnet_rmlp_2_rw_224.sw_in1k,coatnet_rmlp_2_rw_224,
+swinv2_base_window16_256.ms_in1k,swinv2_base_window16_256,
+fastvit_ma36.apple_dist_in1k,fastvit_ma36,Instantiate FastViT-MA36 model variant.
+seresnextaa101d_32x8d.ah_in1k,seresnextaa101d_32x8d,Constructs a SE=ResNeXt-101-D 32x8d model with avgpool anti-aliasing
+deit3_medium_patch16_224.fb_in22k_ft_in1k,deit3_medium_patch16_224,"DeiT-3 medium model @ 224x224 (https://arxiv.org/abs/2012.12877).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+regnety_320.swag_lc_in1k,regnety_320,RegNetY-32GF
+rexnetr_300.sw_in12k_ft_in1k,rexnetr_300,ReXNet V1 3.0x w/ rounded (mod 16) channels
+vit_base_patch16_224.augreg_in21k_ft_in1k,vit_base_patch16_224,ViT-B/16 based on samvit arch
+flexivit_base.600ep_in1k,flexivit_base,FlexiViT-Base
+resnetv2_152x2_bit.goog_in21k_ft_in1k,resnetv2_152x2_bit,
+resnest269e.in1k,resnest269e,"ResNeSt-269e model. Matches paper ResNeSt-269 model, https://arxiv.org/abs/2004.08955
+Since this codebase supports all possible variations, 'e' for deep stem, stem_width 64, avg in downsample."
+caformer_s36.sail_in1k,caformer_s36,
+convformer_m36.sail_in1k,convformer_m36,
+regnetz_040_h.ra3_in1k,regnetz_040_h,"RegNetZ-4.0GF
+NOTE: config found in https://github.com/facebookresearch/ClassyVision/blob/main/classy_vision/models/regnet.py
+but it's not clear it is equivalent to paper model as not detailed in the paper."
+maxvit_rmlp_small_rw_224.sw_in1k,maxvit_rmlp_small_rw_224,
+hrnet_w48_ssld.paddle_in1k,hrnet_w48_ssld,
+swin_base_patch4_window12_384.ms_in1k,swin_base_patch4_window12_384,Swin-B @ 384x384
+convnext_tiny.in12k_ft_in1k,convnext_tiny,
+mvitv2_base.fb_in1k,mvitv2_base,
+vit_medium_patch16_gap_256.sw_in12k_ft_in1k,vit_medium_patch16_gap_256,"ViT-Medium (ViT-M/16) w/o class token, w/ avg-pool @ 256x256"
+resnetrs200.tf_in1k,resnetrs200,"Constructs a ResNet-RS-200 model.
+Paper: Revisiting ResNets - https://arxiv.org/abs/2103.07579
+Pretrained weights from https://github.com/tensorflow/tpu/tree/bee9c4f6/models/official/resnet/resnet_rs"
+gcvit_base.in1k,gcvit_base,
+resnetv2_101x3_bit.goog_in21k_ft_in1k,resnetv2_101x3_bit,
+regnety_1280.seer_ft_in1k,regnety_1280,RegNetY-128GF
+convnext_base.fb_in1k,convnext_base,
+resnetrs270.tf_in1k,resnetrs270,"Constructs a ResNet-RS-270 model.
+Paper: Revisiting ResNets - https://arxiv.org/abs/2103.07579
+Pretrained weights from https://github.com/tensorflow/tpu/tree/bee9c4f6/models/official/resnet/resnet_rs"
+maxvit_small_tf_224.in1k,maxvit_small_tf_224,
+vit_large_r50_s32_224.augreg_in21k_ft_in1k,vit_large_r50_s32_224,R50+ViT-L/S32 hybrid.
+convnextv2_tiny.fcmae_ft_in22k_in1k,convnextv2_tiny,
+tf_efficientnet_b7.aa_in1k,tf_efficientnet_b7,EfficientNet-B7. Tensorflow compatible variant
+flexivit_base.300ep_in1k,flexivit_base,FlexiViT-Base
+convformer_s18.sail_in1k_384,convformer_s18,
+resmlp_big_24_224.fb_in22k_ft_in1k,resmlp_big_24_224,"ResMLP-B-24
+Paper: ResMLP: Feedforward networks for image classification... - https://arxiv.org/abs/2105.03404"
+xcit_large_24_p8_224.fb_in1k,xcit_large_24_p8_224,
+seresnet152d.ra2_in1k,seresnet152d,Constructs a ResNet-200-D model with SE attn.
+seresnext101d_32x8d.ah_in1k,seresnext101d_32x8d,Constructs a ResNet-18 model with blur anti-aliasing
+resnext101_32x8d.fb_swsl_ig1b_ft_in1k,resnext101_32x8d,Constructs a ResNet-18 model with blur anti-aliasing
+tf_efficientnetv2_s.in21k_ft_in1k,tf_efficientnetv2_s,EfficientNet-V2 Small. Tensorflow compatible variant
+xcit_medium_24_p16_224.fb_dist_in1k,xcit_medium_24_p16_224,
+vit_base_patch16_224_miil.in21k_ft_in1k,vit_base_patch16_224_miil,"ViT-Base (ViT-B/16) from original paper (https://arxiv.org/abs/2010.11929).
+Weights taken from: https://github.com/Alibaba-MIIL/ImageNet21K"
+tf_efficientnet_b5.ap_in1k,tf_efficientnet_b5,EfficientNet-B5. Tensorflow compatible variant
+davit_small.msft_in1k,davit_small,
+swinv2_base_window8_256.ms_in1k,swinv2_base_window8_256,
+regnetz_040.ra3_in1k,regnetz_040,"RegNetZ-4.0GF
+NOTE: config found in https://github.com/facebookresearch/ClassyVision/blob/main/classy_vision/models/regnet.py
+but it's not clear it is equivalent to paper model as not detailed in the paper."
+xcit_small_12_p8_224.fb_dist_in1k,xcit_small_12_p8_224,
+swinv2_small_window16_256.ms_in1k,swinv2_small_window16_256,
+maxvit_rmlp_tiny_rw_256.sw_in1k,maxvit_rmlp_tiny_rw_256,
+crossvit_18_dagger_408.in1k,crossvit_18_dagger_408,
+vit_base_patch16_384.orig_in21k_ft_in1k,vit_base_patch16_384,"ViT-Base model (ViT-B/16) from original paper (https://arxiv.org/abs/2010.11929).
+ImageNet-1k weights fine-tuned from in21k @ 384x384, source https://github.com/google-research/vision_transformer."
+seresnext101_32x8d.ah_in1k,seresnext101_32x8d,Constructs a ResNet-18 model with blur anti-aliasing
+resnext101_32x16d.fb_wsl_ig1b_ft_in1k,resnext101_32x16d,Constructs a ResNeXt-101 32x16d model
+volo_d1_224.sail_in1k,volo_d1_224,"VOLO-D1 model, Params: 27M"
+efficientvit_b3.r288_in1k,efficientvit_b3,
+regnetz_d8_evos.ch_in1k,regnetz_d8_evos,
+resnetaa101d.sw_in12k_ft_in1k,resnetaa101d,Constructs a ResNet-101-D model with avgpool anti-aliasing
+tf_efficientnet_b6.aa_in1k,tf_efficientnet_b6,EfficientNet-B6. Tensorflow compatible variant
+inception_next_base.sail_in1k,inception_next_base,
+convnext_tiny.fb_in22k_ft_in1k_384,convnext_tiny,
+caformer_s18.sail_in22k_ft_in1k,caformer_s18,
+cait_xs24_384.fb_dist_in1k,cait_xs24_384,
+convformer_s36.sail_in1k,convformer_s36,
+edgenext_base.in21k_ft_in1k,edgenext_base,
+regnetz_d8.ra3_in1k,regnetz_d8,
+tf_efficientnet_b3.ns_jft_in1k,tf_efficientnet_b3,EfficientNet-B3. Tensorflow compatible variant
+vit_small_r26_s32_384.augreg_in21k_ft_in1k,vit_small_r26_s32_384,R26+ViT-S/S32 hybrid.
+fastvit_sa36.apple_dist_in1k,fastvit_sa36,Instantiate FastViT-SA36 model variant.
+regnetz_d32.ra3_in1k,regnetz_d32,
+resnetv2_50x3_bit.goog_in21k_ft_in1k,resnetv2_50x3_bit,
+eca_nfnet_l1.ra2_in1k,eca_nfnet_l1,"ECA-NFNet-L1 w/ SiLU
+My experimental 'light' model w/ F1 repeats, 2.0x final_conv mult, 64 group_size, .25 bottleneck & ECA attn"
+resnet200d.ra2_in1k,resnet200d,Constructs a ResNet-200-D model with SE attn.
+edgenext_base.usi_in1k,edgenext_base,
+regnety_080.ra3_in1k,regnety_080,RegNetY-8.0GF w/ torchvision group rounding
+swin_s3_base_224.ms_in1k,swin_s3_base_224,"Swin-S3-B @ 224x224, https://arxiv.org/abs/2111.14725"
+regnety_640.seer_ft_in1k,regnety_640,RegNetY-64GF
+tf_efficientnetv2_s.in1k,tf_efficientnetv2_s,EfficientNet-V2 Small. Tensorflow compatible variant
+tresnet_v2_l.miil_in21k_ft_in1k,tresnet_v2_l,
+gcvit_small.in1k,gcvit_small,
+fastvit_ma36.apple_in1k,fastvit_ma36,Instantiate FastViT-MA36 model variant.
+xcit_small_24_p16_224.fb_dist_in1k,xcit_small_24_p16_224,
+swinv2_small_window8_256.ms_in1k,swinv2_small_window8_256,
+resnest200e.in1k,resnest200e,"ResNeSt-200e model. Matches paper ResNeSt-200 model, https://arxiv.org/abs/2004.08955
+Since this codebase supports all possible variations, 'e' for deep stem, stem_width 64, avg in downsample."
+crossvit_15_dagger_408.in1k,crossvit_15_dagger_408,
+focalnet_base_lrf.ms_in1k,focalnet_base_lrf,
+resnetv2_152x2_bit.goog_teacher_in21k_ft_in1k_384,resnetv2_152x2_bit,
+xcit_small_24_p8_224.fb_in1k,xcit_small_24_p8_224,
+focalnet_base_srf.ms_in1k,focalnet_base_srf,
+tf_efficientnet_b5.ra_in1k,tf_efficientnet_b5,EfficientNet-B5. Tensorflow compatible variant
+efficientnetv2_rw_s.ra2_in1k,efficientnetv2_rw_s,"EfficientNet-V2 Small (RW variant).
+NOTE: This is my initial (pre official code release) w/ some differences.
+See efficientnetv2_s and tf_efficientnetv2_s for versions that match the official w/ PyTorch vs TF padding"
+vit_small_patch16_384.augreg_in21k_ft_in1k,vit_small_patch16_384,ViT-Small (ViT-S/16)
+efficientvit_b3.r256_in1k,efficientvit_b3,
+deit3_base_patch16_224.fb_in1k,deit3_base_patch16_224,"DeiT-3 base model @ 224x224 from paper (https://arxiv.org/abs/2204.07118).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+regnety_160.swag_lc_in1k,regnety_160,RegNetY-16GF
+mvitv2_small.fb_in1k,mvitv2_small,
+pit_b_distilled_224.in1k,pit_b_distilled_224,
+swin_s3_small_224.ms_in1k,swin_s3_small_224,"Swin-S3-S @ 224x224, https://arxiv.org/abs/2111.14725"
+xcit_tiny_24_p8_384.fb_dist_in1k,xcit_tiny_24_p8_384,
+xcit_medium_24_p8_224.fb_in1k,xcit_medium_24_p8_224,
+repvit_m2_3.dist_450e_in1k,repvit_m2_3,Constructs a RepViT-M2.3 model
+pvt_v2_b5.in1k,pvt_v2_b5,
+convformer_s18.sail_in22k_ft_in1k,convformer_s18,
+regnety_064.ra3_in1k,regnety_064,RegNetY-6.4GF
+regnetv_064.ra3_in1k,regnetv_064,RegNetV-6.4GF (pre-activation)
+pvt_v2_b4.in1k,pvt_v2_b4,
+resnetrs152.tf_in1k,resnetrs152,"Constructs a ResNet-RS-152 model.
+Paper: Revisiting ResNets - https://arxiv.org/abs/2103.07579
+Pretrained weights from https://github.com/tensorflow/tpu/tree/bee9c4f6/models/official/resnet/resnet_rs"
+convnext_small.fb_in1k,convnext_small,
+regnety_160.deit_in1k,regnety_160,RegNetY-16GF
+tf_efficientnet_b5.aa_in1k,tf_efficientnet_b5,EfficientNet-B5. Tensorflow compatible variant
+resnet152d.ra2_in1k,resnet152d,Constructs a ResNet-200-D model with SE attn.
+twins_svt_large.in1k,twins_svt_large,
+caformer_s18.sail_in1k,caformer_s18,
+efficientformerv2_l.snap_dist_in1k,efficientformerv2_l,
+swin_base_patch4_window7_224.ms_in1k,swin_base_patch4_window7_224,Swin-B @ 224x224
+coat_lite_medium.in1k,coat_lite_medium,
+coatnet_1_rw_224.sw_in1k,coatnet_1_rw_224,
+resmlp_big_24_224.fb_distilled_in1k,resmlp_big_24_224,"ResMLP-B-24
+Paper: ResMLP: Feedforward networks for image classification... - https://arxiv.org/abs/2105.03404"
+inception_next_small.sail_in1k,inception_next_small,
+repvgg_d2se.rvgg_in1k,repvgg_d2se,"RepVGG-D2se
+Making VGG-style ConvNets Great Again - https://arxiv.org/abs/2101.03697"
+cs3se_edgenet_x.c2ns_in1k,cs3se_edgenet_x,
+nest_base_jx.goog_in1k,nest_base_jx,Nest-B @ 224x224
+repvit_m2_3.dist_300e_in1k,repvit_m2_3,Constructs a RepViT-M2.3 model
+maxvit_tiny_rw_224.sw_in1k,maxvit_tiny_rw_224,
+fastvit_sa36.apple_in1k,fastvit_sa36,Instantiate FastViT-SA36 model variant.
+swinv2_cr_small_ns_224.sw_in1k,swinv2_cr_small_ns_224,"Swin-S V2 CR @ 224x224, trained ImageNet-1k"
+focalnet_small_lrf.ms_in1k,focalnet_small_lrf,
+dm_nfnet_f0.dm_in1k,dm_nfnet_f0,"NFNet-F0 (DeepMind weight compatible)
+High-Performance Large-Scale Image Recognition Without Normalization
+- https://arxiv.org/abs/2102.06171"
+convnextv2_tiny.fcmae_ft_in1k,convnextv2_tiny,
+efficientvit_b3.r224_in1k,efficientvit_b3,
+resnet152.a1h_in1k,resnet152,Constructs a ResNet-200-D model with SE attn.
+cait_s24_224.fb_dist_in1k,cait_s24_224,
+deit3_small_patch16_384.fb_in1k,deit3_small_patch16_384,"DeiT-3 small model @ 384x384 from paper (https://arxiv.org/abs/2204.07118).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+focalnet_small_srf.ms_in1k,focalnet_small_srf,
+efficientnet_b4.ra2_in1k,efficientnet_b4,EfficientNet-B4. Tensorflow compatible variant
+maxvit_tiny_tf_224.in1k,maxvit_tiny_tf_224,
+mobilevitv2_200.cvnets_in22k_ft_in1k_384,mobilevitv2_200,
+sequencer2d_l.in1k,sequencer2d_l,
+deit_base_distilled_patch16_224.fb_in1k,deit_base_distilled_patch16_224,"DeiT-base distilled model @ 224x224 from paper (https://arxiv.org/abs/2012.12877).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+gcvit_tiny.in1k,gcvit_tiny,
+efficientformer_l7.snap_dist_in1k,efficientformer_l7,
+convnextv2_nano.fcmae_ft_in22k_in1k_384,convnextv2_nano,
+coatnet_rmlp_1_rw_224.sw_in1k,coatnet_rmlp_1_rw_224,
+vit_base_patch32_384.augreg_in21k_ft_in1k,vit_base_patch32_384,"ViT-Base model (ViT-B/32) from original paper (https://arxiv.org/abs/2010.11929).
+ImageNet-1k weights fine-tuned from in21k @ 384x384, source https://github.com/google-research/vision_transformer."
+fastvit_sa24.apple_dist_in1k,fastvit_sa24,Instantiate FastViT-SA24 model variant.
+resnext101_32x16d.fb_swsl_ig1b_ft_in1k,resnext101_32x16d,Constructs a ResNeXt-101 32x16d model
+xcit_small_12_p8_224.fb_in1k,xcit_small_12_p8_224,
+regnety_320.seer_ft_in1k,regnety_320,RegNetY-32GF
+xcit_small_12_p16_224.fb_dist_in1k,xcit_small_12_p16_224,
+swin_small_patch4_window7_224.ms_in22k_ft_in1k,swin_small_patch4_window7_224,Swin-S @ 224x224
+vit_base_patch32_clip_224.laion2b_ft_in12k_in1k,vit_base_patch32_clip_224,ViT-B/32 CLIP image tower @ 224x224
+tiny_vit_21m_224.in1k,tiny_vit_21m_224,
+tf_efficientnet_b4.ap_in1k,tf_efficientnet_b4,EfficientNet-B4. Tensorflow compatible variant
+tiny_vit_11m_224.dist_in22k_ft_in1k,tiny_vit_11m_224,
+resnext101_32x4d.fb_swsl_ig1b_ft_in1k,resnext101_32x4d,Constructs a ResNet-18 model with blur anti-aliasing
+swin_small_patch4_window7_224.ms_in1k,swin_small_patch4_window7_224,Swin-S @ 224x224
+regnetv_040.ra3_in1k,regnetv_040,RegNetV-4.0GF (pre-activation)
+xception65.ra3_in1k,xception65,Modified Aligned Xception-65 w/ Pre-Act
+tf_efficientnet_b5.in1k,tf_efficientnet_b5,EfficientNet-B5. Tensorflow compatible variant
+regnety_320.tv2_in1k,regnety_320,RegNetY-32GF
+resnext101_64x4d.c1_in1k,resnext101_64x4d,Constructs a ResNet-18 model with blur anti-aliasing
+rexnetr_200.sw_in12k_ft_in1k,rexnetr_200,ReXNet V1 2.0x w/ rounded (mod 8) channels
+swinv2_cr_small_224.sw_in1k,swinv2_cr_small_224,"Swin-S V2 CR @ 224x224, trained ImageNet-1k"
+twins_pcpvt_large.in1k,twins_pcpvt_large,
+xception65p.ra3_in1k,xception65p,Modified Aligned Xception-65 w/ Pre-Act
+nest_small_jx.goog_in1k,nest_small_jx,Nest-S @ 224x224
+twins_svt_base.in1k,twins_svt_base,
+pvt_v2_b3.in1k,pvt_v2_b3,
+maxxvitv2_nano_rw_256.sw_in1k,maxxvitv2_nano_rw_256,
+deit_base_patch16_384.fb_in1k,deit_base_patch16_384,"DeiT base model @ 384x384 from paper (https://arxiv.org/abs/2012.12877).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+efficientvit_b2.r288_in1k,efficientvit_b2,
+deit3_medium_patch16_224.fb_in1k,deit3_medium_patch16_224,"DeiT-3 medium model @ 224x224 (https://arxiv.org/abs/2012.12877).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+deit3_small_patch16_224.fb_in22k_ft_in1k,deit3_small_patch16_224,"DeiT-3 small model @ 224x224 from paper (https://arxiv.org/abs/2204.07118).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+tresnet_m.miil_in21k_ft_in1k,tresnet_m,
+tresnet_xl.miil_in1k_448,tresnet_xl,
+regnety_040.ra3_in1k,regnety_040,RegNetY-4.0GF w/ GroupNorm
+maxxvit_rmlp_nano_rw_256.sw_in1k,maxxvit_rmlp_nano_rw_256,
+resnet101d.ra2_in1k,resnet101d,"Constructs a ResNet-101-D model pruned with eca.
+ The pruning has been obtained using https://arxiv.org/pdf/2002.08258.pdf"
+tf_efficientnet_b4.aa_in1k,tf_efficientnet_b4,EfficientNet-B4. Tensorflow compatible variant
+resnetv2_101.a1h_in1k,resnetv2_101,
+resnext101_64x4d.tv_in1k,resnext101_64x4d,Constructs a ResNet-18 model with blur anti-aliasing
+convformer_s18.sail_in1k,convformer_s18,
+ecaresnet101d.miil_in1k,ecaresnet101d,"Constructs a ResNet-101-D model pruned with eca.
+ The pruning has been obtained using https://arxiv.org/pdf/2002.08258.pdf"
+maxvit_rmlp_nano_rw_256.sw_in1k,maxvit_rmlp_nano_rw_256,
+mobilevitv2_175.cvnets_in22k_ft_in1k_384,mobilevitv2_175,
+maxvit_nano_rw_256.sw_in1k,maxvit_nano_rw_256,
+xcit_large_24_p16_224.fb_in1k,xcit_large_24_p16_224,
+resnest101e.in1k,resnest101e,"ResNeSt-101e model. Matches paper ResNeSt-101 model, https://arxiv.org/abs/2004.08955
+ Since this codebase supports all possible variations, 'e' for deep stem, stem_width 64, avg in downsample."
+resnetv2_152x2_bit.goog_teacher_in21k_ft_in1k,resnetv2_152x2_bit,
+convnext_nano.in12k_ft_in1k,convnext_nano,
+resnext101_32x8d.tv2_in1k,resnext101_32x8d,Constructs a ResNet-18 model with blur anti-aliasing
+resnetv2_50x1_bit.goog_distilled_in1k,resnetv2_50x1_bit,
+sequencer2d_m.in1k,sequencer2d_m,
+regnetx_320.tv2_in1k,regnetx_320,RegNetX-32GF
+swinv2_tiny_window16_256.ms_in1k,swinv2_tiny_window16_256,
+pnasnet5large.tf_in1k,pnasnet5large,"PNASNet-5 model architecture from the
+""Progressive Neural Architecture Search""
+<https://arxiv.org/abs/1712.00559>_ paper."
+resnet101.a1h_in1k,resnet101,Normalization-Free ECA-ResNet101
+rexnet_300.nav_in1k,rexnet_300,ReXNet V1 3.0x
+vit_relpos_base_patch16_clsgap_224.sw_in1k,vit_relpos_base_patch16_clsgap_224,"ViT-Base (ViT-B/16) w/ relative log-coord position, class token present
+NOTE this config is a bit of a mistake, class token was enabled but global avg-pool w/ fc-norm was not disabled
+Leaving here for comparisons w/ a future re-train as it performs quite well."
+nfnet_l0.ra2_in1k,nfnet_l0,"ECA-NFNet-L0 w/ SiLU
+My experimental 'light' model w/ F0 repeats, 1.5x final_conv mult, 64 group_size, .25 bottleneck & ECA attn"
+resnet152.a1_in1k,resnet152,Constructs a ResNet-200-D model with SE attn.
+regnety_032.ra_in1k,regnety_032,RegNetY-3.2GF
+twins_pcpvt_base.in1k,twins_pcpvt_base,
+cs3edgenet_x.c2_in1k,cs3edgenet_x,
+resnext101_32x8d.fb_wsl_ig1b_ft_in1k,resnext101_32x8d,Constructs a ResNet-18 model with blur anti-aliasing
+convnext_tiny.fb_in1k,convnext_tiny,
+davit_tiny.msft_in1k,davit_tiny,
+efficientvit_b2.r256_in1k,efficientvit_b2,
+fastvit_sa24.apple_in1k,fastvit_sa24,Instantiate FastViT-SA24 model variant.
+tf_efficientnetv2_b3.in21k_ft_in1k,tf_efficientnetv2_b3,EfficientNet-V2-B3. Tensorflow compatible variant
+convnextv2_nano.fcmae_ft_in22k_in1k,convnextv2_nano,
+cs3sedarknet_x.c2ns_in1k,cs3sedarknet_x,
+regnety_160.tv2_in1k,regnety_160,RegNetY-16GF
+xcit_medium_24_p16_224.fb_in1k,xcit_medium_24_p16_224,
+regnetz_c16_evos.ch_in1k,regnetz_c16_evos,
+regnetz_c16.ra3_in1k,regnetz_c16,
+nasnetalarge.tf_in1k,nasnetalarge,NASNet-A large model architecture.
+poolformerv2_m48.sail_in1k,poolformerv2_m48,
+tf_efficientnet_b4.in1k,tf_efficientnet_b4,EfficientNet-B4. Tensorflow compatible variant
+resnet152.a2_in1k,resnet152,Constructs a ResNet-200-D model with SE attn.
+resnetaa50d.sw_in12k_ft_in1k,resnetaa50d,Constructs a SE=ResNet-50-D model with avgpool anti-aliasing
+levit_384.fb_dist_in1k,levit_384,
+regnety_080_tv.tv2_in1k,regnety_080_tv,RegNetY-8.0GF w/ torchvision group rounding
+levit_conv_384.fb_dist_in1k,levit_conv_384,
+mobilevitv2_150.cvnets_in22k_ft_in1k_384,mobilevitv2_150,
+convnext_tiny_hnf.a2h_in1k,convnext_tiny_hnf,
+vit_base_patch32_clip_224.laion2b_ft_in1k,vit_base_patch32_clip_224,ViT-B/32 CLIP image tower @ 224x224
+eca_nfnet_l0.ra2_in1k,eca_nfnet_l0,"ECA-NFNet-L0 w/ SiLU
+My experimental 'light' model w/ F0 repeats, 1.5x final_conv mult, 64 group_size, .25 bottleneck & ECA attn"
+xcit_small_24_p16_224.fb_in1k,xcit_small_24_p16_224,
+vit_relpos_medium_patch16_cls_224.sw_in1k,vit_relpos_medium_patch16_cls_224,"ViT-Base (ViT-M/16) w/ relative log-coord position, class token present"
+xcit_tiny_24_p16_384.fb_dist_in1k,xcit_tiny_24_p16_384,
+xcit_tiny_24_p8_224.fb_dist_in1k,xcit_tiny_24_p8_224,
+regnetx_160.tv2_in1k,regnetx_160,RegNetX-16GF
+efficientformer_l3.snap_dist_in1k,efficientformer_l3,
+flexivit_small.1200ep_in1k,flexivit_small,FlexiViT-Small
+resnet61q.ra2_in1k,resnet61q,
+crossvit_18_dagger_240.in1k,crossvit_18_dagger_240,
+repvit_m1_5.dist_450e_in1k,repvit_m1_5,Constructs a RepViT-M1.5 model
+wide_resnet101_2.tv2_in1k,wide_resnet101_2,"Constructs a Wide ResNet-101-2 model.
+The model is the same as ResNet except for the bottleneck number of channels
+which is twice larger in every block. The number of channels in outer 1x1
+convolutions is the same."
+vit_relpos_base_patch16_224.sw_in1k,vit_relpos_base_patch16_224,"ViT-Base (ViT-B/16) w/ relative log-coord position, no class token"
+convnextv2_nano.fcmae_ft_in1k,convnextv2_nano,
+poolformer_m48.sail_in1k,poolformer_m48,
+inception_next_tiny.sail_in1k,inception_next_tiny,
+vit_relpos_medium_patch16_224.sw_in1k,vit_relpos_medium_patch16_224,"ViT-Base (ViT-B/16) w/ relative log-coord position, no class token"
+gc_efficientnetv2_rw_t.agc_in1k,gc_efficientnetv2_rw_t,"EfficientNet-V2 Tiny w/ Global Context Attn (Custom variant, tiny not in paper)."
+pit_b_224.in1k,pit_b_224,
+mvitv2_tiny.fb_in1k,mvitv2_tiny,
+coatnet_bn_0_rw_224.sw_in1k,coatnet_bn_0_rw_224,
+crossvit_18_240.in1k,crossvit_18_240,
+coatnet_0_rw_224.sw_in1k,coatnet_0_rw_224,
+xcit_tiny_12_p8_384.fb_dist_in1k,xcit_tiny_12_p8_384,
+tf_efficientnet_b2.ns_jft_in1k,tf_efficientnet_b2,EfficientNet-B2. Tensorflow compatible variant
+repvit_m1_5.dist_300e_in1k,repvit_m1_5,Constructs a RepViT-M1.5 model
+coat_small.in1k,coat_small,
+flexivit_small.600ep_in1k,flexivit_small,FlexiViT-Small
+resnet51q.ra2_in1k,resnet51q,
+ecaresnet50t.ra2_in1k,ecaresnet50t,"Constructs an ECA-ResNet-50-T model.
+Like a 'D' bag-of-tricks model but with tiered 24, 32, 64 channels in the deep stem and ECA attn."
+efficientnetv2_rw_t.ra2_in1k,efficientnetv2_rw_t,"EfficientNet-V2 Tiny w/ Global Context Attn (Custom variant, tiny not in paper)."
+resnetv2_101x1_bit.goog_in21k_ft_in1k,resnetv2_101x1_bit,
+sequencer2d_s.in1k,sequencer2d_s,
+mobilevitv2_200.cvnets_in22k_ft_in1k,mobilevitv2_200,
+crossvit_15_dagger_240.in1k,crossvit_15_dagger_240,
+resnet101.a1_in1k,resnet101,Normalization-Free ECA-ResNet101
+coat_lite_small.in1k,coat_lite_small,
+vit_relpos_medium_patch16_rpn_224.sw_in1k,vit_relpos_medium_patch16_rpn_224,"ViT-Base (ViT-B/16) w/ relative log-coord position and residual post-norm, no class token"
+mixer_b16_224.miil_in21k_ft_in1k,mixer_b16_224,"Mixer-B/16 224x224. ImageNet-1k pretrained weights.
+Paper:'MLP-Mixer: An all-MLP Architecture for Vision' - https://arxiv.org/abs/2105.01601"
+convit_base.fb_in1k,convit_base,
+resnet152.tv2_in1k,resnet152,Constructs a ResNet-200-D model with SE attn.
+resnetrs101.tf_in1k,resnetrs101,"Constructs a ResNet-RS-101 model.
+Paper: Revisiting ResNets - https://arxiv.org/abs/2103.07579
+Pretrained weights from https://github.com/tensorflow/tpu/tree/bee9c4f6/models/official/resnet/resnet_rs"
+wide_resnet50_2.racm_in1k,wide_resnet50_2,"Constructs a Wide ResNet-50-2 model.
+The model is the same as ResNet except for the bottleneck number of channels
+which is twice larger in every block. The number of channels in outer 1x1
+convolutions is the same, e.g. last block in ResNet-50 has 2048-512-2048
+channels, and in Wide ResNet-50-2 has 2048-1024-2048."
+tresnet_l.miil_in1k_448,tresnet_l,
+efficientnet_b3.ra2_in1k,efficientnet_b3,EfficientNet-B3. Tensorflow compatible variant
+vit_srelpos_medium_patch16_224.sw_in1k,vit_srelpos_medium_patch16_224,"ViT-Base (ViT-B/16) w/ shared relative log-coord position, no class token"
+resnet101.a2_in1k,resnet101,Normalization-Free ECA-ResNet101
+cs3darknet_x.c2ns_in1k,cs3darknet_x,
+poolformerv2_m36.sail_in1k,poolformerv2_m36,
+crossvit_base_240.in1k,crossvit_base_240,
+cait_xxs36_384.fb_dist_in1k,cait_xxs36_384,
+vit_base_patch16_rpn_224.sw_in1k,vit_base_patch16_rpn_224,ViT-Base (ViT-B/16) w/ residual post-norm
+seresnext50_32x4d.racm_in1k,seresnext50_32x4d,Constructs a ResNet-18 model with blur anti-aliasing
+pvt_v2_b2_li.in1k,pvt_v2_b2_li,
+flexivit_small.300ep_in1k,flexivit_small,FlexiViT-Small
+resnext50_32x4d.fb_swsl_ig1b_ft_in1k,resnext50_32x4d,"Constructs a Select Kernel ResNeXt50-32x4d model. This should be equivalent to
+the SKNet-50 model in the Select Kernel Paper"
+efficientformerv2_s2.snap_dist_in1k,efficientformerv2_s2,
+focalnet_tiny_lrf.ms_in1k,focalnet_tiny_lrf,
+efficientvit_b2.r224_in1k,efficientvit_b2,
+swin_s3_tiny_224.ms_in1k,swin_s3_tiny_224,"Swin-S3-T @ 224x224, https://arxiv.org/abs/2111.14725"
+focalnet_tiny_srf.ms_in1k,focalnet_tiny_srf,
+ecaresnet50t.a1_in1k,ecaresnet50t,"Constructs an ECA-ResNet-50-T model.
+Like a 'D' bag-of-tricks model but with tiered 24, 32, 64 channels in the deep stem and ECA attn."
+visformer_small.in1k,visformer_small,
+poolformer_m36.sail_in1k,poolformer_m36,
+pvt_v2_b2.in1k,pvt_v2_b2,
+tresnet_xl.miil_in1k,tresnet_xl,
+halo2botnet50ts_256.a1h_in1k,halo2botnet50ts_256,Combo Attention (Halo + Halo + Bot) Network
+coatnet_rmlp_nano_rw_224.sw_in1k,coatnet_rmlp_nano_rw_224,
+hrnet_w18_ssld.paddle_in1k,hrnet_w18_ssld,
+fbnetv3_g.ra2_in1k,fbnetv3_g,FBNetV3-G
+resnext50_32x4d.a1h_in1k,resnext50_32x4d,"Constructs a Select Kernel ResNeXt50-32x4d model. This should be equivalent to
+the SKNet-50 model in the Select Kernel Paper"
+resnetv2_50d_evos.ah_in1k,resnetv2_50d_evos,
+ecaresnet101d_pruned.miil_in1k,ecaresnet101d_pruned,"Constructs a ResNet-101-D model pruned with eca.
+ The pruning has been obtained using https://arxiv.org/pdf/2002.08258.pdf"
+deit_base_patch16_224.fb_in1k,deit_base_patch16_224,"DeiT base model @ 224x224 from paper (https://arxiv.org/abs/2012.12877).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+xception41p.ra3_in1k,xception41p,Modified Aligned Xception-41 w/ Pre-Act
+tf_efficientnetv2_b3.in1k,tf_efficientnetv2_b3,EfficientNet-V2-B3. Tensorflow compatible variant
+xcit_small_12_p16_224.fb_in1k,xcit_small_12_p16_224,
+resnetv2_50d_gn.ah_in1k,resnetv2_50d_gn,
+gcvit_xtiny.in1k,gcvit_xtiny,
+coatnext_nano_rw_224.sw_in1k,coatnext_nano_rw_224,
+mobilevitv2_175.cvnets_in22k_ft_in1k,mobilevitv2_175,
+vit_base_patch32_clip_224.openai_ft_in1k,vit_base_patch32_clip_224,ViT-B/32 CLIP image tower @ 224x224
+xcit_tiny_24_p8_224.fb_in1k,xcit_tiny_24_p8_224,
+resnet101.tv2_in1k,resnet101,Normalization-Free ECA-ResNet101
+vit_small_r26_s32_224.augreg_in21k_ft_in1k,vit_small_r26_s32_224,R26+ViT-S/S32 hybrid.
+fastvit_sa12.apple_dist_in1k,fastvit_sa12,Instantiate FastViT-SA12 model variant.
+resnext101_32x16d.fb_ssl_yfcc100m_ft_in1k,resnext101_32x16d,Constructs a ResNeXt-101 32x16d model
+swinv2_tiny_window8_256.ms_in1k,swinv2_tiny_window8_256,
+tf_efficientnet_b3.ap_in1k,tf_efficientnet_b3,EfficientNet-B3. Tensorflow compatible variant
+pit_s_distilled_224.in1k,pit_s_distilled_224,
+swinv2_cr_tiny_ns_224.sw_in1k,swinv2_cr_tiny_ns_224,"Swin-T V2 CR @ 224x224, trained ImageNet-1k w/ extra stage norms.
+** Experimental, may make default if results are improved. **"
+vit_base_patch16_224.orig_in21k_ft_in1k,vit_base_patch16_224,ViT-B/16 based on samvit arch
+cs3sedarknet_l.c2ns_in1k,cs3sedarknet_l,
+regnety_032.tv2_in1k,regnety_032,RegNetY-3.2GF
+tresnet_m.miil_in1k_448,tresnet_m,
+coatnet_nano_rw_224.sw_in1k,coatnet_nano_rw_224,
+twins_svt_small.in1k,twins_svt_small,
+halonet50ts.a1h_in1k,halonet50ts,"HaloNet w/ a ResNet50-t backbone, silu act. Halo attention in final two stages"
+ecaresnet50t.a2_in1k,ecaresnet50t,"Constructs an ECA-ResNet-50-T model.
+Like a 'D' bag-of-tricks model but with tiered 24, 32, 64 channels in the deep stem and ECA attn."
+ecaresnet50d.miil_in1k,ecaresnet50d,"Constructs a ResNet-50-D model pruned with eca.
+The pruning has been obtained using https://arxiv.org/pdf/2002.08258.pdf"
+tf_efficientnet_b3.aa_in1k,tf_efficientnet_b3,EfficientNet-B3. Tensorflow compatible variant
+rexnet_200.nav_in1k,rexnet_200,ReXNet V1 2.0x
+resnetaa50.a1h_in1k,resnetaa50,Constructs a SE=ResNet-50-D model with avgpool anti-aliasing
+resnext101_32x8d.fb_ssl_yfcc100m_ft_in1k,resnext101_32x8d,Constructs a ResNet-18 model with blur anti-aliasing
+wide_resnet50_2.tv2_in1k,wide_resnet50_2,"Constructs a Wide ResNet-50-2 model.
+The model is the same as ResNet except for the bottleneck number of channels
+which is twice larger in every block. The number of channels in outer 1x1
+convolutions is the same, e.g. last block in ResNet-50 has 2048-512-2048
+channels, and in Wide ResNet-50-2 has 2048-1024-2048."
+convnext_nano_ols.d1h_in1k,convnext_nano_ols,
+poolformerv2_s36.sail_in1k,poolformerv2_s36,
+edgenext_small.usi_in1k,edgenext_small,
+lamhalobotnet50ts_256.a1h_in1k,lamhalobotnet50ts_256,Combo Attention (Lambda + Halo + Bot) Network
+regnetx_080.tv2_in1k,regnetx_080,RegNetX-8.0GF
+tnt_s_patch16_224,tnt_s_patch16_224,
+crossvit_15_240.in1k,crossvit_15_240,
+tf_efficientnet_lite4.in1k,tf_efficientnet_lite4,EfficientNet-Lite4
+levit_256.fb_dist_in1k,levit_256,
+levit_conv_256.fb_dist_in1k,levit_conv_256,
+vit_large_patch32_384.orig_in21k_ft_in1k,vit_large_patch32_384,"ViT-Large model (ViT-L/32) from original paper (https://arxiv.org/abs/2010.11929).
+ImageNet-1k weights fine-tuned from in21k @ 384x384, source https://github.com/google-research/vision_transformer."
+repvit_m3.dist_in1k,repvit_m3,Constructs a RepViT-M3 model
+tiny_vit_11m_224.in1k,tiny_vit_11m_224,
+mobilevitv2_150.cvnets_in22k_ft_in1k,mobilevitv2_150,
+convnext_nano.d1h_in1k,convnext_nano,
+tresnet_l.miil_in1k,tresnet_l,
+resnext50_32x4d.a1_in1k,resnext50_32x4d,"Constructs a Select Kernel ResNeXt50-32x4d model. This should be equivalent to
+the SKNet-50 model in the Select Kernel Paper"
+vit_relpos_small_patch16_224.sw_in1k,vit_relpos_small_patch16_224,"ViT-Base (ViT-B/16) w/ relative log-coord position, no class token"
+gcresnet50t.ra2_in1k,gcresnet50t,
+resnet50d.a1_in1k,resnet50d,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+poolformer_s36.sail_in1k,poolformer_s36,
+nest_tiny_jx.goog_in1k,nest_tiny_jx,Nest-T @ 224x224
+convit_small.fb_in1k,convit_small,
+ecaresnetlight.miil_in1k,ecaresnetlight,Constructs a ResNet-50-D light model with eca.
+resnetv2_50.a1h_in1k,resnetv2_50,
+tf_efficientnet_b1.ns_jft_in1k,tf_efficientnet_b1,EfficientNet-B1. Tensorflow compatible variant
+vit_small_patch16_224.augreg_in21k_ft_in1k,vit_small_patch16_224,ViT-Small (ViT-S/16)
+swin_tiny_patch4_window7_224.ms_in1k,swin_tiny_patch4_window7_224,"Swin-T @ 224x224, trained ImageNet-1k"
+deit3_small_patch16_224.fb_in1k,deit3_small_patch16_224,"DeiT-3 small model @ 224x224 from paper (https://arxiv.org/abs/2204.07118).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+convmixer_1536_20.in1k,convmixer_1536_20,
+resnet50d.ra2_in1k,resnet50d,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+gernet_l.idstcv_in1k,gernet_l,"GEResNet-Large (GENet-Large from official impl)
+Neural Architecture Design for GPU-Efficient Networks - https://arxiv.org/abs/2006.14090"
+repvit_m1_1.dist_450e_in1k,repvit_m1_1,Constructs a RepViT-M1.1 model
+efficientnet_el.ra_in1k,efficientnet_el,EfficientNet-Edge-Large. Tensorflow compatible variant
+legacy_senet154.in1k,legacy_senet154,
+resnext50_32x4d.a2_in1k,resnext50_32x4d,"Constructs a Select Kernel ResNeXt50-32x4d model. This should be equivalent to
+the SKNet-50 model in the Select Kernel Paper"
+seresnet50.ra2_in1k,seresnet50,Normalization-Free SE-ResNet50
+coat_mini.in1k,coat_mini,
+gcresnext50ts.ch_in1k,gcresnext50ts,
+senet154.gluon_in1k,senet154,Constructs a ResNet-18 model with blur anti-aliasing
+res2net101d.in1k,res2net101d,Construct Res2Net-50
+resnet50_gn.a1h_in1k,resnet50_gn,Constructs a ResNet-50 model w/ GroupNorm
+deit_small_distilled_patch16_224.fb_in1k,deit_small_distilled_patch16_224,"DeiT-small distilled model @ 224x224 from paper (https://arxiv.org/abs/2012.12877).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+resnet50.a1_in1k,resnet50,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+xcit_tiny_12_p8_224.fb_dist_in1k,xcit_tiny_12_p8_224,
+resnext50_32x4d.tv2_in1k,resnext50_32x4d,"Constructs a Select Kernel ResNeXt50-32x4d model. This should be equivalent to
+the SKNet-50 model in the Select Kernel Paper"
+resnet50.fb_swsl_ig1b_ft_in1k,resnet50,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+sebotnet33ts_256.a1h_in1k,sebotnet33ts_256,"Bottleneck Transformer w/ a ResNet33-t backbone, SE attn for non Halo blocks, SiLU,"
+resnet50d.a2_in1k,resnet50d,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+lambda_resnet50ts.a1h_in1k,lambda_resnet50ts,Lambda-ResNet-50-TS. SiLU act. Lambda layers w/ conv pos in last two stages.
+resmlp_36_224.fb_distilled_in1k,resmlp_36_224,"ResMLP-36
+Paper: ResMLP: Feedforward networks for image classification... - https://arxiv.org/abs/2105.03404"
+mobilevitv2_200.cvnets_in1k,mobilevitv2_200,
+resnest50d_4s2x40d.in1k,resnest50d_4s2x40d,ResNeSt-50 4s2x40d from https://github.com/zhanghang1989/ResNeSt/blob/master/ablation.md
+vit_small_patch16_384.augreg_in1k,vit_small_patch16_384,ViT-Small (ViT-S/16)
+seresnet50.a2_in1k,seresnet50,Normalization-Free SE-ResNet50
+vit_base_patch16_384.augreg_in1k,vit_base_patch16_384,"ViT-Base model (ViT-B/16) from original paper (https://arxiv.org/abs/2010.11929).
+ImageNet-1k weights fine-tuned from in21k @ 384x384, source https://github.com/google-research/vision_transformer."
+seresnet50.a1_in1k,seresnet50,Normalization-Free SE-ResNet50
+twins_pcpvt_small.in1k,twins_pcpvt_small,
+vit_srelpos_small_patch16_224.sw_in1k,vit_srelpos_small_patch16_224,"ViT-Base (ViT-B/16) w/ shared relative log-coord position, no class token"
+convnextv2_pico.fcmae_ft_in1k,convnextv2_pico,
+pit_s_224.in1k,pit_s_224,
+fastvit_s12.apple_dist_in1k,fastvit_s12,Instantiate FastViT-S12 model variant.
+haloregnetz_b.ra3_in1k,haloregnetz_b,Halo + RegNetZ
+resmlp_big_24_224.fb_in1k,resmlp_big_24_224,"ResMLP-B-24
+Paper: ResMLP: Feedforward networks for image classification... - https://arxiv.org/abs/2105.03404"
+crossvit_small_240.in1k,crossvit_small_240,
+resnet152s.gluon_in1k,resnet152s,Constructs a ResNet-152-S model.
+resnest50d_1s4x24d.in1k,resnest50d_1s4x24d,ResNeSt-50 1s4x24d from https://github.com/zhanghang1989/ResNeSt/blob/master/ablation.md
+cait_xxs24_384.fb_dist_in1k,cait_xxs24_384,
+resnet50.d_in1k,resnet50,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+swin_tiny_patch4_window7_224.ms_in22k_ft_in1k,swin_tiny_patch4_window7_224,"Swin-T @ 224x224, trained ImageNet-1k"
+resnest50d.in1k,resnest50d,ResNeSt-50 1s4x24d from https://github.com/zhanghang1989/ResNeSt/blob/master/ablation.md
+sehalonet33ts.ra2_in1k,sehalonet33ts,"HaloNet w/ a ResNet33-t backbone, SE attn for non Halo blocks, SiLU, 1-2 Halo in stage 2,3,4."
+xcit_tiny_12_p16_384.fb_dist_in1k,xcit_tiny_12_p16_384,
+regnetx_032.tv2_in1k,regnetx_032,RegNetX-3.2GF
+resnext101_32x4d.fb_ssl_yfcc100m_ft_in1k,resnext101_32x4d,Constructs a ResNet-18 model with blur anti-aliasing
+resnet50.c1_in1k,resnet50,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+cs3darknet_l.c2ns_in1k,cs3darknet_l,
+seresnext101_64x4d.gluon_in1k,seresnext101_64x4d,Constructs a ResNet-18 model with blur anti-aliasing
+seresnext101_32x4d.gluon_in1k,seresnext101_32x4d,Constructs a ResNet-18 model with blur anti-aliasing
+cs3darknet_focus_l.c2ns_in1k,cs3darknet_focus_l,
+tiny_vit_5m_224.dist_in22k_ft_in1k,tiny_vit_5m_224,
+tf_efficientnet_b3.in1k,tf_efficientnet_b3,EfficientNet-B3. Tensorflow compatible variant
+resnet50.c2_in1k,resnet50,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+mobilevitv2_175.cvnets_in1k,mobilevitv2_175,
+efficientnet_b3_pruned.in1k,efficientnet_b3_pruned,EfficientNet-B3 Pruned. The pruning has been obtained using https://arxiv.org/pdf/2002.08258.pdf
+resnet50.tv2_in1k,resnet50,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+fastvit_sa12.apple_in1k,fastvit_sa12,Instantiate FastViT-SA12 model variant.
+repvit_m1_1.dist_300e_in1k,repvit_m1_1,Constructs a RepViT-M1.1 model
+regnety_320.pycls_in1k,regnety_320,RegNetY-32GF
+tresnet_m.miil_in1k,tresnet_m,
+ecaresnet50d_pruned.miil_in1k,ecaresnet50d_pruned,"Constructs a ResNet-50-D model pruned with eca.
+The pruning has been obtained using https://arxiv.org/pdf/2002.08258.pdf"
+seresnet33ts.ra2_in1k,seresnet33ts,
+resnet50.a2_in1k,resnet50,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+resmlp_24_224.fb_distilled_in1k,resmlp_24_224,"ResMLP-24
+Paper: ResMLP: Feedforward networks for image classification... - https://arxiv.org/abs/2105.03404"
+poolformerv2_s24.sail_in1k,poolformerv2_s24,
+gernet_m.idstcv_in1k,gernet_m,"GEResNet-Medium (GENet-Normal from official impl)
+Neural Architecture Design for GPU-Efficient Networks - https://arxiv.org/abs/2006.14090"
+regnetz_b16.ra3_in1k,regnetz_b16,
+vit_base_patch32_224.augreg_in21k_ft_in1k,vit_base_patch32_224,"ViT-Base (ViT-B/32) from original paper (https://arxiv.org/abs/2010.11929).
+ImageNet-1k weights fine-tuned from in21k, source https://github.com/google-research/vision_transformer."
+resnet50.b1k_in1k,resnet50,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+resnext50_32x4d.ra_in1k,resnext50_32x4d,"Constructs a Select Kernel ResNeXt50-32x4d model. This should be equivalent to
+the SKNet-50 model in the Select Kernel Paper"
+resnet50.a1h_in1k,resnet50,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+eca_resnet33ts.ra2_in1k,eca_resnet33ts,
+regnety_016.tv2_in1k,regnety_016,RegNetY-1.6GF
+resnext50d_32x4d.bt_in1k,resnext50d_32x4d,Constructs a ResNeXt50d-32x4d model. ResNext50 w/ deep stem & avg pool downsample
+nf_resnet50.ra2_in1k,nf_resnet50,"Normalization-Free ResNet-50
+Characterizing signal propagation to close the performance gap in unnormalized ResNets
+- https://arxiv.org/abs/2101.08692"
+eva02_tiny_patch14_336.mim_in22k_ft_in1k,eva02_tiny_patch14_336,EVA-g CLIP model (only difference from non-CLIP is the pooling)
+efficientnet_b2.ra_in1k,efficientnet_b2,EfficientNet-B2. Tensorflow compatible variant
+gcresnet33ts.ra2_in1k,gcresnet33ts,
+resnext101_64x4d.gluon_in1k,resnext101_64x4d,Constructs a ResNet-18 model with blur anti-aliasing
+cspresnext50.ra_in1k,cspresnext50,
+resnet152.a3_in1k,resnet152,Constructs a ResNet-200-D model with SE attn.
+darknet53.c2ns_in1k,darknet53,
+maxvit_rmlp_pico_rw_256.sw_in1k,maxvit_rmlp_pico_rw_256,
+darknetaa53.c2ns_in1k,darknetaa53,
+repvgg_b3.rvgg_in1k,repvgg_b3,"RepVGG-B3g4
+Making VGG-style ConvNets Great Again - https://arxiv.org/abs/2101.03697"
+efficientformer_l1.snap_dist_in1k,efficientformer_l1,
+vit_small_patch32_384.augreg_in21k_ft_in1k,vit_small_patch32_384,ViT-Small (ViT-S/32) at 384x384.
+mixnet_xl.ra_in1k,mixnet_xl,"Creates a MixNet Extra-Large model.
+Not a paper spec, experimental def by RW w/ depth scaling."
+resnet152d.gluon_in1k,resnet152d,Constructs a ResNet-200-D model with SE attn.
+convnext_pico_ols.d1_in1k,convnext_pico_ols,
+repvit_m2.dist_in1k,repvit_m2,Constructs a RepViT-M2.3 model
+inception_resnet_v2.tf_in1k,inception_resnet_v2,
+edgenext_small_rw.sw_in1k,edgenext_small_rw,
+resnet50.b2k_in1k,resnet50,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+xcit_tiny_24_p16_224.fb_dist_in1k,xcit_tiny_24_p16_224,
+repvit_m1_0.dist_450e_in1k,repvit_m1_0,Constructs a RepViT-M1.0 model
+resnet101d.gluon_in1k,resnet101d,"Constructs a ResNet-101-D model pruned with eca.
+ The pruning has been obtained using https://arxiv.org/pdf/2002.08258.pdf"
+convnext_pico.d1_in1k,convnext_pico,
+regnety_120.pycls_in1k,regnety_120,RegNetY-12GF
+mobilevitv2_150.cvnets_in1k,mobilevitv2_150,
+fastvit_t12.apple_dist_in1k,fastvit_t12,Instantiate FastViT-T12 model variant.
+ese_vovnet39b.ra_in1k,ese_vovnet39b,
+resnetv2_50x1_bit.goog_in21k_ft_in1k,resnetv2_50x1_bit,
+resnext101_32x4d.gluon_in1k,resnext101_32x4d,Constructs a ResNet-18 model with blur anti-aliasing
+resnext50_32x4d.fb_ssl_yfcc100m_ft_in1k,resnext50_32x4d,"Constructs a Select Kernel ResNeXt50-32x4d model. This should be equivalent to
+the SKNet-50 model in the Select Kernel Paper"
+rexnet_150.nav_in1k,rexnet_150,ReXNet V1 1.5x
+efficientvit_b1.r288_in1k,efficientvit_b1,
+tf_efficientnet_b2.ap_in1k,tf_efficientnet_b2,EfficientNet-B2. Tensorflow compatible variant
+resnet101s.gluon_in1k,resnet101s,Constructs a ResNet-101-S model.
+efficientnet_el_pruned.in1k,efficientnet_el_pruned,EfficientNet-Edge-Large pruned. For more info: https://github.com/DeGirum/pruned-models/releases/tag/efficientnet_v1.0
+regnety_160.pycls_in1k,regnety_160,RegNetY-16GF
+poolformer_s24.sail_in1k,poolformer_s24,
+res2net50d.in1k,res2net50d,Construct Res2Net-50
+tf_efficientnet_el.in1k,tf_efficientnet_el,EfficientNet-Edge-Large. Tensorflow compatible variant
+regnetx_320.pycls_in1k,regnetx_320,RegNetX-32GF
+vit_base_patch16_224.sam_in1k,vit_base_patch16_224,ViT-B/16 based on samvit arch
+resnetblur50.bt_in1k,resnetblur50,Constructs a ResNet-50-D model with blur anti-aliasing
+legacy_seresnext101_32x4d.in1k,legacy_seresnext101_32x4d,
+repvgg_b3g4.rvgg_in1k,repvgg_b3g4,"RepVGG-B3g4
+Making VGG-style ConvNets Great Again - https://arxiv.org/abs/2101.03697"
+tf_efficientnetv2_b2.in1k,tf_efficientnetv2_b2,EfficientNet-V2-B2. Tensorflow compatible variant
+dpn107.mx_in1k,dpn107,
+convmixer_768_32.in1k,convmixer_768_32,
+skresnext50_32x4d.ra_in1k,skresnext50_32x4d,"Constructs a Select Kernel ResNeXt50-32x4d model. This should be equivalent to
+the SKNet-50 model in the Select Kernel Paper"
+inception_v4.tf_in1k,inception_v4,
+repvit_m1_0.dist_300e_in1k,repvit_m1_0,Constructs a RepViT-M1.0 model
+tf_efficientnet_b2.aa_in1k,tf_efficientnet_b2,EfficientNet-B2. Tensorflow compatible variant
+cspdarknet53.ra_in1k,cspdarknet53,
+dpn92.mx_in1k,dpn92,
+inception_resnet_v2.tf_ens_adv_in1k,inception_resnet_v2,
+resnet50.ram_in1k,resnet50,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+fastvit_s12.apple_in1k,fastvit_s12,Instantiate FastViT-S12 model variant.
+seresnext50_32x4d.gluon_in1k,seresnext50_32x4d,Constructs a ResNet-18 model with blur anti-aliasing
+efficientnet_b2_pruned.in1k,efficientnet_b2_pruned,EfficientNet-B2 Pruned. The pruning has been obtained using https://arxiv.org/pdf/2002.08258.pdf
+resnet152c.gluon_in1k,resnet152c,Constructs a ResNet-152-C model.
+resnetrs50.tf_in1k,resnetrs50,"Constructs a ResNet-RS-50 model.
+Paper: Revisiting ResNets - https://arxiv.org/abs/2103.07579
+Pretrained weights from https://github.com/tensorflow/tpu/tree/bee9c4f6/models/official/resnet/resnet_rs"
+xception71.tf_in1k,xception71,Modified Aligned Xception-71
+regnety_080.pycls_in1k,regnety_080,RegNetY-8.0GF w/ torchvision group rounding
+regnetx_160.pycls_in1k,regnetx_160,RegNetX-16GF
+ecaresnet26t.ra2_in1k,ecaresnet26t,"Constructs an ECA-ResNeXt-26-T model.
+This is technically a 28 layer ResNet, like a 'D' bag-of-tricks model but with tiered 24, 32, 64 channels
+in the deep stem and ECA attn."
+deit_small_patch16_224.fb_in1k,deit_small_patch16_224,"DeiT-small model @ 224x224 from paper (https://arxiv.org/abs/2012.12877).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+levit_conv_192.fb_dist_in1k,levit_conv_192,
+levit_192.fb_dist_in1k,levit_192,
+resnet50.ra_in1k,resnet50,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+dpn131.mx_in1k,dpn131,
+resnet101.a3_in1k,resnet101,Normalization-Free ECA-ResNet101
+tf_efficientnet_lite3.in1k,tf_efficientnet_lite3,EfficientNet-Lite3
+resmlp_36_224.fb_in1k,resmlp_36_224,"ResMLP-36
+Paper: ResMLP: Feedforward networks for image classification... - https://arxiv.org/abs/2105.03404"
+cait_xxs36_224.fb_dist_in1k,cait_xxs36_224,
+efficientvit_b1.r256_in1k,efficientvit_b1,
+gcvit_xxtiny.in1k,gcvit_xxtiny,
+resnet33ts.ra2_in1k,resnet33ts,
+regnety_064.pycls_in1k,regnety_064,RegNetY-6.4GF
+resnet152.gluon_in1k,resnet152,Constructs a ResNet-200-D model with SE attn.
+efficientformerv2_s1.snap_dist_in1k,efficientformerv2_s1,
+xcit_tiny_12_p8_224.fb_in1k,xcit_tiny_12_p8_224,
+fbnetv3_d.ra2_in1k,fbnetv3_d,FBNetV3-D
+mobilevitv2_125.cvnets_in1k,mobilevitv2_125,
+dpn98.mx_in1k,dpn98,
+gmlp_s16_224.ra3_in1k,gmlp_s16_224,"gMLP-Small
+Paper: Pay Attention to MLPs - https://arxiv.org/abs/2105.08050"
+resnet50.bt_in1k,resnet50,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+tf_efficientnet_b2.in1k,tf_efficientnet_b2,EfficientNet-B2. Tensorflow compatible variant
+regnetx_120.pycls_in1k,regnetx_120,RegNetX-12GF
+cspresnet50.ra_in1k,cspresnet50,
+xception65.tf_in1k,xception65,Modified Aligned Xception-65 w/ Pre-Act
+ecaresnet50t.a3_in1k,ecaresnet50t,"Constructs an ECA-ResNet-50-T model.
+Like a 'D' bag-of-tricks model but with tiered 24, 32, 64 channels in the deep stem and ECA attn."
+resnet101c.gluon_in1k,resnet101c,Constructs a ResNet-101-C model.
+rexnet_130.nav_in1k,rexnet_130,ReXNet V1 1.3x
+eca_halonext26ts.c1_in1k,eca_halonext26ts,"HaloNet w/ a ResNet26-t backbone, silu act. Halo attention in final two stages"
+vit_relpos_base_patch32_plus_rpn_256.sw_in1k,vit_relpos_base_patch32_plus_rpn_256,"ViT-Base (ViT-B/32+) w/ relative log-coord position and residual post-norm, no class token"
+hrnet_w64.ms_in1k,hrnet_w64,
+tf_efficientnetv2_b1.in1k,tf_efficientnetv2_b1,EfficientNet-V2-B1. Tensorflow compatible variant
+xcit_tiny_24_p16_224.fb_in1k,xcit_tiny_24_p16_224,
+dla102x2.in1k,dla102x2,
+regnetx_016.tv2_in1k,regnetx_016,RegNetX-1.6GF
+mobileone_s4.apple_in1k,mobileone_s4,
+resnet32ts.ra2_in1k,resnet32ts,
+repvgg_b2g4.rvgg_in1k,repvgg_b2g4,"RepVGG-B2g4
+Making VGG-style ConvNets Great Again - https://arxiv.org/abs/2101.03697"
+resmlp_24_224.fb_in1k,resmlp_24_224,"ResMLP-24
+Paper: ResMLP: Feedforward networks for image classification... - https://arxiv.org/abs/2105.03404"
+dpn68b.ra_in1k,dpn68b,
+resnext50_32x4d.gluon_in1k,resnext50_32x4d,"Constructs a Select Kernel ResNeXt50-32x4d model. This should be equivalent to
+the SKNet-50 model in the Select Kernel Paper"
+convnextv2_femto.fcmae_ft_in1k,convnextv2_femto,
+resnet101.gluon_in1k,resnet101,Normalization-Free ECA-ResNet101
+resnext101_32x8d.tv_in1k,resnext101_32x8d,Constructs a ResNet-18 model with blur anti-aliasing
+nf_regnet_b1.ra2_in1k,nf_regnet_b1,"Normalization-Free RegNet-B1
+Characterizing signal propagation to close the performance gap in unnormalized ResNets
+- https://arxiv.org/abs/2101.08692"
+hrnet_w48.ms_in1k,hrnet_w48,
+tf_efficientnet_cc_b1_8e.in1k,tf_efficientnet_cc_b1_8e,EfficientNet-CondConv-B1 w/ 8 Experts. Tensorflow compatible variant
+tf_efficientnet_b1.ap_in1k,tf_efficientnet_b1,EfficientNet-B1. Tensorflow compatible variant
+eca_botnext26ts_256.c1_in1k,eca_botnext26ts_256,"Bottleneck Transformer w/ ResNet26-T backbone, silu act."
+resnext50_32x4d.a3_in1k,resnext50_32x4d,"Constructs a Select Kernel ResNeXt50-32x4d model. This should be equivalent to
+the SKNet-50 model in the Select Kernel Paper"
+fastvit_t12.apple_in1k,fastvit_t12,Instantiate FastViT-T12 model variant.
+botnet26t_256.c1_in1k,botnet26t_256,Bottleneck Transformer w/ ResNet26-T backbone.
+efficientvit_b1.r224_in1k,efficientvit_b1,
+efficientnet_em.ra2_in1k,efficientnet_em,EfficientNet-Edge-Medium. Tensorflow compatible variant
+resnet50.fb_ssl_yfcc100m_ft_in1k,resnet50,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+regnety_040.pycls_in1k,regnety_040,RegNetY-4.0GF w/ GroupNorm
+res2net101_26w_4s.in1k,res2net101_26w_4s,Constructs a Res2Net-101 26w4s model.
+regnetx_080.pycls_in1k,regnetx_080,RegNetX-8.0GF
+pit_xs_distilled_224.in1k,pit_xs_distilled_224,
+tiny_vit_5m_224.in1k,tiny_vit_5m_224,
+vit_base_patch16_224.augreg_in1k,vit_base_patch16_224,ViT-B/16 based on samvit arch
+fbnetv3_b.ra2_in1k,fbnetv3_b,FBNetV3-B
+halonet26t.a1h_in1k,halonet26t,HaloNet w/ a ResNet26-t backbone. Halo attention in final two stages
+coat_lite_mini.in1k,coat_lite_mini,
+lambda_resnet26t.c1_in1k,lambda_resnet26t,Lambda-ResNet-26-T. Lambda layers w/ conv pos in last two stages.
+resnet50d.gluon_in1k,resnet50d,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+legacy_seresnext50_32x4d.in1k,legacy_seresnext50_32x4d,
+regnetx_064.pycls_in1k,regnetx_064,RegNetX-6.4GF
+repvit_m0_9.dist_450e_in1k,repvit_m0_9,Constructs a RepViT-M0.9 model
+legacy_xception.tf_in1k,legacy_xception,
+resnet50.am_in1k,resnet50,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+mixnet_l.ft_in1k,mixnet_l,Creates a MixNet Large model. Tensorflow compatible variant
+lambda_resnet26rpt_256.c1_in1k,lambda_resnet26rpt_256,Lambda-ResNet-26-R-T. Lambda layers w/ rel pos embed in last two stages.
+res2net50_26w_8s.in1k,res2net50_26w_8s,Constructs a Res2Net-50 26w8s model.
+hrnet_w40.ms_in1k,hrnet_w40,
+convnext_femto_ols.d1_in1k,convnext_femto_ols,
+convnext_tiny.fb_in22k_ft_in1k,convnext_tiny,
+hrnet_w44.ms_in1k,hrnet_w44,
+regnety_032.pycls_in1k,regnety_032,RegNetY-3.2GF
+vit_small_patch16_224.augreg_in1k,vit_small_patch16_224,ViT-Small (ViT-S/16)
+wide_resnet101_2.tv_in1k,wide_resnet101_2,"Constructs a Wide ResNet-101-2 model.
+The model is the same as ResNet except for the bottleneck number of channels
+which is twice larger in every block. The number of channels in outer 1x1
+convolutions is the same."
+tf_efficientnet_b1.aa_in1k,tf_efficientnet_b1,EfficientNet-B1. Tensorflow compatible variant
+seresnext26d_32x4d.bt_in1k,seresnext26d_32x4d,"Constructs a SE-ResNeXt-26-D model.
+This is technically a 28 layer ResNet, using the 'D' modifier from Gluon / bag-of-tricks for
+combination of deep stem and avg_pool in downsample."
+repghostnet_200.in1k,repghostnet_200,RepGhostNet-2.0x
+inception_v3.gluon_in1k,inception_v3,
+efficientnet_b1.ft_in1k,efficientnet_b1,EfficientNet-B1. Tensorflow compatible variant
+repvgg_b2.rvgg_in1k,repvgg_b2,"RepVGG-B2g4
+Making VGG-style ConvNets Great Again - https://arxiv.org/abs/2101.03697"
+tf_mixnet_l.in1k,tf_mixnet_l,Creates a MixNet Large model. Tensorflow compatible variant
+vit_base_patch32_384.augreg_in1k,vit_base_patch32_384,"ViT-Base model (ViT-B/32) from original paper (https://arxiv.org/abs/2010.11929).
+ImageNet-1k weights fine-tuned from in21k @ 384x384, source https://github.com/google-research/vision_transformer."
+seresnext26t_32x4d.bt_in1k,seresnext26t_32x4d,"Constructs a SE-ResNet-26-T model.
+This is technically a 28 layer ResNet, like a 'D' bag-of-tricks model but with tiered 24, 32, 64 channels
+in the deep stem."
+resnet50d.a3_in1k,resnet50d,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+convnext_femto.d1_in1k,convnext_femto,
+resnet50s.gluon_in1k,resnet50s,Constructs a ResNet-50-S model.
+dla169.in1k,dla169,
+pvt_v2_b1.in1k,pvt_v2_b1,
+tf_efficientnet_b0.ns_jft_in1k,tf_efficientnet_b0,EfficientNet-B0. Tensorflow compatible variant
+regnety_008_tv.tv2_in1k,regnety_008_tv,RegNetY-800MF w/ torchvision group rounding
+legacy_seresnet152.in1k,legacy_seresnet152,
+repvit_m0_9.dist_300e_in1k,repvit_m0_9,Constructs a RepViT-M0.9 model
+xcit_tiny_12_p16_224.fb_dist_in1k,xcit_tiny_12_p16_224,
+res2net50_26w_6s.in1k,res2net50_26w_6s,Constructs a Res2Net-50 26w6s model.
+tf_efficientnet_b1.in1k,tf_efficientnet_b1,EfficientNet-B1. Tensorflow compatible variant
+repvit_m1.dist_in1k,repvit_m1,Constructs a RepViT-M1.5 model
+dla102x.in1k,dla102x,
+xception41.tf_in1k,xception41,Modified Aligned Xception-41 w/ Pre-Act
+levit_conv_128.fb_dist_in1k,levit_conv_128,
+regnetx_040.pycls_in1k,regnetx_040,RegNetX-4.0GF
+levit_128.fb_dist_in1k,levit_128,
+resnest26d.gluon_in1k,resnest26d,ResNeSt-26d model. Weights ported from GluonCV.
+wide_resnet50_2.tv_in1k,wide_resnet50_2,"Constructs a Wide ResNet-50-2 model.
+The model is the same as ResNet except for the bottleneck number of channels
+which is twice larger in every block. The number of channels in outer 1x1
+convolutions is the same, e.g. last block in ResNet-50 has 2048-512-2048
+channels, and in Wide ResNet-50-2 has 2048-1024-2048."
+dla60_res2net.in1k,dla60_res2net,
+hrnet_w32.ms_in1k,hrnet_w32,
+dla60_res2next.in1k,dla60_res2next,
+resnet34d.ra2_in1k,resnet34d,Constructs a ResNet-34-D model.
+coat_tiny.in1k,coat_tiny,
+vit_tiny_patch16_384.augreg_in21k_ft_in1k,vit_tiny_patch16_384,ViT-Tiny (Vit-Ti/16) @ 384x384.
+gcresnext26ts.ch_in1k,gcresnext26ts,
+selecsls60b.in1k,selecsls60b,Constructs a SelecSls60_B model.
+legacy_seresnet101.in1k,legacy_seresnet101,
+cait_xxs24_224.fb_dist_in1k,cait_xxs24_224,
+repvgg_b1.rvgg_in1k,repvgg_b1,"RepVGG-B1g4
+Making VGG-style ConvNets Great Again - https://arxiv.org/abs/2101.03697"
+tf_efficientnetv2_b0.in1k,tf_efficientnetv2_b0,EfficientNet-V2-B0. Tensorflow compatible variant
+resnet26t.ra2_in1k,resnet26t,"Constructs an ECA-ResNeXt-26-T model.
+This is technically a 28 layer ResNet, like a 'D' bag-of-tricks model but with tiered 24, 32, 64 channels
+in the deep stem and ECA attn."
+resnet152.tv_in1k,resnet152,Constructs a ResNet-200-D model with SE attn.
+mobilevit_s.cvnets_in1k,mobilevit_s,
+seresnext26ts.ch_in1k,seresnext26ts,
+bat_resnext26ts.ch_in1k,bat_resnext26ts,
+res2next50.in1k,res2next50,Construct Res2NeXt-50 4s
+efficientnet_b1_pruned.in1k,efficientnet_b1_pruned,EfficientNet-B1 Pruned. The pruning has been obtained using https://arxiv.org/pdf/2002.08258.pdf
+dla60x.in1k,dla60x,
+hrnet_w30.ms_in1k,hrnet_w30,
+hrnet_w18_small_v2.gluon_in1k,hrnet_w18_small_v2,
+pit_xs_224.in1k,pit_xs_224,
+regnetx_032.pycls_in1k,regnetx_032,RegNetX-3.2GF
+visformer_tiny.in1k,visformer_tiny,
+res2net50_14w_8s.in1k,res2net50_14w_8s,Constructs a Res2Net-50 14w8s model.
+tf_efficientnet_em.in1k,tf_efficientnet_em,EfficientNet-Edge-Medium. Tensorflow compatible variant
+hrnet_w18.ms_aug_in1k,hrnet_w18,
+hardcorenas_f.miil_green_in1k,hardcorenas_f,hardcorenas_F
+mobilevitv2_100.cvnets_in1k,mobilevitv2_100,
+efficientnet_es.ra_in1k,efficientnet_es,EfficientNet-Edge Small. Tensorflow compatible variant
+resnet50.a3_in1k,resnet50,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+gmixer_24_224.ra3_in1k,gmixer_24_224,"Glu-Mixer-24 224x224
+Experiment by Ross Wightman, adding SwiGLU to MLP-Mixer"
+dla102.in1k,dla102,
+resnet50c.gluon_in1k,resnet50c,Constructs a ResNet-50-C model.
+poolformerv2_s12.sail_in1k,poolformerv2_s12,
+eca_resnext26ts.ch_in1k,eca_resnext26ts,
+mobileone_s3.apple_in1k,mobileone_s3,
+selecsls60.in1k,selecsls60,Constructs a SelecSls60_B model.
+resmlp_12_224.fb_distilled_in1k,resmlp_12_224,"ResMLP-12
+Paper: ResMLP: Feedforward networks for image classification... - https://arxiv.org/abs/2105.03404"
+res2net50_26w_4s.in1k,res2net50_26w_4s,Constructs a Res2Net-50 26w4s model.
+mobilenetv3_large_100.miil_in21k_ft_in1k,mobilenetv3_large_100,MobileNet V3
+resnet34.a1_in1k,resnet34,"Constructs a Selective Kernel ResNet-34 model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+tf_efficientnet_cc_b0_8e.in1k,tf_efficientnet_cc_b0_8e,EfficientNet-CondConv-B0 w/ 8 Experts. Tensorflow compatible variant
+regnety_016.pycls_in1k,regnety_016,RegNetY-1.6GF
+rexnet_100.nav_in1k,rexnet_100,ReXNet V1 1.0x
+inception_v3.tf_in1k,inception_v3,
+ghostnetv2_160.in1k,ghostnetv2_160,GhostNetV2-1.6x
+xcit_nano_12_p8_384.fb_dist_in1k,xcit_nano_12_p8_384,
+hardcorenas_e.miil_green_in1k,hardcorenas_e,hardcorenas_E
+convnextv2_atto.fcmae_ft_in1k,convnextv2_atto,
+ese_vovnet19b_dw.ra_in1k,ese_vovnet19b_dw,
+efficientnet_b0.ra_in1k,efficientnet_b0,EfficientNet-B0. Tensorflow compatible variant
+tinynet_a.in1k,tinynet_a,
+legacy_seresnet50.in1k,legacy_seresnet50,
+cs3darknet_m.c2ns_in1k,cs3darknet_m,
+resnext50_32x4d.tv_in1k,resnext50_32x4d,"Constructs a Select Kernel ResNeXt50-32x4d model. This should be equivalent to
+the SKNet-50 model in the Select Kernel Paper"
+inception_v3.tf_adv_in1k,inception_v3,
+repvgg_b1g4.rvgg_in1k,repvgg_b1g4,"RepVGG-B1g4
+Making VGG-style ConvNets Great Again - https://arxiv.org/abs/2101.03697"
+resnet50.gluon_in1k,resnet50,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+coat_lite_tiny.in1k,coat_lite_tiny,
+dpn68b.mx_in1k,dpn68b,
+mobileone_s2.apple_in1k,mobileone_s2,
+res2net50_48w_2s.in1k,res2net50_48w_2s,Constructs a Res2Net-50 48w2s model.
+tf_efficientnet_lite2.in1k,tf_efficientnet_lite2,EfficientNet-Lite2
+repghostnet_150.in1k,repghostnet_150,RepGhostNet-1.5x
+hardcorenas_d.miil_green_in1k,hardcorenas_d,hardcorenas_D
+inception_v3.tv_in1k,inception_v3,
+resnet26d.bt_in1k,resnet26d,Custom ViT base hybrid w/ ResNet26D stride 32. No pretrained weights.
+resnet101.tv_in1k,resnet101,Normalization-Free ECA-ResNet101
+densenet161.tv_in1k,densenet161,"Densenet-161 model from
+""Densely Connected Convolutional Networks"" <https://arxiv.org/pdf/1608.06993.pdf>"
+densenetblur121d.ra_in1k,densenetblur121d,"Densenet-121 w/ blur-pooling & 3-layer 3x3 stem
+""Densely Connected Convolutional Networks"" <https://arxiv.org/pdf/1608.06993.pdf>"
+mobilenetv2_120d.ra_in1k,mobilenetv2_120d,"MobileNet V2 w/ 1.2 channel, 1.4 depth multipliers"
+regnetx_008.tv2_in1k,regnetx_008,RegNetX-800MF
+tf_efficientnet_cc_b0_4e.in1k,tf_efficientnet_cc_b0_4e,EfficientNet-CondConv-B0 w/ 4 Experts. Tensorflow compatible variant
+densenet201.tv_in1k,densenet201,"Densenet-201 model from
+""Densely Connected Convolutional Networks"" <https://arxiv.org/pdf/1608.06993.pdf>"
+cs3darknet_focus_m.c2ns_in1k,cs3darknet_focus_m,
+mixnet_m.ft_in1k,mixnet_m,Creates a MixNet Medium model. Tensorflow compatible variant
+poolformer_s12.sail_in1k,poolformer_s12,
+convnext_atto_ols.a2_in1k,convnext_atto_ols,
+resnext26ts.ra2_in1k,resnext26ts,
+fastvit_t8.apple_dist_in1k,fastvit_t8,Instantiate FastViT-T8 model variant.
+selecsls42b.in1k,selecsls42b,Constructs a SelecSls42_B model.
+resnet34.a2_in1k,resnet34,"Constructs a Selective Kernel ResNet-34 model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+xcit_tiny_12_p16_224.fb_in1k,xcit_tiny_12_p16_224,
+legacy_seresnext26_32x4d.in1k,legacy_seresnext26_32x4d,
+tf_efficientnet_b0.ap_in1k,tf_efficientnet_b0,EfficientNet-B0. Tensorflow compatible variant
+hardcorenas_c.miil_green_in1k,hardcorenas_c,hardcorenas_C
+efficientvit_m5.r224_in1k,efficientvit_m5,
+dla60.in1k,dla60,
+seresnet50.a3_in1k,seresnet50,Normalization-Free SE-ResNet50
+convnext_atto.d2_in1k,convnext_atto,
+crossvit_9_dagger_240.in1k,crossvit_9_dagger_240,
+tf_mixnet_m.in1k,tf_mixnet_m,Creates a MixNet Medium model. Tensorflow compatible variant
+convmixer_1024_20_ks9_p14.in1k,convmixer_1024_20_ks9_p14,
+regnetx_016.pycls_in1k,regnetx_016,RegNetX-1.6GF
+skresnet34.ra_in1k,skresnet34,"Constructs a Selective Kernel ResNet-34 model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+gernet_s.idstcv_in1k,gernet_s,"EResNet-Small (GENet-Small from official impl)
+Neural Architecture Design for GPU-Efficient Networks - https://arxiv.org/abs/2006.14090"
+tf_efficientnet_b0.aa_in1k,tf_efficientnet_b0,EfficientNet-B0. Tensorflow compatible variant
+ghostnetv2_130.in1k,ghostnetv2_130,GhostNetV2-1.3x
+hrnet_w18.ms_in1k,hrnet_w18,
+resmlp_12_224.fb_in1k,resmlp_12_224,"ResMLP-12
+Paper: ResMLP: Feedforward networks for image classification... - https://arxiv.org/abs/2105.03404"
+tf_efficientnet_lite1.in1k,tf_efficientnet_lite1,EfficientNet-Lite1
+mixer_b16_224.goog_in21k_ft_in1k,mixer_b16_224,"Mixer-B/16 224x224. ImageNet-1k pretrained weights.
+Paper:'MLP-Mixer: An all-MLP Architecture for Vision' - https://arxiv.org/abs/2105.01601"
+tf_efficientnet_es.in1k,tf_efficientnet_es,EfficientNet-Edge Small. Tensorflow compatible variant
+hardcorenas_b.miil_green_in1k,hardcorenas_b,hardcorenas_B
+tf_efficientnet_b0.in1k,tf_efficientnet_b0,EfficientNet-B0. Tensorflow compatible variant
+levit_128s.fb_dist_in1k,levit_128s,
+levit_conv_128s.fb_dist_in1k,levit_conv_128s,
+mobilenetv2_140.ra_in1k,mobilenetv2_140,MobileNet V2 w/ 1.4 channel multiplier
+densenet121.ra_in1k,densenet121,"Densenet-121 model from
+""Densely Connected Convolutional Networks"" <https://arxiv.org/pdf/1608.06993.pdf>"
+resnet34.bt_in1k,resnet34,"Constructs a Selective Kernel ResNet-34 model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+repvgg_a2.rvgg_in1k,repvgg_a2,"RepVGG-A2
+Making VGG-style ConvNets Great Again - https://arxiv.org/abs/2101.03697"
+repghostnet_130.in1k,repghostnet_130,RepGhostNet-1.3x
+resnet26.bt_in1k,resnet26,Normalization-Free ECA-ResNet26
+dpn68.mx_in1k,dpn68,
+xcit_nano_12_p8_224.fb_dist_in1k,xcit_nano_12_p8_224,
+regnety_008.pycls_in1k,regnety_008,RegNetY-800MF w/ torchvision group rounding
+fastvit_t8.apple_in1k,fastvit_t8,Instantiate FastViT-T8 model variant.
+resnet50.tv_in1k,resnet50,"Constructs a Select Kernel ResNet-50-D model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+efficientformerv2_s0.snap_dist_in1k,efficientformerv2_s0,
+vit_small_patch32_224.augreg_in21k_ft_in1k,vit_small_patch32_224,ViT-Small (ViT-S/32)
+mixnet_s.ft_in1k,mixnet_s,Creates a MixNet Small model. Tensorflow compatible variant
+vit_tiny_r_s16_p8_384.augreg_in21k_ft_in1k,vit_tiny_r_s16_p8_384,R+ViT-Ti/S16 w/ 8x8 patch hybrid @ 384 x 384.
+hardcorenas_a.miil_green_in1k,hardcorenas_a,hardcorenas_A
+densenet169.tv_in1k,densenet169,"Densenet-169 model from
+""Densely Connected Convolutional Networks"" <https://arxiv.org/pdf/1608.06993.pdf>"
+mobileone_s1.apple_in1k,mobileone_s1,
+mobilenetv3_large_100.ra_in1k,mobilenetv3_large_100,MobileNet V3
+edgenext_x_small.in1k,edgenext_x_small,
+tf_mixnet_s.in1k,tf_mixnet_s,Creates a MixNet Small model. Tensorflow compatible variant
+mobilenetv3_rw.rmsp_in1k,mobilenetv3_rw,MobileNet V3
+mobilevitv2_075.cvnets_in1k,mobilevitv2_075,
+regnety_004.tv2_in1k,regnety_004,RegNetY-400MF
+tf_mobilenetv3_large_100.in1k,tf_mobilenetv3_large_100,MobileNet V3
+resnest14d.gluon_in1k,resnest14d,ResNeSt-14d model. Weights ported from GluonCV.
+efficientnet_lite0.ra_in1k,efficientnet_lite0,EfficientNet-Lite0
+vit_tiny_patch16_224.augreg_in21k_ft_in1k,vit_tiny_patch16_224,ViT-Tiny (Vit-Ti/16)
+xcit_nano_12_p16_384.fb_dist_in1k,xcit_nano_12_p16_384,
+semnasnet_100.rmsp_in1k,semnasnet_100,"MNASNet A1 (w/ SE), depth multiplier of 1.0."
+regnety_006.pycls_in1k,regnety_006,RegNetY-600MF
+ghostnetv2_100.in1k,ghostnetv2_100,GhostNetV2-1.0x
+repvgg_b0.rvgg_in1k,repvgg_b0,"RepVGG-B0
+Making VGG-style ConvNets Great Again - https://arxiv.org/abs/2101.03697"
+fbnetc_100.rmsp_in1k,fbnetc_100,FBNet-C
+hrnet_w18_small_v2.ms_in1k,hrnet_w18_small_v2,
+repghostnet_111.in1k,repghostnet_111,RepGhostNet-1.11x
+mobilenetv2_110d.ra_in1k,mobilenetv2_110d,"MobileNet V2 w/ 1.1 channel, 1.2 depth multipliers"
+regnetx_008.pycls_in1k,regnetx_008,RegNetX-800MF
+efficientnet_es_pruned.in1k,efficientnet_es_pruned,EfficientNet-Edge Small Pruned. For more info: https://github.com/DeGirum/pruned-models/releases/tag/efficientnet_v1.0
+tinynet_b.in1k,tinynet_b,
+vit_base_patch32_224.augreg_in1k,vit_base_patch32_224,"ViT-Base (ViT-B/32) from original paper (https://arxiv.org/abs/2010.11929).
+ImageNet-1k weights fine-tuned from in21k, source https://github.com/google-research/vision_transformer."
+tf_efficientnet_lite0.in1k,tf_efficientnet_lite0,EfficientNet-Lite0
+legacy_seresnet34.in1k,legacy_seresnet34,
+densenet121.tv_in1k,densenet121,"Densenet-121 model from
+""Densely Connected Convolutional Networks"" <https://arxiv.org/pdf/1608.06993.pdf>"
+mnasnet_100.rmsp_in1k,mnasnet_100,"MNASNet A1 (w/ SE), depth multiplier of 1.0."
+dla34.in1k,dla34,
+mobilevit_xs.cvnets_in1k,mobilevit_xs,
+regnetx_004_tv.tv2_in1k,regnetx_004_tv,RegNetX-400MF w/ torchvision group rounding
+resnet34.gluon_in1k,resnet34,"Constructs a Selective Kernel ResNet-34 model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+deit_tiny_distilled_patch16_224.fb_in1k,deit_tiny_distilled_patch16_224,"DeiT-tiny distilled model @ 224x224 from paper (https://arxiv.org/abs/2012.12877).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+repvgg_a1.rvgg_in1k,repvgg_a1,"RepVGG-A1
+Making VGG-style ConvNets Great Again - https://arxiv.org/abs/2101.03697"
+efficientvit_m4.r224_in1k,efficientvit_m4,
+pit_ti_distilled_224.in1k,pit_ti_distilled_224,
+vgg19_bn.tv_in1k,vgg19_bn,"VGG 19-layer model (configuration 'E') with batch normalization
+""Very Deep Convolutional Networks For Large-Scale Image Recognition"" <https://arxiv.org/pdf/1409.1556.pdf>._"
+repghostnet_100.in1k,repghostnet_100,RepGhostNet-1.0x
+spnasnet_100.rmsp_in1k,spnasnet_100,Single-Path NAS Pixel1
+regnety_004.pycls_in1k,regnety_004,RegNetY-400MF
+crossvit_9_240.in1k,crossvit_9_240,
+ghostnet_100.in1k,ghostnet_100,RepGhostNet-1.0x
+hrnet_w18_small.gluon_in1k,hrnet_w18_small,
+xcit_nano_12_p8_224.fb_in1k,xcit_nano_12_p8_224,
+regnetx_006.pycls_in1k,regnetx_006,RegNetX-600MF
+resnet18d.ra2_in1k,resnet18d,Constructs a ResNet-18-D model.
+vit_base_patch32_224.sam_in1k,vit_base_patch32_224,"ViT-Base (ViT-B/32) from original paper (https://arxiv.org/abs/2010.11929).
+ImageNet-1k weights fine-tuned from in21k, source https://github.com/google-research/vision_transformer."
+tf_mobilenetv3_large_075.in1k,tf_mobilenetv3_large_075,MobileNet V3
+efficientvit_m3.r224_in1k,efficientvit_m3,
+vgg16_bn.tv_in1k,vgg16_bn,"VGG 16-layer model (configuration ""D"") with batch normalization
+""Very Deep Convolutional Networks For Large-Scale Image Recognition"" <https://arxiv.org/pdf/1409.1556.pdf>._"
+crossvit_tiny_240.in1k,crossvit_tiny_240,
+resnet34.tv_in1k,resnet34,"Constructs a Selective Kernel ResNet-34 model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+resnet18.fb_swsl_ig1b_ft_in1k,resnet18,"Constructs a Selective Kernel ResNet-18 model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+resnet18.a1_in1k,resnet18,"Constructs a Selective Kernel ResNet-18 model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+convit_tiny.fb_in1k,convit_tiny,
+skresnet18.ra_in1k,skresnet18,"Constructs a Selective Kernel ResNet-18 model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+semnasnet_075.rmsp_in1k,semnasnet_075,"MNASNet A1 (w/ SE),depth multiplier of 0.75."
+resnet34.a3_in1k,resnet34,"Constructs a Selective Kernel ResNet-34 model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+mobilenetv2_100.ra_in1k,mobilenetv2_100,MobileNet V2 w/ 1.0 channel multiplier
+pit_ti_224.in1k,pit_ti_224,
+resnet18.fb_ssl_yfcc100m_ft_in1k,resnet18,"Constructs a Selective Kernel ResNet-18 model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+repvgg_a0.rvgg_in1k,repvgg_a0,"RepVGG-A0
+Making VGG-style ConvNets Great Again - https://arxiv.org/abs/2101.03697"
+regnetx_004.pycls_in1k,regnetx_004,RegNetX-400MF w/ torchvision group rounding
+vgg19.tv_in1k,vgg19,"VGG 19-layer model (configuration 'E') with batch normalization
+""Very Deep Convolutional Networks For Large-Scale Image Recognition"" <https://arxiv.org/pdf/1409.1556.pdf>._"
+resnet18.a2_in1k,resnet18,"Constructs a Selective Kernel ResNet-18 model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+hrnet_w18_small.ms_in1k,hrnet_w18_small,
+xcit_nano_12_p16_224.fb_dist_in1k,xcit_nano_12_p16_224,
+tf_mobilenetv3_large_minimal_100.in1k,tf_mobilenetv3_large_minimal_100,MobileNet V3
+resnet14t.c3_in1k,resnet14t,Constructs a ResNet-14-T model.
+repghostnet_080.in1k,repghostnet_080,RepGhostNet-0.8x
+deit_tiny_patch16_224.fb_in1k,deit_tiny_patch16_224,"DeiT-tiny model @ 224x224 from paper (https://arxiv.org/abs/2012.12877).
+ImageNet-1k weights from https://github.com/facebookresearch/deit."
+lcnet_100.ra2_in1k,lcnet_100,PP-LCNet 1.0
+mixer_l16_224.goog_in21k_ft_in1k,mixer_l16_224,"Mixer-L/16 224x224. ImageNet-1k pretrained weights.
+Paper:'MLP-Mixer: An all-MLP Architecture for Vision' - https://arxiv.org/abs/2105.01601"
+edgenext_xx_small.in1k,edgenext_xx_small,
+vit_tiny_r_s16_p8_224.augreg_in21k_ft_in1k,vit_tiny_r_s16_p8_224,R+ViT-Ti/S16 w/ 8x8 patch hybrid @ 224 x 224.
+legacy_seresnet18.in1k,legacy_seresnet18,
+vgg16.tv_in1k,vgg16,"VGG 16-layer model (configuration ""D"") with batch normalization
+""Very Deep Convolutional Networks For Large-Scale Image Recognition"" <https://arxiv.org/pdf/1409.1556.pdf>._"
+vgg13_bn.tv_in1k,vgg13_bn,"VGG 13-layer model (configuration ""B"") with batch normalization
+""Very Deep Convolutional Networks For Large-Scale Image Recognition"" <https://arxiv.org/pdf/1409.1556.pdf>._"
+mobileone_s0.apple_in1k,mobileone_s0,
+efficientvit_b0.r224_in1k,efficientvit_b0,
+tinynet_c.in1k,tinynet_c,
+resnet18.gluon_in1k,resnet18,"Constructs a Selective Kernel ResNet-18 model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+efficientvit_m2.r224_in1k,efficientvit_m2,
+pvt_v2_b0.in1k,pvt_v2_b0,
+vgg11_bn.tv_in1k,vgg11_bn,"VGG 11-layer model (configuration ""A"") with batch normalization
+""Very Deep Convolutional Networks For Large-Scale Image Recognition"" <https://arxiv.org/pdf/1409.1556.pdf>._"
+regnety_002.pycls_in1k,regnety_002,RegNetY-200MF
+mobilevitv2_050.cvnets_in1k,mobilevitv2_050,
+xcit_nano_12_p16_224.fb_in1k,xcit_nano_12_p16_224,
+vgg13.tv_in1k,vgg13,"VGG 13-layer model (configuration ""B"") with batch normalization
+""Very Deep Convolutional Networks For Large-Scale Image Recognition"" <https://arxiv.org/pdf/1409.1556.pdf>._"
+resnet18.tv_in1k,resnet18,"Constructs a Selective Kernel ResNet-18 model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+vgg11.tv_in1k,vgg11,"VGG 11-layer model (configuration ""A"") with batch normalization
+""Very Deep Convolutional Networks For Large-Scale Image Recognition"" <https://arxiv.org/pdf/1409.1556.pdf>._"
+mobilevit_xxs.cvnets_in1k,mobilevit_xxs,
+repghostnet_058.in1k,repghostnet_058,RepGhostNet-0.58x
+lcnet_075.ra2_in1k,lcnet_075,PP-LCNet 1.0
+regnetx_002.pycls_in1k,regnetx_002,RegNetX-200MF
+resnet10t.c3_in1k,resnet10t,Constructs a ResNet-10-T model.
+efficientvit_m1.r224_in1k,efficientvit_m1,
+resnet18.a3_in1k,resnet18,"Constructs a Selective Kernel ResNet-18 model.
+
+Different from configs in Select Kernel paper or ""Compounding the Performance Improvements..."" this
+variation splits the input channels to the selective convolutions to keep param count down."
+tf_mobilenetv3_small_100.in1k,tf_mobilenetv3_small_100,MobileNet V3
+dla60x_c.in1k,dla60x_c,
+mobilenetv3_small_100.lamb_in1k,mobilenetv3_small_100,MobileNet V3
+tinynet_d.in1k,tinynet_d,
+repghostnet_050.in1k,repghostnet_050,RepGhostNet-0.5x
+mnasnet_small.lamb_in1k,mnasnet_small,"MNASNet Small,depth multiplier of 1.0."
+dla46x_c.in1k,dla46x_c,
+mobilenetv2_050.lamb_in1k,mobilenetv2_050,MobileNet V2 w/ 0.5 channel multiplier
+tf_mobilenetv3_small_075.in1k,tf_mobilenetv3_small_075,MobileNet V3
+mobilenetv3_small_075.lamb_in1k,mobilenetv3_small_075,MobileNet V3
+dla46_c.in1k,dla46_c,
+efficientvit_m0.r224_in1k,efficientvit_m0,
+lcnet_050.ra2_in1k,lcnet_050,PP-LCNet 0.5
+tf_mobilenetv3_small_minimal_100.in1k,tf_mobilenetv3_small_minimal_100,MobileNet V3
+tinynet_e.in1k,tinynet_e,
+mobilenetv3_small_050.lamb_in1k,mobilenetv3_small_050,MobileNet V3
