@@ -86,14 +86,14 @@ def fetch_and_clean_data(dataset_name):
 
 # =============================== Start ===========================
 st.set_page_config(
-    layout="wide", page_title="Timm model's explorer", initial_sidebar_state="expanded"
+    layout="wide", page_title="Timm models explorer", initial_sidebar_state="expanded"
 )
 
 # Load CSS
 with open("resources/style.css") as fp:
     st.markdown(f"<style>{fp.read()}</style>", unsafe_allow_html=True)
 
-st.title(f"Timm model's explorer ({tme.timm_version})")
+st.title(f"Timm models explorer ({tme.timm_version})")
 
 
 # # =========================== Sidebar ===========================
