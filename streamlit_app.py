@@ -209,12 +209,19 @@ expander.markdown(
 )
 # ================ Scatter ===========================
 
+if x_axis == tme.TRAIN_SAMPLE_PER_SEC or y_axis == tme.TRAIN_SAMPLE_PER_SEC or \
+   x_axis == tme.INFER_SAMPLE_PER_SEC or y_axis == tme.INFER_SAMPLE_PER_SEC:
+    warning_point = True
+else:
+    warning_point = False
+
 scatter = tme.update_plot(
     tme.axis_to_cols[x_axis],
     tme.axis_to_cols[y_axis],
     df_filter,
     show_color=show_plot_color,
-    show_text=False
+    show_text=False,
+    warning_point=warning_point
 )
 selected_points = plotly_events(scatter, key="scatter_key")
 
