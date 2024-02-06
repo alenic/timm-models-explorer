@@ -17,7 +17,7 @@ def update_plot(
         size="param_count",
         text="model" if show_text else None,
         custom_data=["model", "top1", "top5", "param_count", "img_size"],
-        title="Warning! All Models without about infer/train performances have value of -123" if warning_point else None
+        title="Warning! All Models without (Train/Infer img/sec) info have value of -123" if warning_point else None
     )
 
     scatter.update_traces(
