@@ -165,8 +165,8 @@ with st.sidebar:
     )
 
     st.markdown("""
-        <div style="margin-top: 0.75em;"
-                <a href="https://www.buymeacoffee.com/alessandro.nicolosi" target="_blank"
+        <div style="margin-top: 0.75em;">
+                <a href="https://www.buymeacoffee.com/alessandro.nicolosi" target="_blank">
                     <img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174">
                 </a>
         </div>
