@@ -9,7 +9,7 @@ import timm
 
 import tme
 
-PROFILE = True
+PROFILE = False
 
 if PROFILE:
     from streamlit_profiler import Profiler
