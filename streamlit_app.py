@@ -13,12 +13,14 @@ PROFILE = False
 
 if PROFILE:
     from streamlit_profiler import Profiler
+
     PROFILE = Profiler()
     PROFILE.start()
 
 
-if 'num_models' not in st.session_state:
-    st.session_state['num_models'] = 0
+if "num_models" not in st.session_state:
+    st.session_state["num_models"] = 0
+
 
 @st.cache_resource
 def fetch_and_clean_data(dataset_name):
@@ -154,26 +156,28 @@ with st.sidebar:
     st.markdown(
         """
         <br>
-        <h6>Made in &nbsp<img src="https://streamlit.io/images/brand/streamlit-mark-color.png" alt="Streamlit logo" height="16">&nbsp by
-        <a href="https://github.com/alenic">@alenic</a></h6>
+        <h6>
+            Made in &nbsp<img src="https://streamlit.io/images/brand/streamlit-mark-color.png" alt="Streamlit logo" height="16">&nbsp
+            by<a href="https://github.com/alenic">@alenic</a>
+        </h6>
         """,
         unsafe_allow_html=True,
     )
 
-    st.markdown(
-        '<div style="margin-top: 0.75em;"><a href="https://www.buymeacoffee.com/alessandro.nicolosi" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174"></a></div>',
+    st.markdown("""
+        <div style="margin-top: 0.75em;"
+                <a href="https://www.buymeacoffee.com/alessandro.nicolosi" target="_blank"
+                    <img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174">
+                </a>
+        </div>
+        """,
         unsafe_allow_html=True,
     )
 # =================== Filter =========================
 df_filter = df.query(f"top1>={top1_choice[0]} and top1<={top1_choice[1]}")
-df_filter.query(f"top5>={top5_choice[0]} and top5<={top5_choice[1]}", inplace=True)
-df_filter.query(
-    f"param_count>={params_choice[0]} and param_count<={params_choice[1]}", inplace=True
-)
-df_filter.query(
-    f"img_size>={resolutions_choice[0]} and img_size<={resolutions_choice[1]}",
-    inplace=True,
-)
+df_filter = df_filter.query(f"top5>={top5_choice[0]} and top5<={top5_choice[1]}")
+df_filter = df_filter.query(f"param_count>={params_choice[0]} and param_count<={params_choice[1]}")
+df_filter = df_filter.query(f"img_size>={resolutions_choice[0]} and img_size<={resolutions_choice[1]}",)
 
 df_filter.index = range(len(df_filter))
 if contain_text != "":
@@ -181,11 +185,11 @@ if contain_text != "":
     df_filter.index = range(len(df_filter))
 
 if len(model_modules) > 0:
-    filter_module = True
+    show_plot_color = True
     df_filter = df_filter.loc[df_filter["model_module"].isin(model_modules), :]
     df_filter.index = range(len(df_filter))
 else:
-    filter_module = False
+    show_plot_color = False
 
 # ===================== Page =========================
 st.subheader(f"{dataset_name}")
@@ -206,15 +210,19 @@ expander.markdown(
 # ================ Scatter ===========================
 
 scatter = tme.update_plot(
-    tme.axis_to_cols[x_axis], tme.axis_to_cols[y_axis], df_filter, filter_module
+    tme.axis_to_cols[x_axis],
+    tme.axis_to_cols[y_axis],
+    df_filter,
+    show_color=show_plot_color,
+    show_text=False
 )
 selected_points = plotly_events(scatter, key="scatter_key")
 
 # prevent selection keep
-if (len(df_filter) != st.session_state['num_models']):
+if len(df_filter) != st.session_state["num_models"]:
     selected_points = None
 
-st.session_state['num_models'] = len(df_filter)
+st.session_state["num_models"] = len(df_filter)
 
 if selected_points:
     point_index = selected_points[0]["pointIndex"]
@@ -240,7 +248,7 @@ if selected_points:
             <tr><td>Model</td> <td>{row["model"]}</td></tr>
             <tr><td>Model Name</td> <td>{row["model_name"]}</td></tr>
             <tr><td>Model Pretrained Tag</td> <td>{row["pretrained_tag"]}</td></tr>
-            <tr><td>Module</td> <td><a href="{module_timm_url}">{row['model_module']}</a></td></tr>
+            <tr><td>Module</td> <td><a href="{module_timm_url}">{row['model_module']}.py</a></td></tr>
             <tr><td>Top1 (Acc.%)</td> <td>{row["top1"]}</td></tr>
             <tr><td>Top5 (Acc.%)</td> <td>{row["top5"]}</td></tr>
             <tr><td>Parameters [Millions]</td> <td>{row["param_count"]}</td></tr>
@@ -259,8 +267,8 @@ if selected_points:
     with m_tab_arch:
         st.code(row["model"])
         st.code(f'"""\n{row["model_comment"]}\n"""')
-        st.markdown(f"### [{row['model_module']}]({module_timm_url})")
-        st.markdown(row["description"])
+        st.markdown(f"### [{row['model_module']}.py]({module_timm_url})")
+        st.code(f'"""\n{row["description"]}\n"""')
 
     # Model Config Tab
     with m_tab_cfg:

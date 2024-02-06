@@ -4,12 +4,21 @@
 
 This Streamlit application serves as a user-friendly interface for navigating the myriad models available within the timm library.
 
-Try it here: [https://timm-model-explorer.streamlit.app/](https://timm-model-explorer.streamlit.app/)
+Try it here online: [https://timm-model-explorer.streamlit.app/](https://timm-model-explorer.streamlit.app/)
+
+# Local run:
+requirements:
+```
+pip install streamlit plotly streamlit-plotly-events timm==0.9.12
+```
+launch with:
+```
+streamlit run streamlit_app.py
+```
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://timm-model-explorer.streamlit.app/)
 
 ![alt text](screenshot.jpg "Title")
-
 
 # What you can do
 This is a first app prototype and can be useful to visualize and search the following stuff:

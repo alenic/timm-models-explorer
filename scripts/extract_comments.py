@@ -1,4 +1,3 @@
-# pip install astor
 # git clone https://github.com/huggingface/pytorch-image-models.git
 # cd pytorch-image-models
 # git checkout tags/v0.9.12
@@ -8,23 +7,15 @@ import timm
 import re
 import pandas as pd
 import numpy as np
+import sys
+
+sys.path.append(".")
 
 import tme
 
 timm_version = "v0.9.12"
 
-def strlist_in_str(name, name_list):
-    for n in name_list:
-        if n in name:
-            return True
-    return False
-
-
-def str_in_strlist(name, name_list):
-    for n in name_list:
-        if n in name:
-            return True
-    return False
+DEBUG = False
 
 out_root = os.path.join("data", "comments")
 
@@ -65,9 +56,10 @@ for m in modules:
     result = p.findall(content)
     description = result[0]
 
-    df_desc.loc[df_desc["model_module"] == m, "description"] = (
-        description.lstrip().rstrip()
-    )
+    df_desc.loc[df_desc["model_module"] == m, "description"] = description
+    if DEBUG:
+        print(f"---- Description ----\n{description}")
+        input()
 
     p = re.compile('@register_model\n(.*?)(?:""")(.*?)(?:""")', re.DOTALL)
     result = p.findall(content)
@@ -75,14 +67,18 @@ for m in modules:
     for r in result:
         select = df["model_name"].apply(lambda x: x in r[0])
         if len(r) >= 1:
-            cleaned_comment = "\n".join(list(r[1:])).replace("  ", "").replace("`", "")
-            cleaned_comment = cleaned_comment.lstrip().rstrip()
+            comment = "\n".join(list(r[1:]))
         else:
-            cleaned_comment = "None"
+            comment = ""
 
-        df_comments.loc[select, "model_comment"] = cleaned_comment
+        if DEBUG:
+            print(f"---- Model comment ----\n{comment}")
+            input()
+        df_comments.loc[select, "model_comment"] = comment
 
-out_path = os.path.join("data", timm_version, "comments", "model_comments.csv")
-df_comments.to_csv(out_path, index=False)
-out_path = os.path.join("data", timm_version, "comments", "module_descriptions.csv")
-df_desc.to_csv(out_path, index=False)
+if not DEBUG:
+    # Write outputs
+    out_path = os.path.join("data", timm_version, "comments", "model_comments.csv")
+    df_comments.to_csv(out_path, index=False)
+    out_path = os.path.join("data", timm_version, "comments", "module_descriptions.csv")
+    df_desc.to_csv(out_path, index=False)
