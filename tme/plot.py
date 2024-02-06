@@ -2,7 +2,7 @@ import plotly.express as px
 import streamlit as st
 from .constants import cols_to_axis
 
-
+@st.cache_resource
 def update_plot(
     x_axis_display, y_axis_display, df_filter, show_color=False, show_text=False, warning_point=False
 ):

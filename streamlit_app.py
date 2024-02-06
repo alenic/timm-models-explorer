@@ -9,7 +9,7 @@ import timm
 
 import tme
 
-PROFILE = False
+PROFILE = True
 
 if PROFILE:
     from streamlit_profiler import Profiler
@@ -223,7 +223,7 @@ scatter = tme.update_plot(
     show_text=False,
     warning_point=warning_point
 )
-selected_points = plotly_events(scatter, key="scatter_key")
+selected_points = plotly_events(scatter)
 
 # prevent selection keep
 if len(df_filter) != st.session_state["num_models"]:
