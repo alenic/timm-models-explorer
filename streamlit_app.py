@@ -103,8 +103,6 @@ with open("resources/style.css") as fp:
     st.markdown(f"<style>{fp.read()}</style>", unsafe_allow_html=True)
 
 st.title(f"Timm models explorer ({tme.timm_version})")
-
-
 # # =========================== Sidebar ===========================
 
 with st.sidebar:
@@ -328,6 +326,7 @@ if selected_points:
         ) 
         """
         st.code(code_scratch, language="python")
+
 
 if PROFILE:
     PROFILE.stop()

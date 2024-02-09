@@ -34,10 +34,11 @@ def get_trace(
         mode="markers",
         hovertext=df["model"].values,
         hovertemplate="<b>%{hovertext}</b><br>"
-        + x_label
+        + f"{x_label}"
         + " : %{x}<br>"
-        + y_label
-        + " : %{y}",
+        + f"{y_label}"
+        + " : %{y}</br>"
+        + "<extra></extra>",
         name=name,
         marker_color=color,
         marker_size=size,
