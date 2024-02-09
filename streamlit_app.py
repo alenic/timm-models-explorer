@@ -165,16 +165,6 @@ with st.sidebar:
         """,
         unsafe_allow_html=True,
     )
-
-    st.markdown("""
-        <div style="margin-top: 0.75em;">
-                <a href="https://www.buymeacoffee.com/alessandro.nicolosi" target="_blank">
-                    <img src="https://cdn.buymeacoffee.com/buttons/default-orange.png" alt="Buy Me A Coffee" height="41" width="174">
-                </a>
-        </div>
-        """,
-        unsafe_allow_html=True,
-    )
 # =================== Filter =========================
 df_filter = df.query(f"top1>={top1_choice[0]} and top1<={top1_choice[1]}")
 df_filter = df_filter.query(f"top5>={top5_choice[0]} and top5<={top5_choice[1]}")
