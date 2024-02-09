@@ -7,7 +7,7 @@ This Streamlit application serves as a user-friendly interface for navigating th
 Try it here online: [https://timm-models-explorer.streamlit.app/](https://timm-models-explorer.streamlit.app/)
 
 
-[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://timm-model-explorer.streamlit.app/)
+[![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://timm-models-explorer.streamlit.app/)
 
 # Local run:
 requirements:
