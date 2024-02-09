@@ -4,7 +4,7 @@
 
 This Streamlit application serves as a user-friendly interface for navigating the myriad models available within the timm library.
 
-Try it here online: [https://timm-model-explorer.streamlit.app/](https://timm-model-explorer.streamlit.app/)
+Try it here online: [https://timm-models-explorer.streamlit.app/](https://timm-models-explorer.streamlit.app/)
 
 
 [![Streamlit App](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://timm-model-explorer.streamlit.app/)
