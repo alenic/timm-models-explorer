@@ -37,7 +37,7 @@ This is a first app prototype and can be useful to visualize and search the foll
 
 # TODO List
 
-- [ ] More efficient scatter plot
+- [x] More efficient scatter plot
 - [ ] Keep scatter plot zoom
 - [ ] Incorporate missed inference and training stats
 - [ ] Include model's name tag descriptions

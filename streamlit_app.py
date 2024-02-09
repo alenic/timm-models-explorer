@@ -13,7 +13,6 @@ PROFILE = False
 
 if PROFILE:
     from streamlit_profiler import Profiler
-
     PROFILE = Profiler()
     PROFILE.start()
 
@@ -33,6 +32,9 @@ def fetch_and_clean_data(dataset_name):
     # Format of param_count
     df["param_count"] = df["param_count"].str.replace(",", "").astype(float)
 
+    st.session_state["parm_count_min"] = df["param_count"].min()
+    st.session_state["parm_count_max"] = df["param_count"].max()
+    
     # Split model_name and pretrained_tag
     apply = np.vectorize(
         lambda model_name: timm.models.split_model_name_tag(model_name)
@@ -215,13 +217,14 @@ if x_axis == tme.TRAIN_SAMPLE_PER_SEC or y_axis == tme.TRAIN_SAMPLE_PER_SEC or \
 else:
     warning_point = False
 
-scatter = tme.update_plot(
+scatter = tme.update_plot_fast(
     tme.axis_to_cols[x_axis],
     tme.axis_to_cols[y_axis],
     df_filter,
     show_color=show_plot_color,
-    show_text=False,
-    warning_point=warning_point
+    warning_point=warning_point,
+    min_param_count=df["param_count"].min(),
+    max_param_count=df["param_count"].max()
 )
 selected_points = plotly_events(scatter)
 
