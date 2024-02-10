@@ -21,7 +21,7 @@ if "num_models" not in st.session_state:
     st.session_state["num_models"] = 0
 
 
-@st.cache_resource
+@st.cache_data
 def fetch_and_clean_data(dataset_name):
     # Load results file
     filename = os.path.join(
@@ -164,6 +164,7 @@ with st.sidebar:
         unsafe_allow_html=True,
     )
 # =================== Filter =========================
+
 df_filter = df.query(f"top1>={top1_choice[0]} and top1<={top1_choice[1]}")
 df_filter = df_filter.query(f"top5>={top5_choice[0]} and top5<={top5_choice[1]}")
 df_filter = df_filter.query(f"param_count>={params_choice[0]} and param_count<={params_choice[1]}")
