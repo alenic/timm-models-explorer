@@ -21,7 +21,7 @@ if "num_models" not in st.session_state:
     st.session_state["num_models"] = 0
 
 
-@st.cache_data
+@st.cache_resource
 def fetch_and_clean_data(dataset_name):
     # Load results file
     filename = os.path.join(
@@ -164,7 +164,6 @@ with st.sidebar:
         unsafe_allow_html=True,
     )
 # =================== Filter =========================
-
 df_filter = df.query(f"top1>={top1_choice[0]} and top1<={top1_choice[1]}")
 df_filter = df_filter.query(f"top5>={top5_choice[0]} and top5<={top5_choice[1]}")
 df_filter = df_filter.query(f"param_count>={params_choice[0]} and param_count<={params_choice[1]}")
@@ -233,8 +232,8 @@ if selected_points:
     if pretrained_cfg is not None:
         pretrained_cfg = pretrained_cfg.to_dict()
 
-    m_tab_info, m_tab_arch, m_tab_cfg, m_tab_summ, m_tab_code = st.tabs(
-        ["Model Info", "Architecture Info", "Model Config", "Model Summary", "Code"]
+    m_tab_info, m_tab_arch, m_tab_tr, m_tab_cfg, m_tab_summ, m_tab_code = st.tabs(
+        ["Model Info", "Architecture Info", "Preprocessing Info", "Model Config", "Model Summary", "Code"]
     )
 
     module_timm_url = f"https://github.com/huggingface/pytorch-image-models/tree/{tme.timm_version}/timm/models/{row['model_module']}.py"
@@ -265,9 +264,20 @@ if selected_points:
     # Architecture Info tab
     with m_tab_arch:
         st.code(row["model"])
-        st.code(f'"""\n{row["model_comment"]}\n"""')
+        # Check is nan -> isna(num): return num != num
+        if row["model_comment"] ==  row["model_comment"]:
+            st.code(f'"""\n{row["model_comment"]}\n"""')
         st.markdown(f"### [{row['model_module']}.py]({module_timm_url})")
         st.code(f'"""\n{row["description"]}\n"""')
+
+    # Preprocessing info (Train and Val transform)
+    with m_tab_tr:
+        train_tr, val_tr = tme.get_transforms(row["model"])
+        st.code(row["model"])
+        st.write("Train Transform")
+        st.code(train_tr)
+        st.write("Val Transform")
+        st.code(val_tr)
 
     # Model Config Tab
     with m_tab_cfg:
@@ -282,10 +292,12 @@ if selected_points:
         else:
             model_text = None
 
+        st.code(row["model"])
         st.code(model_text, language="python")
 
     # Model Summary Tab
     with m_tab_summ:
+        st.code(row["model"])
         summary_path = os.path.join(
             "data", tme.timm_version, "models_summaries", f'{row["model"]}.txt'
         )

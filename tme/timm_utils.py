@@ -1,5 +1,6 @@
 import timm
-
+from timm.data import resolve_data_config
+from timm.data.transforms_factory import create_transform
 
 def get_models_from_model_modules(model_type):
     models_list = list(timm.models._registry._module_to_models[model_type])
@@ -22,6 +23,11 @@ def strlist_in_str(name, name_list):
             return True
     return False
 
+def get_transforms(model_name):
+    pretrained_cfg = timm.get_pretrained_cfg(model_name, allow_unregistered=False).to_dict()
+    train_tr = create_transform(**resolve_data_config(pretrained_cfg, pretrained_cfg=pretrained_cfg), is_training=True)
+    val_tr = create_transform(**resolve_data_config(pretrained_cfg, pretrained_cfg=pretrained_cfg), is_training=False)
+    return str(train_tr), str(val_tr)
 
 def get_config(model):
     try:
