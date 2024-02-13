@@ -1,6 +1,13 @@
-# git clone https://github.com/huggingface/pytorch-image-models.git
-# cd pytorch-image-models
-# git checkout tags/v0.9.12
+'''
+Extract global comments and local comments under @register function inside modules of timm's library
+
+git clone https://github.com/huggingface/pytorch-image-models.git
+cd pytorch-image-models
+git checkout tags/v0.9.12
+
+@author: Alessandro Nicolosi
+@page: https://github.com/alenic
+'''
 
 import os
 import timm

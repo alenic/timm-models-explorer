@@ -1,4 +1,10 @@
-#from torchsummary import summary
+"""
+Generate summary using the library torchinfo (https://github.com/TylerYep/torchinfo)
+
+@author: Alessandro Nicolosi
+@page: https://github.com/alenic
+"""
+
 from torchinfo import summary
 import timm
 import sys
@@ -14,7 +20,7 @@ with torch.no_grad():
         config = timm.get_pretrained_cfg(model_name, allow_unregistered=True).to_dict()
     except:
         config = None
-    
+
     input_size = list(config["input_size"])
     input_size = [1] + input_size
     summary(model, input_size, device="cpu")

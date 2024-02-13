@@ -1,3 +1,10 @@
+"""
+Download timm's result files
+
+@author: Alessandro Nicolosi
+@page: https://github.com/alenic
+"""
+
 import requests
 import os
 

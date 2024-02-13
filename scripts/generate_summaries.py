@@ -1,3 +1,10 @@
+"""
+Script to generate summaries using the library torchinfo (https://github.com/TylerYep/torchinfo)
+
+@author: Alessandro Nicolosi
+@page: https://github.com/alenic
+"""
+
 import pandas as pd
 import os
 from tqdm import tqdm
