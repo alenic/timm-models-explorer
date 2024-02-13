@@ -1,5 +1,5 @@
-streamlit
-pandas
-plotly
-streamlit-plotly-events
+streamlit==1.31.0
+pandas==2.2.0
+plotly==5.18.0
+streamlit-plotly-events==0.0.6
 timm==0.9.12

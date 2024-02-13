@@ -1,3 +1,12 @@
+"""
+Main streamlit app
+
+Local run:
+streamlit run streamlit_app.py
+
+@author: Alessandro Nicolosi
+@page: https://github.com/alenic
+"""
 import streamlit as st
 import pandas as pd
 import numpy as np
